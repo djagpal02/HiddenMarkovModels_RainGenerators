@@ -1,0 +1,31 @@
+@article {danisman-uzunoglu,
+    AUTHOR = {Danisman, Ozgur and Uzunoglu Kocer, Umay},
+     TITLE = {Hidden {M}arkov models with binary dependence},
+   JOURNAL = {Phys. A},
+  FJOURNAL = {Physica A. Statistical Mechanics and its Applications},
+    VOLUME = {567},
+      YEAR = {2021},
+     PAGES = {125668},
+      ISSN = {0378-4371},
+   MRCLASS = {62M05 (86A32)},
+  MRNUMBER = {4192329},
+       DOI = {10.1016/j.physa.2020.125668},
+       URL = {https://doi.org/10.1016/j.physa.2020.125668},
+}
+
+@article {yonekura-beskos-singh,
+    AUTHOR = {Yonekura, Shouto and Beskos, Alexandros and Singh, Sumeetpal
+              S.},
+     TITLE = {Asymptotic analysis of model selection criteria for general
+              hidden {M}arkov models},
+   JOURNAL = {Stochastic Process. Appl.},
+  FJOURNAL = {Stochastic Processes and their Applications},
+    VOLUME = {132},
+      YEAR = {2021},
+     PAGES = {164--191},
+      ISSN = {0304-4149},
+   MRCLASS = {62M05 (62F12)},
+  MRNUMBER = {4179109},
+       DOI = {10.1016/j.spa.2020.10.006},
+       URL = {https://doi.org/10.1016/j.spa.2020.10.006},
+}

@@ -1,0 +1,60 @@
+In this section, we will briefly visit foundations on which we will build throughout this paper. For most, this will be a simple refresher. 
+
+\section{Mathematical Foundations}
+We start with a few key mathematical concepts.
+\subsection{Probability Theory}
+To discuss any probablisitic ideas we must first understand general probability theory. This can be done through the definition of a probability space.
+\begin{definition}
+	\label{probtheory}
+	Probability Space \\
+	A probability space is defined by $(\Omega ,\sigalgebra , \prob)$. $\Omega$ is the non-empty set of 		all possible outcomes, such that all events $\omega$ $\in$ $\Omega$. $\prob$ is a probability				measure, a function $\prob$(A) that maps event A to a number within [0,1] based on the liklihood of 		the event. $\sigalgebra$ is a $\sigma$-algebra on $\Omega$ if
+
+	\begin{enumerate}
+		\item $\Omega$ $\in$ $\sigalgebra$
+		\item A $\in$ $\sigalgebra$ implies $A^c$ $\in$ $\sigalgebra$
+		\item if $A_1, A_2, A_3$,... are in $\sigalgebra$ then so is $A_1 \cup A_2 \cup A_3$...
+	\end{enumerate}
+\end{definition}
+
+\subsection{Conditional Probability}
+Sometimes we require the probability of an event assuming another event has occured. In such situations we require conditional probability. Given two events A and B, the probability of event A occuring conditioned on the occurance of event B can be calculated as below. \\ 
+\begin{equation}
+\label{condprob}
+	\prob (A|B) = \dfrac{\prob (A \cap B)}{\prob (B)}, \  \forall A \in \sigalgebra
+\end{equation}
+\\
+
+From \ref{condprob} and the fact that for dependednt events $\prob$(A $\cap$ B) = $\prob$(B $\cap$ A) we can see that:
+
+\begin{equation}
+\label{intersection}
+	\prob (A \cap B) = \prob (A|B) \prob (B) = \prob (B|A) \prob (A), \  \forall A,B \in \sigalgebra
+\end{equation}
+\\
+
+Subsituting \ref{intersection} into \ref{condprob} we get the famous Bayes Theorem. 
+
+\begin{theorem}
+\label{bayes}
+	Bayes’ Theorem \\
+	For dependent events A and B with probability space $(\Omega ,\sigalgebra , \prob)$ , where $\prob$			(B) $\ne$ 0,
+	\begin{equation}
+		\prob (A|B) = \dfrac{\prob (B|A) \prob (A)}{\prob (B)}, \  \forall A \in \sigalgebra
+	\end{equation}
+\end{theorem}
+
+
+
+\subsection{Stochastic Process}
+To be able to define a Markov model, of any kind, we must first define a stochastic process. 
+\begin{definition}
+\label{stochasticp} 
+	Stochastic Process \\
+	Given an ordered set T and probability space $(\Omega ,\sigalgebra , \prob)$ a stochastic process is 		a collection of random variables X = \{$X_t$; t$\in$T\}. Based on t $\in $ T and $\omega \in \Omega$ 		we get a numerical realization of the process.  For simplicity, this may be viewed as a function; 			$X_t( \omega)$.
+
+\end{definition}
+
+
+
+
+\section{Applied Foundations}
