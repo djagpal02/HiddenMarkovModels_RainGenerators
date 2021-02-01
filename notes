@@ -1,0 +1,60 @@
+// Markov Property
+
+State at time t is dependent only on previous state t-1
+
+//Abstract Markov Model
+
+//Discrete Markov Model
+
+For a discrete Markov model with x states, there can be at most x^2 possible transitions. We must store each of these probabilities, where 0 represents an impossible transition. This is done using the transition matrix p.
+
+An assumption of the markov model is that changes happen on a preset tempo. On each beat the model randomly changes state based on the probabilities. 
+ 
+qt is state of system at time t (S_i)
+
+due to markov Property we only need state at time t-1 
+
+p(q_t = s_j | q_t-1 = s_i) 1<= i,j <= N
+
+sum of a_ij = 1 - due to this the matrix is a stochastic matrix
+
+This is called an observable markov model as we can observe events, ie state changes. 
+
+
+/// Example observable of Markov Model
+
+rain, cloudy, sunny
+
+tempo = days
+
+in order to predict next day
+
+- we can predict next day based on highest probability
+- we can also predict the probability of a given sequence O = {s_i,s_j...}
+
+P(O|model) = P(s_k) *p (s_j|s_i) ...
+	   = pi_k * a_ij ...
+	   where a_ij is prob frmo transition matrix of transition from state i to j
+	 
+	 
+-what is the probability it will stay in a known state for d days
+
+p(O|Model, q_1=s_i) = (a_ii)^d-(1-a_ii)=p_i(d)
+
+is the discrete probability density function of duration d in state i
+
+from this we can calculate the expected stay in a particular state
+
+this can be calculated by 
+
+mean d_i = sum of d=1 to inf dp_i(d) which simplifies to 1/1-a_ii
+
+
+// Motivating HMM
+
+Sometimes you do not get an observation from your states but only see the effect of the state change. 
+
+
+
+
+

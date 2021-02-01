@@ -2,7 +2,9 @@
 Andrei Markov discovered the Markov model while analyzing the relationship between consecutive letters from text in the Russian novel "Eugene Onegin". With a two state model (states Vowel and Consonant) he proved that the probabililty of letters being in a particular state are not independent. Given the current state he could probabilistically predict the next. This chain of states, with various probabilities to and from each state, formed the foundation of the Markov Chain.
 
 \section{Markov Chain}
-To define a Markov chain we must first address the Markov property.
+A Markov chain is a network of connceted states. At any given time the model is said to be in a particular state. At a regular discrete interval
+the model has the ability to change states, which state will depend on the probaility and randomness. To define a Markov chain we must first address the Markov property. 
+This simply states that the next state depends only on the current state. A more formal definition is given below. 
 
 \begin{definition}
 \label{markovproperty}
@@ -13,58 +15,169 @@ To define a Markov chain we must first address the Markov property.
 	\end{equation}
 \end{definition}
 
+
+A Markov chain is simply a model that obeys \ref{markovproperty}. Again a more formal definition is given below.
+
 \begin{definition}
 \label{markovchain}
 	Markov Chain \\
 	A stochastic process \{$X_t$ ; t $>$ 0\} is a Markov Chain if and only if it satisfies the Markov 			property \ref{markovproperty}.
 \end{definition}
 
-To be able to use a Markov chain, we must first be able to define its transition probabilities. This becomes complex if the probabilities vary with time. Thus, we usually assume the probabilities are constant. These special Markov chains are called time-homogenous.  
+To store the sequence of states a Markov chain has been through, we use the set $Q = \{q_t ; t \in \mathbb{N}_0\}$, where $q_t$ represents 
+the state at time $t$. We will use this notation throughout the paper.
+
+\begin{example}
+	\label{stateseq}
+	Given a Markov Model with states S = $\{S_1,S_2,S_3\}$, if the model starts at $S_2$ and then goes to $S_3$ and then back to $S_2$
+	the state sequence $Q$ will be $Q = \{q_1 = S_2, q_2 = S_3, q_3 = S_2\}$.
+\end{example}
+
+From the markov property we can see that the only thing that influences $q_t$ is $q_{t-1}$. Thus we can make a prediction for $q_{t+1}$
+based on the outward transition probabililties from state $q_t$. If we calculate the probability of all possible states $S_j$
+given $q_t = S_i$ and find the maximum of these,  we can find the most likely $q_{t+1}$.
+\\
+i.e. 
+\\
+Given a Markov chain with N states including $i$ and $j$ and discrete time $t \in \mathbb{N}_0$:
+\begin{equation}
+	\prob (q_t = S_j | q_{t-1} = S_i)_{1 \leq i,j \leq N}
+\end{equation}
+
+
+These probabilities can vary with time but can become quite complex. Thus, we usually assume the probabilities are constant. 
+These special Markov models are called time-homogenous. 
 
 \begin{definition}
 \label{timehomogenous}
 	Time homogenous \\
-	Let \{$X_t$ ; t $\in \mathbb{N}_0$\} denote a stochastic proccess \ref{stochasticp}, where t 				represents discrete time, and $p(i,j)$ represent the transition probability from state i to state j. 
+	Let \{$X_t$ ; t $\in \mathbb{N}_0$\} denote a stochastic proccess \ref{stochasticp}, where t represents discrete time, and $p(i,j)$ represent the transition probability from state i to state j. 
 	\begin{equation}
 		\prob \{X_n = j | X_{n-1} = i\} = p(i,j),       \forall n \in \mathbb{N}_0
 	\end{equation}
 \end{definition}
 
-Given a time-homogenous Markov chain, we can create a 2-dimensional N x N matrix of transition probabilities, where N is the cardinality of the state space.Unique Markov chains have unique transition matrices. These matrices can be defined as below:
+For a discrete Markov model with N states, there are N$^2$ possible transitions, where $p(i,j) = 0$ represents an impossible transition.
+We must store each of these probabilities. Given a time-homogenous Markov chain, we can create a 2-dimensional N x N matrix of transition probabilities $p$.
+Unique Markov chains have unique transition matrices. These matrices can be defined as below:
+
 \begin{equation}
-	P = \{ p(i,j) = \prob \{ X_n = j | X_{n-1} = i \}\}_{1 \leq i,j \leq N}
+	p = \{ p(i,j) = \prob \{ X_n = j | X_{n-1} = i \}\}_{1 \leq i,j \leq N}
 \end{equation}
 
-\section{Applications of the Markov Model}
-Markov models have many applications. To demonstrate we will present an example where the weather is represented by the states.  
+All $p$ matrices have some special characteristics. The first, is that all values contained within $p$ must be within $[0,1]$.
+This is quite natural as all values are probabililties and thus by definition must lie within $[0,1]$. The second is that all either the 
+rows, columns or both form stochastic vectors. If it is the rows then the matrix is defined as a right-stochastic matrix, if it is 
+the columns then it is called a left-stochastic matrix.  
+\\
+
+To demonstrate we will present an example where the weather is represented by the states.  
 
 \begin{example}
 \label{weathermarkovchain}
-	Let \{$X_t ; t \in \mathbb{N}_0$\} denote a Markov Chain, with state space S = \{rainy, sunny, 				cloudy\}, where t represents the number of days from start. Since any state can transition into any 		other state, we can say this model is ergodic. This can also be seen through fig() as each state is 		connected to all others. 
+	Let \{$X_t ; t \in \mathbb{N}_0$\} denote a Markov Chain, with state space S = \{rainy, sunny, cloudy\}, where t represents the number of days from start. Since any state can transition into any 		other state, we can say this model is ergodic. This can also be seen through the figure below as each state is connected to all others. 
 	
-	\centering
-    \begin{tikzpicture}
+	\begin{center}
+	\begin{tikzpicture}
         \node[state] at(-3,0) (s) {Sunny};
         \node[state] at(3,0)  (r) {Rainy};
         \node[state] at(0,-3)  (c) {Cloudy};
 
-        \draw
-            (s) edge[bend right=20] node {} (r)
-            (s) edge[bend right=20] node {} (c)
-            (r) edge[bend right=20] node {} (c)
-            (r) edge[bend right=20] node {} (s)
-            (c) edge[bend right=20] node {} (r)
-            (c) edge[bend right=20] node {} (s);
-    \end{tikzpicture}
-    
-
+        \draw[every loop]
+            (s) edge[bend right=20, auto=left] node {0.4} (r)
+            (s) edge[bend right=20, auto=right] node {0.2} (c)
+            (s) edge[loop left] node {0.4} (s)       
+            (r) edge[bend right=20, auto=left] node {0.4} (c)
+            (r) edge[bend right=20, auto=right] node {0.3} (s)
+            (r) edge[loop right] node {0.3} (r) 
+            (c) edge[bend right=20, auto=right] node {0.5} (r)
+            (c) edge[bend right=20, auto=left] node {0.2} (s)
+            (c) edge[loop below] node {0.3} (c);
+	\end{tikzpicture}
+	\\
+    In this Markov Chain diagram, as per usual, the arrows indicate the transition between states and the values next to these correspond to the probability of this transition. 
+	\end{center}
 \end{example}
 
+Using \ref{weathermarkovchain} we can create a matrix containing all the transition probabilities. This is called the transition matrix of the model and is usually labeled $p$. To build this we first create a table with our states labeled for rows and columns, where the $p(i,j)$ is the cell corresponding to row $i$ and column $j$.
+
+\begin{center}
+	\begin{tabular}{c c c c}
+		x      & Sunny & Rainy & Cloudy \\
+		Sunny  & 0.4   & 0.4   & 0.2 \\
+		Rainy  & 0.3   & 0.3   & 0.4 \\ 
+		Cloudy & 0.2   & 0.5   & 0.3 
+	\end{tabular}
+\end{center}
+
+This content of this table forms the matrix $p$. 
+
+\begin{equation}
+p = 
+\begin{bmatrix}
+	0.4 & 0.4 & 0.2 \\
+	0.3 & 0.3 & 0.4 \\
+	0.2 & 0.5 & 0.3 
+	\end{bmatrix}
+\end{equation}
+
+
 \section{Motivating the Hidden Markov Model}
-These examples should show the need for adaptations to simple markov models in particular cases. 
+ When we cannot directly calcualte the probabililties for matrix $p$ we use data to find an approprate estimate. However, this is not always possible.
+
+ \begin{example}
+	 \label{motivationhmm}
+	 Suppose Alice is hidden away from the world and has no access to information regarding the weather. She meets Bob everyday and knows how weather affects his mood.
+	 For simplicity, assume Bob only has two moods, happy and sad. Given that conditioned on the weather, his mood has the probabililties below ($\prob (weather | mood)$) can she determine the weather?
+	\\
+	Let $(i,j)$ represent $p(j|i)$, for row $i$ and column $j$) 
+	 \begin{center}
+		\begin{tabular}{c c c}
+			x      & Happy & Sad \\
+			Sunny  & 0.8   & 0.2 \\
+			Rainy  & 0.7   & 0.3 \\ 
+			Cloudy & 0.6   & 0.4
+		\end{tabular}
+	\end{center}
+
+    We can let this be the Observation matrix O, since it is the condiational probabililties for the observations Alice can make.
+	\begin{equation}
+		O = 
+		\begin{bmatrix}
+		0.8 & 0.2 \\
+		0.7 & 0.3 \\
+		0.6 & 0.4 
+		\end{bmatrix}
+		\end{equation}
+	
+	We can illustrate this by adding these probabililties to \ref{weathermarkovchain}.
+
+	\begin{center}
+		\begin{tikzpicture}
+			\node[state] at(-3,0) (s) {Sunny};
+			\node[state] at(3,0)  (r) {Rainy};
+			\node[state] at(0,-3)  (c) {Cloudy};
+	
+			\draw[every loop]
+				(s) edge[bend right=20, auto=left] node {0.4} (r)
+				(s) edge[bend right=20, auto=right] node {0.2} (c)
+				(s) edge[loop left] node {0.4} (s)       
+				(r) edge[bend right=20, auto=left] node {0.4} (c)
+				(r) edge[bend right=20, auto=right] node {0.3} (s)
+				(r) edge[loop right] node {0.3} (r) 
+				(c) edge[bend right=20, auto=right] node {0.5} (r)
+				(c) edge[bend right=20, auto=left] node {0.2} (s)
+				(c) edge[loop below] node {0.3} (c);
+		\end{tikzpicture}
+		\\
+		\end{center}
+
+\end{example}
 
 \begin{example}
 \label{}
 \end{example}
 
 Show how MM is a type of HMM.
+
+The Markov model we have been discussing so far is called an observable Markov Model as we can observe its events. This is not always the case.
