@@ -1,26 +1,214 @@
-\section{Derivation}
+\section{Definition}
 
-Explain all 5 inputs for HMM using example from previous chapter
+A hidden markov model is a doubly stochastic markov process. This comes from the fact that there are two stochastic processes, one determining the transition between states and one determining the output observation. 
 
+To define a hidden markov model we need 5 things.
+\begin{enumerate}
+    \item N \begin{enumerate}[i]
+        \item N is the number of hidden states. This is usually based of something in the real world but sometimes can be uknown, as in \ref{motivhmmcoin}.
+        \item The states are usually ergodic, i.e. from any given state you can reach another eventually.
+        \item These states from the state space $S = \{s_1,s_2,...,s_N\}$.
+        \end{enumerate}
+    \item M \begin{enumerate}[i]
+        \item M is the number of observable outputs.
+        \item These combine to make a discrete alphabet of observations called $V = \{v_1, v_2,...,v_M\}$.
+    \end{enumerate}
+    \item A \begin{enumerate}[i]
+        \item A is the state transition matrix.
+        \item This is the same as the $p$ matrix \ref{pmat}. 
+        \item A = $\{a_{ij}\}$ 
+        \item $a_{ij}$ = $\{ p(i,j) = \prob \{ X_n = j | X_{n-1}\}$
+    \end{enumerate}
+    \item B \begin{enumerate}[i]
+        \item B is the observation probability matrix.
+        \item B = $\{b_j(k)\}$
+        \item $b_j(k) = \prob (V_k \  at \  t | q_t = S_j)_{1 \leq j \leq N, 1 \leq k \leq M}$
+    \end{enumerate}
+    \item $\pi$ \begin{enumerate}[i]
+        \item $\pi$ is a vector containing all inital state probabilities. 
+        \item $\pi$ = $\{ \pi_i \}$
+        \item $\pi_i$ = $\prob (q_1 = S_i) for 1 \leq i \leq N$
+    \end{enumerate}
+\end{enumerate}
+
+We can now combine the above to provide a formal definition of hidden markov models.
 \begin{definition}
-\label{}
-Define HMM
+\label{hmm} Hidden Markov Model \\
+A Hidden Markov Model is a 5-tuple $\{N,M,A,B,\pi \}$ that is used to represent a doubly stochastic process where the hidden process is markovian. 
 \end{definition}
 
-Provide notation that will be used for the rest of the paper.
+Before we continue we will provide notation that will be used for the rest of the paper.
+\begin{enumerate}[i]
+    \item We will continue to use $Q$ \ref{stateseq} to represent the state sequence for markov model, i.e. the hidden process.
+    \item We will use $O = \{o_1,o_2,...,o_T\} ,\ o_i \in V$ to represent the observation sequence.
+    \item we will occasionally represent the hidden markov model as $\{N,M, \lambda \}$ where $\lambda = \{A, B, \pi\}$ 
+\end{enumerate}
 
 
-\section{Applications of HMM}
-As with any mathematical model, we can use HMMs for either verification or prediction. Through the output liklihood we can find the liklihood of paticular sequences and through the given probablities we can find the most likely states in the future. 
+\section{Using HMM}
+As with any mathematical model, we can use HMMs prediction. Through the output liklihood we can find the liklihood of paticular sequences and through the given probablities and random variables we can create predictions. 
 
 \subsection{Predicitive Model}
+ We can use HMM to generate a sequence of potential observations. Given a a hidden markov model, lets call it H = $\{N,M,A,B,\pi\}$, to generate a sequence of $T$ observations $O$ we do the following steps:
+ \begin{enumerate}
+    \label{hmmpredict}
+     \item Using $\pi$ as a probability distribution, set $t$ = 1 and randomly select a state as the first $q_1$ = $s_i$.
+     \item Using $b_i(k)$ as a probability distribution, randomly select the observation $O_t$ = $v_k$.
+     \item Using $a_{ij}$ as a probability distribution, set $t$ = $t+1$ and randomly select a the next state $q_{t+1}$ = $s_j$.
+     \item Repeat steps 2 and 3 until $t$ = $T$
+ \end{enumerate}
 
-\subsection{Sequence Prediction}
+ To demonstrate this method, we will use an adapted version of \ref{weathermarkovchain}. This version will have the markov chain from before as the underlying hidden process and another process with state space \{Happy, Sad\}, which we can observe.
+
+ \begin{example}
+    \label{motivationhmm}
+    Suppose Alice is hidden away from the world and has no access to information regarding the weather. She meets Bob everyday and knows how weather affects his mood.
+    For simplicity, assume Bob only has two moods, happy and sad. Given matrix A, B and vector $\pi$ can she predict his mood for 3 consecutive days?
+    \begin{figure}
+        \centering
+        \begin{tikzpicture}
+            \node[state] at(-3,0) (s) {Sunny};
+            \node[state] at(3,0)  (r) {Rainy};
+            \node[state] at(0,-3)  (c) {Cloudy};
+    
+            \draw[every loop]
+                (s) edge[bend right=20, auto=left] node {0.4} (r)
+                (s) edge[bend right=20, auto=right] node {0.2} (c)
+                (s) edge[loop left] node {0.4} (s)       
+                (r) edge[bend right=20, auto=left] node {0.4} (c)
+                (r) edge[bend right=20, auto=right] node {0.3} (s)
+                (r) edge[loop right] node {0.3} (r) 
+                (c) edge[bend right=20, auto=right] node {0.5} (r)
+                (c) edge[bend right=20, auto=left] node {0.2} (s)
+                (c) edge[loop below] node {0.3} (c);
+        \end{tikzpicture}
+    \end{figure}
+   \\
+    From context we can deduce the following:
+    \begin{enumerate}[i]
+        \item N = 3, number of hidden states
+        \item M = 2, number of possible observations
+        \item \begin{equation}
+            A = 
+            \begin{bmatrix}
+                0.4 & 0.4 & 0.2 \\
+                0.3 & 0.3 & 0.4 \\
+                0.2 & 0.5 & 0.3 
+                \end{bmatrix}
+            \end{equation}
+        \item \begin{equation}
+            B = 
+            \begin{bmatrix}
+                0.8 & 0.2 \\
+                0.7 & 0.3 \\
+                0.6 & 0.4 
+                \end{bmatrix}
+            \end{equation}
+        \item \begin{equation}
+            \pi = 
+            \begin{bmatrix}
+                0.5 \\
+                0.3 \\
+                0.2 
+                \end{bmatrix}
+            \end{equation}
+    \end{enumerate}
+
+    We can now use \ref{hmmpredict} to create an observation sequence $O$ = $\{o_1, o_2, o_3\}$. At multiple occasions we will require a random variables. I will generate uniform random variables through python using my "rand.py" file. I will label these r.v.. I select the state that corresponds to the region on the probability distribution that the random variable lies on.
+    \begin{enumerate}
+        \item We generate a r.v. = 0.0058. Using Pi as the probaility distribution, we select Sunny. We can now set $q_1$ = $s_1$.
+        \item We generate a r.v. = 0.1947. Using $b_1(k)$ as the probability distribution we select Happy as the observation. We can now set $o_1$ = $v_1$.
+        \item we generate a r.v. = 0.7168. Using $a_{1j}$ as the probability distribution we select Rainy as the next state. We now set $q_2$ = $s_2$.
+        \item We generate a r.v. = 0.1060. Using $b_2(k)$ as the probability distribution we select Happy as the observation. We can now set $o_2$ = $v_1$.
+        \item we generate a r.v. = 0.8977. Using $a_{2j}$ as the probability distribution we select Cloudy as the next state. We now set $q_3$ = $s_3$.
+        \item We generate a r.v. = 0.1369. Using $b_3(k)$ as the probability distribution we select Happy as the observation. We can now set $o_2$ = $v_1$.
+    \end{enumerate}
+    Finally we can look back on our prediction $O$ and see that it is equal to $\{v_1,v_1,v_1\}$, i.e. we predict three consecutive Happy days.
+\end{example}
+
+
 \subsection{Three Key Problems}
+There are many interesting questions one may have regarding the HMM but there are three famous ones which we will focus on. 
+\begin{enumerate}
+    \item \label{q:first} Evaluation \\ Given model H = $\{N,M,A,B,\pi\}$ what is the probability that it generated the sequence of observations $O = \{o_1,o_2,...,o_T\}$? i.e. $\prob (O \ | \ H)$
+    \item \label{q:second} Decoding \\ What sequence of states $Q = \{q_1, q_2,..., q_3\}$ best explains a sequence of observations $O = \{o_1,o_2,...,o_T\}$?
+    \item \label{q:third} Learning \\ Given a set of observation $O = \{o_1,o_2,...,o_T\}$, how can we learn the model H = $\{N,M,A,B,\pi\}$ that would generate them?
+\end{enumerate}
 
+In the coming sections for each problem we will be motivating its uses and exploring its solutions. 
 
 \section{Problem 1: Evaluation}
+Lets start by addressing question \ref{q:first}. Informally, we are looking for the proability that a given model generated a sequence of observations, i.e. $\prob (O | \lambda)$.
+
+This probability has many useful applications. For example, you may have multiple potential models $\lambda_i$, for a given senario, but are unable to decide which one is the most suitable. In such case, you can now calculate this probability for each $\lambda_i$ and select the one that gives the highest proability as you can now concretly say this model has the highest liklihood to generate the given observations.
+
+To find this probability we must consider the internal hidden states of the model. Since our probability of observations $\{b_j(k)\}$ is conditioned on the hidden state, we can start by calculating this probaility conditioned on these states. Lets assume we know what the state sequence $Q = \{q_1,q_2,...,q_t\}$ is. 
+\begin{equation}
+    \label{poq1}
+    \prob (O | Q, \lambda) = \prod_{t=1}^T \prob (O_t | q_t, \lambda)
+\end{equation}
+All that is happening in the above equation is the probability that an observation was generated given a particular model and a particular hidden state at time t, is multiplied by all by the same for all these probabilities up to time T. In essence this breaks the lhs into T parts.
+
+An observation one may make is that these probabilities are simply taken from the matrix $B$. 
+\[
+    \prob (O_t | q_t, \lambda) = b_{q_t}(O_t), \ \ \forall t \in [0,T] 
+\]
+Thus we can rewrite \ref{poq1} as:
+\begin{equation}
+    \label{oqlam}
+    \prob (O | Q, \lambda) = b_{q_1}(O_1) b_{q_2}(O_2)  ...  b_{q_T}(O_T)
+\end{equation}
+
+Our next objective is to remove $Q$ from the conditioned part of the probability. To do this we must first calculate $\prob (Q | \lambda)$. This is simply the probability of transitioning from $q_1$ to $q_2$, $q_2$ to $q_3$ etc. More formally we can use matrix $A$ to find the probability of each of these transitions and since we are finding the total for the entire sequence, we just multiply them all togther. We start with $\pi_{q_1}$ as we also need the probability of starting at $q_1$.
+\begin{equation}
+    \label{qlam}
+    \prob ( Q | \lambda) \pi_{q_1} a_{q_1q_2} a_{q_2q_3} ... a_{q_{T-1}q_T}
+\end{equation}
+
+We can now successfully remove $Q$ from the condition using \ref{oqlam} and \ref{qlam}:
+\begin{eqnarray}
+    \label{oqgivenlam}
+    \prob (O,Q | \lambda) & = & \prob(O | Q, \lambda) \prob(Q | \lambda) \\
+                          & = & \pi_{q_1} b_{q_1}(O_1) a_{q_1q_2} b_{q_2}(O_2) a_{q_2q_3} ... a_{q_{T-1}q_T} b_{q_T}(O_T)
+\end{eqnarray}
+
+This gives us the joint probability of observations and the internal states. In other words, it provides the probabilty that given observations $O$ and internal state sequence $Q$ was generated by model $\lambda$. To achieve our desired probablity all we need to do is get rid of the $Q$. Since it is another input, all we must do is sum each value of \ref{oqgivenlam}. As we have accounted for every possible $Q$, we no longer need to worry about its particular value. This leaves us with:
+\begin{eqnarray}
+    \prob (O | \lambda) & = & \sum_{all Q} \prob(O| Q,\lambda)P(Q|\lambda) \\
+                        & = & \sum_{q_1,q_2,...,q_T} \pi_{q_1} b_{q_1}(O_1) a_{q_1q_2} b_{q_2}(O_2) a_{q_2q_3} ... a_{q_{T-1}q_T} b_{q_T}(O_T)
+\end{eqnarray} 
+
+Although this solution is correct, calculating this is infeasible. This is because it requires to many computations. For $T$ timesteps and $N$ states, to find every possible $Q$ we must sum over $N^T$ state sequences. For each timestep we require a multiplication to $a_{q_{i-1}q_{i}}$ and $b_{q_i}(O_i)$, except the last where there are no transitions. This leads to $2T-1$ multiplications for each state sequence. Lastly we require $N^T$ addition operations to sum the result for each state sequence. This gives us a final total number of operations of $(2T-1)N^T + (N^T-1)$. This is a problem as even with a smaller model we require an infeasible amount of calculations. To overcome this problem we look for a more efficient method, the Forward-Backward algorithm.
+
+
+
 \subsection{Forward-Backward Algorithm}
+The Forward-Backward algorithm (F-B) is composed of two helper functions $\alpha$ and $\beta$. We will start by discussing the former.
+
+\begin{equation}
+    \label{alpha}
+    \alpha_t(i) = \prob (O_1,O_2,O_3,...,O_t,q_t=S_i | \lambda)
+\end{equation}
+$\alpha$ is an extremly powerful tool in reducing the number of calculations. As given by \ref{alpha}, it providse the probability that at time $t$ we have seen a sequence of observations and are currently at state $q_t=S_i$. This is not quite $\prob (O | \lambda)$ but it represents a part of it. Instead of the probability of the whole sequence, it breaks it into a chunk of size $t$, commits to end at a particular state and then calculates the same proabbility for this.
+
+We can combine \label{alpha} with induction to produce an iterative process that can calculate \ref{q:first}.
+
+\begin{enumerate}[i]
+    \item Base case \\
+    For the base case we require the probability of the $q_1$ being equal to $S_1$ and giving us observation $O_1$. The former is addressed by $\pi_i$ and the later by $b_i(O_1)$. This gives us:
+    \begin{eqnarray}
+        \alpha_1(i) = \pi_i b_i(O_1), & i \in [1,N]
+    \end{eqnarray}
+
+    \item Inductive step: \\
+    For the inductive step we must consider how to approach the next timestep. We will again be calculating for all $j\in [1,N]$ and as such must take into consideration, for each $j$, every possible $i$. This is again the same set of $[1,N]$. Therefore, to account for all possible previous states and their transition to the current state, we must sum over 1 to $N$ the product of $\alpha_t(i)$ and $a_{ij}$. For the given observation, as before, we compute $b_j(O_{t+1})$. Additionally, we must stop before reaching the final step as there is no outward transition and thus this would not be applicable. This gives us:
+    \begin{eqnarray}
+        \alpha_{t+1}(j) = \left[\sum_{i=1}^N \alpha_t(i)a_{ij}\right] b_j(O_{t+1}), & j \in [1,N], t \in [1,T-1]
+    \end{eqnarray}
+
+    \item Termination Step: \\
+    
+\end{enumerate}
 
 
 \section{Problem 2: Decoding}

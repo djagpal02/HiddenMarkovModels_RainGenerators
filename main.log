@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  31 JAN 2021 19:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.25)  5 FEB 2021 22:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/main.tex
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/main.tex
+**/home/dil/Desktop/MMathProject/main.tex
+(/home/dil/Desktop/MMathProject/main.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
@@ -737,9 +737,9 @@ File: biblatex.cfg
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count438
 \l__pdf_internal_box=\box82
-) (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/main.aux
+) (/home/dil/Desktop/MMathProject/main.aux
 
-LaTeX Warning: Label `' multiply defined.
+LaTeX Warning: Label `alpha' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -799,7 +799,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 51.
 LaTeX Info: Redefining \pageref on input line 51.
 LaTeX Info: Redefining \nameref on input line 51.
- (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/main.out) (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/main.out)
+ (/home/dil/Desktop/MMathProject/main.out) (/home/dil/Desktop/MMathProject/main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -815,7 +815,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/main.bbl)
+ (/home/dil/Desktop/MMathProject/main.bbl)
 Package biblatex Info: Reference section=0 on input line 51.
 Package biblatex Info: Reference segment=0 on input line 51.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
@@ -833,17 +833,17 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 Non-PDF special ignored!
 <special> papersize=597.50787pt,845.04684pt
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/main.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/dil/Desktop/MMathProject/main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
  [1
 
-] (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/chapters/preface.tex) [2
+] (/home/dil/Desktop/MMathProject/chapters/preface.tex) [2
 
 ]
 Chapter 1.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/chapters/chp1.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+(/home/dil/Desktop/MMathProject/chapters/chp1.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.66 	\chapter
@@ -851,7 +851,7 @@ l.66 	\chapter
 
 ]
 Chapter 2.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/chapters/chp2.tex
+(/home/dil/Desktop/MMathProject/chapters/chp2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
@@ -877,27 +877,37 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
 ) [3]
 Chapter 3.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/chapters/chp3.tex [4
+(/home/dil/Desktop/MMathProject/chapters/chp3.tex [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 68--73
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-[5] [6]) [7]
+[5] [6] [7] [8] [9]) [10]
 Chapter 4.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/chapters/chp4.tex) [8
+(/home/dil/Desktop/MMathProject/chapters/chp4.tex
+Overfull \hbox (7.97783pt too wide) in paragraph at lines 14--15
+[]\OT1/cmr/m/n/12 These com-bine to make a dis-crete al-pha-bet of ob-ser-va-tions called $\OML/cmm/m/it/12 V \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 v[]; v[]; :::; v[]\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 . 
+ []
 
-] [9] [10
+[11
+
+] [12] [13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+
+ []
+
+) [16] [17
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
- (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/main.aux)
+ (/home/dil/Desktop/MMathProject/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: ED136E327F694961231A6014630C7FEE;1724.
+(rerunfilecheck)             Checksum: CD8D1DE401591FF3E2B88C0ED516CF43;1641.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -908,18 +918,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
  ) 
 Here is how much of TeX's memory you used:
- 25004 strings out of 481239
- 481396 string characters out of 5920377
- 1116715 words of memory out of 5000000
- 39752 multiletter control sequences out of 15000+600000
+ 25145 strings out of 481239
+ 482041 string characters out of 5920377
+ 1119337 words of memory out of 5000000
+ 39816 multiletter control sequences out of 15000+600000
  543160 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,70p,1002b,1240s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/main.pdf (13 pages, 155440 bytes).
+ 60i,11n,70p,971b,1240s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /home/dil/Desktop/MMathProject/main.pdf (20 pages, 213398 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
- 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 441 PDF objects out of 1000 (max. 8388607)
+ 399 compressed objects within 4 object streams
+ 143 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -51,7 +51,6 @@
       \field{title}{An introduction to hidden Markov models}
       \field{volume}{3}
       \field{year}{1986}
-      \true{nocite}
       \field{pages}{4\bibrangedash 16}
       \range{pages}{13}
       \verb{doi}

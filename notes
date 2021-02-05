@@ -53,8 +53,100 @@ mean d_i = sum of d=1 to inf dp_i(d) which simplifies to 1/1-a_ii
 // Motivating HMM
 
 Sometimes you do not get an observation from your states but only see the effect of the state change. 
+Imagine there is a person behind a barrier that shouts heads or tails based on the flipping of some number of coins. The coins may be fair or unfair, we do not have this information.
+
+We attempt to model this using a Markov Model. 
+2 state model:
+	Assumes 1 coin, in state 1 is heads and state 2 is tails. Transition is pased on p(h).
+1 state model: 
+	only 1 state, state represents coin and we recieve heads or trails. We know we are always in state 1 but the observations can still vary based on if the ocin is biased or fair.
+	
+	perhaps we have multpiple coins, some fair some unfair.
+2 state model: 
+ 	2 coins with varying fairness and 
+
+3 state model: 3 coins
+
+What should we choose?
+model 1 has 1 unkown
+model 2 has 4 
+model 3 has 9
+
+//HMM
+
+Must have:
+-N states, hidden but usually correspond to something we know from the world
+-usually ergodic, from any given state you can eventually get to any other state
+s = {s_1,S_N}
+-M observable symbols
+-they are a discrete alphabet
+v = {v_1, V_2, V_m}
+
+- State transition matrix A
+Same as markov model
+
+-Observation probability matrix B= {b_j(k)}
+prob obvs V_k at t given state q_t = S_j
+
+-Intial state probabilities pi
+
+HMM = {N,M,A,B,pi}
+O = { O_1,O_2,...,O_T}
+
+
+// 3 interesting questions
+
+what is the probability that a model generated a sequence of observations?
+P(O| lambda)
+
+What sequence of states best explains a sequence of observations?
+
+Given a set of observations sequences how do we learn the modedl probabilities that would generate them?
+
+// Question one
+what is the probability that a model generated a sequence of observations?
+P(O| lambda)
+
+Awnsering this question may be  useful in many senario. For example, if you have multiple potential models and you would like to select the best fitting, you can calculate this probability for each and select the highest one.
+
+Imagine all possible state sequences: Q = {q_1, q_2,...,q_t}
+
+probability of seeing observations given those states is 
+P(O|Q,lambda) = product t=1 to T P(o_t|q_t,lambda )
+ 
+= b_{q_1}(O_1)... 
+
+probability of getting observation O1 given we are in state q1
+
+probability of seeing those state transitions is
+P(Q|lambda) = pi_q_1 a_q1q2....a_qT-1qT
+
+P(O,Q|lambda) = P(O|Q,lambda)P(Q|Lambda)
+
+Joint probability of observations and the states 
+
+P(O|lambda) = sum all q P(O|Q,Lambda)P(Q|lambda)
+Calculating this is infeasible. Since there are T  moments, we require N^T sequences to reprsent all possible sequences.
+
+Each Sequence requries 2T-1 multiplications
+
+Thus total operations is : (2T-1)N^T + (N^T -1)
+
+We need a more efficient method to calculate this. This is the forward-backward algorith.
 
 
 
+// Forward backward algo
 
+This relies on two particular helper fucntions alpha and beta.
+Alpha helper function helps reduces the number of calculations.
 
+alpha_t(i) = P(O_1,O_2,...,O_t,q_t = S_i|lamba)
+
+alpha_1(i) = pi_i b_i(O_1) 
+
+inductive :
+alpha_t+1(j) = sum alpha_t(i)a_ij  bj(O_t+1)
+
+final:
+P(O|lambda) = sum alpha_T(i)
