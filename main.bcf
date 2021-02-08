@@ -2183,7 +2183,16 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">1165342</bcf:citekey>
+    <bcf:citekey order="1">markov2006example</bcf:citekey>
+    <bcf:citekey order="2">grimmett2020probability</bcf:citekey>
+    <bcf:citekey order="3">1165342</bcf:citekey>
+    <bcf:citekey order="4">1165342</bcf:citekey>
+    <bcf:citekey order="5">baum1967inequality</bcf:citekey>
+    <bcf:citekey order="6">baum1966</bcf:citekey>
+    <bcf:citekey order="7">1165342</bcf:citekey>
+    <bcf:citekey order="8">viterbi1967error</bcf:citekey>
+    <bcf:citekey order="9">forney1973viterbi</bcf:citekey>
+    <bcf:citekey order="10">baum1972inequality</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

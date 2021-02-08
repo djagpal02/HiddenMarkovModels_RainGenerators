@@ -19,7 +19,6 @@
 \BOOKMARK [1][-]{section.4.4}{Problem 2: Decoding}{chapter.4}% 19
 \BOOKMARK [2][-]{subsection.4.4.1}{Viterbi Algorithm}{section.4.4}% 20
 \BOOKMARK [1][-]{section.4.5}{Problem 3: Learning}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.5.1}{Expectation-Maximization}{section.4.5}% 22
-\BOOKMARK [2][-]{subsection.4.5.2}{Baum-Welch Algorithm}{section.4.5}% 23
-\BOOKMARK [1][-]{section.4.6}{Modified HMM}{chapter.4}% 24
-\BOOKMARK [2][-]{subsection.4.6.1}{GMM}{section.4.6}% 25
+\BOOKMARK [2][-]{subsection.4.5.1}{Baum-Welch Algorithm}{section.4.5}% 22
+\BOOKMARK [1][-]{section.4.6}{Modified HMM}{chapter.4}% 23
+\BOOKMARK [2][-]{subsection.4.6.1}{GMM}{section.4.6}% 24

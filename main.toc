@@ -36,16 +36,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}Forward-Backward Algorithm}{16}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Problem 2: Decoding}{18}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Problem 2: Decoding}{19}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Viterbi Algorithm}{19}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.1}Viterbi Algorithm}{20}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Problem 3: Learning}{19}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Problem 3: Learning}{22}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Expectation-Maximization}{20}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.1}Baum-Welch Algorithm}{22}{subsection.4.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}Baum-Welch Algorithm}{20}{subsection.4.5.2}%
+\contentsline {section}{\numberline {4.6}Modified HMM}{23}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Modified HMM}{21}{section.4.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}GMM}{21}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.1}GMM}{23}{subsection.4.6.1}%
