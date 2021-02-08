@@ -28,24 +28,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Using HMM}{12}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Predicitive Model}{12}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}Predictive Model}{12}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}Three Key Problems}{14}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Problem 1: Evaluation}{14}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Forward-Backward Algorithm}{15}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.1}Forward-Backward Algorithm}{16}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Problem 2: Decoding}{16}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Problem 2: Decoding}{18}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Viterbi Algorithm}{16}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.1}Viterbi Algorithm}{19}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Problem 3: Learning}{16}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Problem 3: Learning}{19}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Expectation Maximization}{16}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.1}Expectation-Maximization}{20}{subsection.4.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}Baum-Welch Algorithm}{16}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.2}Baum-Welch Algorithm}{20}{subsection.4.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Modified HMM}{16}{section.4.6}%
+\contentsline {section}{\numberline {4.6}Modified HMM}{21}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}GMM}{16}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.1}GMM}{21}{subsection.4.6.1}%

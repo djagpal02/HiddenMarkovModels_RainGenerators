@@ -1,13 +1,13 @@
 \section{Definition}
 
-A hidden markov model is a doubly stochastic markov process. This comes from the fact that there are two stochastic processes, one determining the transition between states and one determining the output observation. 
+A hidden markov model is a doubly stochastic markov process **citation**. This comes from the fact that there are two stochastic processes, one determining the transition between states and one determining the output observation. 
 
-To define a hidden markov model we need 5 things.
+To define a hidden markov model we need 5 things.**citation**
 \begin{enumerate}
     \item N \begin{enumerate}[i]
         \item N is the number of hidden states. This is usually based of something in the real world but sometimes can be uknown, as in \ref{motivhmmcoin}.
-        \item The states are usually ergodic, i.e. from any given state you can reach another eventually.
-        \item These states from the state space $S = \{s_1,s_2,...,s_N\}$.
+        \item The states are usually ergodic, i.e. from any given state you can reach another eventually but this is not nessesary.
+        \item The states are from the state space $S = \{S_1,S_2,...,S_N\}$.
         \end{enumerate}
     \item M \begin{enumerate}[i]
         \item M is the number of observable outputs.
@@ -37,24 +37,24 @@ We can now combine the above to provide a formal definition of hidden markov mod
 A Hidden Markov Model is a 5-tuple $\{N,M,A,B,\pi \}$ that is used to represent a doubly stochastic process where the hidden process is markovian. 
 \end{definition}
 
-Before we continue we will provide notation that will be used for the rest of the paper.
+Before we continue we will also provide notation that will be used for the rest of the paper.
 \begin{enumerate}[i]
     \item We will continue to use $Q$ \ref{stateseq} to represent the state sequence for markov model, i.e. the hidden process.
-    \item We will use $O = \{o_1,o_2,...,o_T\} ,\ o_i \in V$ to represent the observation sequence.
+    \item We will use $O = \{O_1,O_2,...,O_T\} ,\ O_i \in V$ to represent the observation sequence.
     \item we will occasionally represent the hidden markov model as $\{N,M, \lambda \}$ where $\lambda = \{A, B, \pi\}$ 
 \end{enumerate}
 
 
 \section{Using HMM}
-As with any mathematical model, we can use HMMs prediction. Through the output liklihood we can find the liklihood of paticular sequences and through the given probablities and random variables we can create predictions. 
+As with any mathematical model, we can use HMMs to predict future observations. As with simple markov models \ref{probmeas}, we can create probability measures but this time we must use conditioning. 
 
-\subsection{Predicitive Model}
- We can use HMM to generate a sequence of potential observations. Given a a hidden markov model, lets call it H = $\{N,M,A,B,\pi\}$, to generate a sequence of $T$ observations $O$ we do the following steps:
+\subsection{Predictive Model}
+ We can use HMM to generate a sequence of potential observations. Given a a hidden markov model, lets call it H = $\{N,M,A,B,\pi\}$, to generate a sequence of $T$ observations $O$ we do the following steps: **citation**
  \begin{enumerate}
     \label{hmmpredict}
-     \item Using $\pi$ as a probability distribution, set $t$ = 1 and randomly select a state as the first $q_1$ = $s_i$.
-     \item Using $b_i(k)$ as a probability distribution, randomly select the observation $O_t$ = $v_k$.
-     \item Using $a_{ij}$ as a probability distribution, set $t$ = $t+1$ and randomly select a the next state $q_{t+1}$ = $s_j$.
+     \item Using $\pi$ as a probability measure, set $t$ = 1 and randomly select a state as the first $q_1$ = $s_i$.
+     \item Using $b_i(k)$ as a probability measure, randomly select the observation $O_t$ = $v_k$.
+     \item Using $a_{ij}$ as a probability measures, set $t$ = $t+1$ and randomly select a the next state $q_{t+1}$ = $s_j$.
      \item Repeat steps 2 and 3 until $t$ = $T$
  \end{enumerate}
 
@@ -70,7 +70,13 @@ As with any mathematical model, we can use HMMs prediction. Through the output l
             \node[state] at(-3,0) (s) {Sunny};
             \node[state] at(3,0)  (r) {Rainy};
             \node[state] at(0,-3)  (c) {Cloudy};
-    
+            \node at (-6,3) (h1) {Happy};
+            \node at (-6,-3) (s1) {Sad};
+            \node at (3,-6) (h2) {Happy};
+            \node at (-3,-6) (s2) {Sad};
+            \node at (6,3) (h3) {Happy};
+            \node at (6,-3) (s3) {Sad};
+
             \draw[every loop]
                 (s) edge[bend right=20, auto=left] node {0.4} (r)
                 (s) edge[bend right=20, auto=right] node {0.2} (c)
@@ -81,11 +87,21 @@ As with any mathematical model, we can use HMMs prediction. Through the output l
                 (c) edge[bend right=20, auto=right] node {0.5} (r)
                 (c) edge[bend right=20, auto=left] node {0.2} (s)
                 (c) edge[loop below] node {0.3} (c);
+            
+            \draw [->, dashed] (s) edge[auto=right] node{0.2} (s1);
+            \draw [->, dashed] (s) edge[auto=right] node{0.8} (h1);
+            \draw [->, dashed] (c) edge[auto=right] node{0.3} (s2);
+            \draw [->, dashed] (c) edge[auto=right] node{0.6} (h2);
+            \draw [->, dashed] (r) edge[auto=right] node{0.3} (s3);
+            \draw [->, dashed] (r) edge[auto=right] node{0.7} (h3);
         \end{tikzpicture}
+        \\
+        The solid lines represent hidden probabilities and the dashed represent observable.
     \end{figure}
    \\
     From context we can deduce the following:
-    \begin{enumerate}[i]
+    \begin*{enumerate}
+        \begin{center}
         \item N = 3, number of hidden states
         \item M = 2, number of possible observations
         \item \begin{equation}
@@ -112,10 +128,11 @@ As with any mathematical model, we can use HMMs prediction. Through the output l
                 0.2 
                 \end{bmatrix}
             \end{equation}
-    \end{enumerate}
+        \end{center}
+    \end*{enumerate}
 
-    We can now use \ref{hmmpredict} to create an observation sequence $O$ = $\{o_1, o_2, o_3\}$. At multiple occasions we will require a random variables. I will generate uniform random variables through python using my "rand.py" file. I will label these r.v.. I select the state that corresponds to the region on the probability distribution that the random variable lies on.
-    \begin{enumerate}
+    We can now use \ref{hmmpredict} to create an observation sequence $O$ = $\{o_1, o_2, o_3\}$. We will require multiple random variables generated using various different probability measures. I will these through python using my "rand.py" file. I will use a unifrom random variable. I will label these r.v.. I select the state that corresponds to the region on the cumulative probability distribution that the random variable lies on.
+    \begin{enumerate}[i]
         \item We generate a r.v. = 0.0058. Using Pi as the probaility distribution, we select Sunny. We can now set $q_1$ = $s_1$.
         \item We generate a r.v. = 0.1947. Using $b_1(k)$ as the probability distribution we select Happy as the observation. We can now set $o_1$ = $v_1$.
         \item we generate a r.v. = 0.7168. Using $a_{1j}$ as the probability distribution we select Rainy as the next state. We now set $q_2$ = $s_2$.
@@ -128,31 +145,32 @@ As with any mathematical model, we can use HMMs prediction. Through the output l
 
 
 \subsection{Three Key Problems}
-There are many interesting questions one may have regarding the HMM but there are three famous ones which we will focus on. 
+There are many interesting questions one may pose regarding the HMM but there are three famous ones which we will focus on. Posed orgiinally by **citation**
 \begin{enumerate}
     \item \label{q:first} Evaluation \\ Given model H = $\{N,M,A,B,\pi\}$ what is the probability that it generated the sequence of observations $O = \{o_1,o_2,...,o_T\}$? i.e. $\prob (O \ | \ H)$
     \item \label{q:second} Decoding \\ What sequence of states $Q = \{q_1, q_2,..., q_3\}$ best explains a sequence of observations $O = \{o_1,o_2,...,o_T\}$?
     \item \label{q:third} Learning \\ Given a set of observation $O = \{o_1,o_2,...,o_T\}$, how can we learn the model H = $\{N,M,A,B,\pi\}$ that would generate them?
 \end{enumerate}
 
-In the coming sections for each problem we will be motivating its uses and exploring its solutions. 
+In the coming sections, for each problem, we will be motivating its uses and developing its solutions. 
 
 \section{Problem 1: Evaluation}
 Lets start by addressing question \ref{q:first}. Informally, we are looking for the proability that a given model generated a sequence of observations, i.e. $\prob (O | \lambda)$.
 
-This probability has many useful applications. For example, you may have multiple potential models $\lambda_i$, for a given senario, but are unable to decide which one is the most suitable. In such case, you can now calculate this probability for each $\lambda_i$ and select the one that gives the highest proability as you can now concretly say this model has the highest liklihood to generate the given observations.
+This probability has many useful applications. For example, you may have multiple potential models $\lambda_i$ and are unable to decide which one is the most suitable. In this case you can now calculate this probability for each $\lambda_i$ and the largest.
 
-To find this probability we must consider the internal hidden states of the model. Since our probability of observations $\{b_j(k)\}$ is conditioned on the hidden state, we can start by calculating this probaility conditioned on these states. Lets assume we know what the state sequence $Q = \{q_1,q_2,...,q_t\}$ is. 
+To find this probability we must consider the internal hidden states of the model. Since our probability of observations $\{b_j(k)\}$ is conditioned on the hidden state, we can start by calculating this probaility conditioned on these states. Lets assume we know what the state sequence $Q = \{q_1,q_2,...,q_t\}$ is. To $\prob (O | Q, \lambda)$ we can find the product of all the probabilities of an observation given the models state at all times $t$. In essence this breaks the  $\prob (O | Q, \lambda)$ into T parts. 
 \begin{equation}
     \label{poq1}
     \prob (O | Q, \lambda) = \prod_{t=1}^T \prob (O_t | q_t, \lambda)
 \end{equation}
-All that is happening in the above equation is the probability that an observation was generated given a particular model and a particular hidden state at time t, is multiplied by all by the same for all these probabilities up to time T. In essence this breaks the lhs into T parts.
+
 
 An observation one may make is that these probabilities are simply taken from the matrix $B$. 
-\[
+\begin{equation}
     \prob (O_t | q_t, \lambda) = b_{q_t}(O_t), \ \ \forall t \in [0,T] 
-\]
+\end{equation}
+
 Thus we can rewrite \ref{poq1} as:
 \begin{equation}
     \label{oqlam}
@@ -162,7 +180,7 @@ Thus we can rewrite \ref{poq1} as:
 Our next objective is to remove $Q$ from the conditioned part of the probability. To do this we must first calculate $\prob (Q | \lambda)$. This is simply the probability of transitioning from $q_1$ to $q_2$, $q_2$ to $q_3$ etc. More formally we can use matrix $A$ to find the probability of each of these transitions and since we are finding the total for the entire sequence, we just multiply them all togther. We start with $\pi_{q_1}$ as we also need the probability of starting at $q_1$.
 \begin{equation}
     \label{qlam}
-    \prob ( Q | \lambda) \pi_{q_1} a_{q_1q_2} a_{q_2q_3} ... a_{q_{T-1}q_T}
+    \prob ( Q | \lambda) = \pi_{q_1} a_{q_1q_2} a_{q_2q_3} ... a_{q_{T-1}q_T}
 \end{equation}
 
 We can now successfully remove $Q$ from the condition using \ref{oqlam} and \ref{qlam}:
@@ -174,22 +192,37 @@ We can now successfully remove $Q$ from the condition using \ref{oqlam} and \ref
 
 This gives us the joint probability of observations and the internal states. In other words, it provides the probabilty that given observations $O$ and internal state sequence $Q$ was generated by model $\lambda$. To achieve our desired probablity all we need to do is get rid of the $Q$. Since it is another input, all we must do is sum each value of \ref{oqgivenlam}. As we have accounted for every possible $Q$, we no longer need to worry about its particular value. This leaves us with:
 \begin{eqnarray}
+    \label{ogivenlamsumq}
     \prob (O | \lambda) & = & \sum_{all Q} \prob(O| Q,\lambda)P(Q|\lambda) \\
                         & = & \sum_{q_1,q_2,...,q_T} \pi_{q_1} b_{q_1}(O_1) a_{q_1q_2} b_{q_2}(O_2) a_{q_2q_3} ... a_{q_{T-1}q_T} b_{q_T}(O_T)
 \end{eqnarray} 
 
-Although this solution is correct, calculating this is infeasible. This is because it requires to many computations. For $T$ timesteps and $N$ states, to find every possible $Q$ we must sum over $N^T$ state sequences. For each timestep we require a multiplication to $a_{q_{i-1}q_{i}}$ and $b_{q_i}(O_i)$, except the last where there are no transitions. This leads to $2T-1$ multiplications for each state sequence. Lastly we require $N^T$ addition operations to sum the result for each state sequence. This gives us a final total number of operations of $(2T-1)N^T + (N^T-1)$. This is a problem as even with a smaller model we require an infeasible amount of calculations. To overcome this problem we look for a more efficient method, the Forward-Backward algorithm.
+Although this solution is correct, calculating this is infeasible. This is because it requires to many computations. For $T$ timesteps and $N$ states, to find every possible $Q$ we must sum over $N^T$ state sequences. For each timestep we require a multiplication to $a_{q_{i-1}q_{i}}$ and $b_{q_i}(O_i)$, except the last where there are no transitions. This leads to $2T-1$ multiplications for each state sequence. Lastly we require $N^T$ addition operations to sum the result for each state sequence. This gives us a final total number of operations of $(2T-1)N^T + (N^T-1)$. 
+
+\begin{example}
+    \label{motivfb}
+    Lets refer back to \ref{motivationhmm}. Suppose we would like to find the probability of a string of 10 observations using model H. Here $N$ = 3 and $T$ = 10. 
+    \begin{eqnarray}
+        operations & = & (2T-1)N^T + (N^T-1) \\
+                   & = & (20-1)3^10 + (3^10 -1) \\
+                   & = & 1180979
+    \end{eqnarray}
+\end{example}
+
+
+This is a problem as even with a smaller model \ref{motivfb} we require a very large number of calculations. For a moderate to large sized model we would require an infeasible amount of calculations. To overcome this problem we look for a more efficient method, the Forward-Backward algorithm.
 
 
 
 \subsection{Forward-Backward Algorithm}
+History of F-B , **citation**
 The Forward-Backward algorithm (F-B) is composed of two helper functions $\alpha$ and $\beta$. We will start by discussing the former.
 
 \begin{equation}
     \label{alpha}
     \alpha_t(i) = \prob (O_1,O_2,O_3,...,O_t,q_t=S_i | \lambda)
 \end{equation}
-$\alpha$ is an extremly powerful tool in reducing the number of calculations. As given by \ref{alpha}, it providse the probability that at time $t$ we have seen a sequence of observations and are currently at state $q_t=S_i$. This is not quite $\prob (O | \lambda)$ but it represents a part of it. Instead of the probability of the whole sequence, it breaks it into a chunk of size $t$, commits to end at a particular state and then calculates the same proabbility for this.
+$\alpha$ is an extremly powerful tool in reducing the number of calculations  **citation**. As given by \ref{alpha}, it providse the probability that at time $t$ we have seen a sequence of observations and are currently at state $q_t=S_i$. This is not quite $\prob (O | \lambda)$ but it represents a part of it. Instead of the probability of the whole sequence, it breaks it into a chunk of size $t$, commits to end at a particular state and then calculates the same proabbility for this.
 
 We can combine \label{alpha} with induction to produce an iterative process that can calculate \ref{q:first}.
 
@@ -206,18 +239,205 @@ We can combine \label{alpha} with induction to produce an iterative process that
         \alpha_{t+1}(j) = \left[\sum_{i=1}^N \alpha_t(i)a_{ij}\right] b_j(O_{t+1}), & j \in [1,N], t \in [1,T-1]
     \end{eqnarray}
 
-    \item Termination Step: \\
-    
+    \item Termination step: \\
+    For the termination step we sum over all alpha at the final time $T$. Each alpha represents the probability of being in that given state at that particular time, through all possible sequences that it may have followed. Therefore, by summing all of these we now do not have to concern ourselves with the state sequence as all have been considered.
+    \begin{eqnarray}
+        \prob (O | \lambda) = \sum_{i=1}^N \alpha_T(i)
+    \end{eqnarray}
+\end{enumerate}
+
+\begin{figure}
+	\begin{center}
+        \begin{tikzpicture}
+            \node[state] at(-2,3) (s1) {$S_1$};
+            \node[state] at(-2,1)  (s2) {$S_2$};
+            \node at(-2,0)  (sd1) {.};
+            \node at(-2,-0.5)  (sd2) {.};
+            \node at(-2,-1) (sd3) {.};
+            \node[state] at(-2,-2)  (sn) {$S_N$};
+            \node[state] at(3,0) (new) {$S_j$};
+            \node at(-2,-3) (a1) {$\alpha_t(i)$};
+            \node at(3,-3) (a2) {$\alpha_{t+1}(i)$};
+            \node at(-2,-4) (t1) {$t$};
+            \node at(3,-4) (t2) {$t+1$};
+
+            \draw [->] (s1) edge[auto=right] node{$a_{1j}$} (new);
+            \draw [->] (s2) edge[auto=right] node{$a_{2j}$} (new);
+            \draw [->] (sn) edge[auto=right] node{$a_{Nj}$} (new);
+        \end{tikzpicture}
+        \\
+    For each state $j$, for each inductive step, we follow the above method. Each $\alpha_t(i)$ is multiplied by each $a_{ij}$ and then summed up. This result multipled by $b_j(O_{t+1}$ gives us $\alpha_{t+1}(j)$.
+    \end{center}
+\end{figure}
+
+
+
+One can see that this method is far more efficient than \ref{ogivenlamsumq}. It requires $N^2$ multiplications for  $\alpha_t(i)$ and $a_{ij}$  for $T$ time periods. For each $T$ there are also $N$ addition operations for the summation and a multiplication for the $b_j(O_{t+1})$. This is true for all but the first and the last timestep, where there are $N$ multiplications and $N$ additions respectively. This gives us $(T-2)(N^2 + N + 1) + 2N$ calculations. Considering simply the order we see that the previous method had order $O(TN^T)$ whereas F-B gives us an order of $O(TN^2)$. It is now feasible to compute $\prob (O | \lambda)$.
+
+\begin{example}
+    \label{motivfb}
+    We attempt to solve the problem \ref{motivfb} again but this time using the F-B algorithm. Suppose we would like to find the probability of a string of 10 observations using model H. Here $N$ = 3 and $T$ = 10. 
+    \begin{eqnarray}
+        operations & = & (T-2)(N^2 + N + 1) + 2N \\
+                   & = & (10-2)(3^2 + 10 + 1) + 6\\
+                   & = & 118
+    \end{eqnarray}
+
+    This is clearly many orders of mangitude smaller than 1180979, which was the requirement without F-B algorithm, thus it is a significant improvement. One may note, the improvement against the base method will be even more drastic for larger models, due to the $N^T$ term being removed.  
+\end{example}
+
+
+For question 1 this is sufficient. However, we will later require the $\beta$, the backward component and as such we will describe it now. Logically it is the same principle as the forward component except this time instead of moving forward step by step we are moving backwards.
+\begin{equation}
+    \label{beta}
+    \beta_t(i) = \prob (O_{t+1},O_{t+2},,...,O_T | q_t=S_i, \lambda)
+\end{equation}
+This represents the probability of seeing the observations $O_{t+1}$ up to $O_T$ given that at time $t$ the model $\lambda$ is at state $S_i$. We again calculate this inductively.
+
+\begin{enumerate}
+    \item Base case \\
+    For each state we must assume that it is the final state in order to iterate from it. This gives us:
+    \begin{eqnarray}
+        \beta_T(i) = 1, & i \in [1,N]
+    \end{eqnarray}
+
+    \item Inductive step: \\
+    Each inductive step we move back by one timestep. As before, we will be calculating for all $N$ states except this time $i$ will be varying instead of $j$. This makes sense as we are stepping backward and we want to see which previous state is the most likely previous state. At each step, we the transaction probability of having coming from $i$, $a_{ij}$ to the probability of seeing the given observation at state $S_j$, $b_j(O_{t+1})$ and the liklihood of being at that state based on future states $\beta_{t+1}(i)$. This gives us:
+    \begin{eqnarray}
+        \beta_{t}(i) = \sum_{j=1}^N a_{ij} b_j(O_{t+1}) \beta_{t+1}(i), & i \in [1,N], t \in [1,T-1]
+    \end{eqnarray}
 \end{enumerate}
 
 
+
 \section{Problem 2: Decoding}
+We now turn our attention to \ref{q:second}. This problem is somewhat more difficult, as the definition of 'best' is quite vague and open to interpretations. An obvious appraoch would be to look for the states that are individually most likely for each state for a set time $t$ given all observations and the model. Lets define this probaility as $\gamma$.
+\begin{equation}
+    \gamma_t(i) = \prob (q_t = S_i | O, \lambda)
+\end{equation}
+
+Using \ref{alpha} and \ref{beta} we can solve for $\gamma$ quite quickly. If we recall, $\alpha_t(i)$ provides us with the probability of being in state $i$ after seeing all the previous observations and $\beta_t(i)$ gives us the probability of being in state $i$ see all the remaining observations in the future. This gives us $\alpha_t(i) \beta_t(i)$. We now normalise this to get a probability. This is possible by dividing by the probability of getting this particular observation given all possible observation sequqnces $\prob (O|\lambda)$. This is equvialent to dividing by the sum of $\alpha_t(j) \beta_t(j)$ over all possible states $j$.
+\begin{eqnarray}
+    \gamma_t(i) & = &  \dfrac{\alpha_t(i) \beta_t(i)}{\prob (O|\lambda)} \\
+                & = &  \dfrac{\alpha_t(i) \beta_t(i)}{\sum_{j=1}^N \alpha_t(j) \beta_t(j)}
+\end{eqnarray}
+
+This ensures that:
+\begin{equation}
+    \sum_{i=1}^N \gamma_t(i) = 1
+\end{equation}
+
+As such this ensures all $\gamma_t(i)$ are probabilities. We can now go through each timestep $t$ calculating $\gamma_t(i)$ and selecting state $i$ corresponding to the largest $\gamma_t(i)$.
+
+
+This will maximize the number of correct states and give the correct awnser if the model is completely connected, i.e. each state can reach every other state. If this is not the case, we may get a state sequence that is not possible. e.g. At time $t$ the model is in state $i$ and at time $t+1$ it is in $j$, but $a_{ij} = 0$, thus is not possible.
+
+In the senario given, we must redefine 'best' to the path that maximizes $\prob (Q | O, \lambda)$. Since we are maximizing this, we can say equvialently that we would like to maximize $\prob (Q, O | \lambda)$. To solve this problem we require the Viterbi Algorithm.
+
+
 \subsection{Viterbi Algorithm}
+The Viterbi Algorithm follows a similar latice structure of the F-B algorithm. Similar to how we broke \ref{q:first} into smaller pieces, we do the same to $\prob (Q | O, \lambda)$.
+
+\begin{equation}
+    \delta_t(i)  = max_{q_1,q_2,...,q_t-1} \prob (\{q_1,q_2,...q_t=i\},{O_1,O_2,...,O_t}|\lambda) 
+\end{equation}
+
+An important point to note is $\delta_t(i)$ does not store the sequence. Thus we must introduce a new variable that will be responisble for doing so. We can call this $\psi_t(i)$, where it is equal to the state we have come from given we are at time $t$ and at state $i$. We will once again use induction, the process is as follows.
+
+\begin{enumerate}
+    \item Base case \\
+    For each state we must calculate $\pi_i b_i(O_1)$ to determine which intial state is most likely. We also must set $\psi_1(i)$ = 0 as there have not been any states until now. 
+    \begin{eqnarray}
+        \delta_1(i) & = & \pi_i b_i(O_1) \\
+        \psi_1(i)   & = & 0
+    \end{eqnarray}
+
+    \item Inductive step: \\
+    For each state we calculate the $\delta_{t-1}(i)$ times $a_{ij}$ to find the most likely next state based on previous state liklihood and the transition probability. We maximize this term  and the multiply by  $b_j(O_t)$ to include a bias based on the observation probabilities. As before we store the argument of the maximum in $\psi$. This gives us:
+    \begin{eqnarray}
+        \delta_t(j) & = & max_{1 \leq i \leq N}[\delta_{t-1}(i) a_{ij}] b_j(O_t),  t \in [2,T] \\
+        \psi_t(j)   & = & argmax_{1 \leq i \leq N}[\delta_{t-1}(i) a_{ij}], j \in [1,N]
+    \end{eqnarray}
+
+    \item Termination step: \\
+    To terminate this recursion, we  need to find the maximum $\delta_{T}(i)$. Here we simply maximize, as the values have already been calculated in the induction. We will store this probability in $\prob*$. Similarly for the final state, we just need to find the argument corresponding to this max and we set this to the final state $q_T^*$.
+    \begin{eqnarray}
+        \prob^* & = & max_{1 \leq i \leq N}[\delta_{T}(i)] \\
+        q_T^*   & = & argmax_{1 \leq i \leq N}[\delta_{T}(i)]
+    \end{eqnarray}
+    To find any particular states that we may be interseted in $q_t^*$, we use $q_t^*$ = $\psi_{t+1}(q_{t+1}^*)$. 
+\end{enumerate}
+
 
 
 \section{Problem 3: Learning}
-\subsection{Expectation Maximization}
+The third problem \ref{q:third} addresses learning. How can we learn a model from given data of observations. This is an extremly important problem as we often do not have the model and calculating it is not simple. In these cases, we must derive the model from the data we have, a set of observations. Given the set of observations $O$ = $\{O_1,O_2,...,O_T\}$ we want to find the most suitable $\lambda$ = $(A,B,\pi)$. To do this we use the Baum-Welch algorithm.
+
+
+\subsection{Expectation-Maximization} **
+Before we continue to the algorithm itself, it is useful to understand Expectation maximization (E-M). We use E-M to compare models and decide which is superior. 
+
+
+The algorthim finds the local optima, suggesting it may not always provide the best model, as it is not the global optima. We try to overcome this by using multiple randomized starts and then accepting the the best model of these. 
+
+
 \subsection{Baum-Welch Algorithm}
+For the Baum-Welch algorithm we will need all three parameters intrudced earlier; $\alpha$ \ref{alpha}, $beta$ \ref{beta} and $\gamma$. We will also need a new parameter $\xi_t(i,j)$. This will capture the probability of being in some state $S_i$ at time $t$ and then $S_j$ at time $t+1$ given the observations and the model.
+\begin{equation}
+    \xi_t(i,j) = \prob (q_t = S_i, q_{t+1} = S_j | O, \lambda)
+\end{equation} 
+
+To solve this problem we can refer back to \ref{alpha} for the left hand side (including $q_t$) and \ref{beta} for the right hand side (indlucing $q_{t+1}$). To get from state $i$ to $j$ we use $a_{ij} b_j(O_{t+1})$. Putting this all togther we get a liklihood. To normalize this into a probabiltiy we once more use $\prob (O|\lambda)$. This gives us:
+\begin{equation}
+    \xi_t(i,j) = \dfrac{\alpha_t(i) a_{ij} b_j(O_{t+1}) \beta_{t+1}(j)}{\prob (O|\lambda)}
+\end{equation}
+Since we are interested in the probability of going from one $i$ to one $j$, for the denominator we use the sum of all $i$ and all $j$. 
+\begin{equation}
+    \xi_t(i,j) = \dfrac{\alpha_t(i) a_{ij} b_j(O_{t+1}) \beta_{t+1}(j)}{\sum_{i=1}^N \sum_{j=1}^N \alpha_t(i) a_{ij} b_j(O_{t+1}) \beta_{t+1}(j)}
+\end{equation}
+
+One may find it helpful to compare $\xi_t(i,j)$ with $\gamma_t(i)$. $\gamma_t(i)$ represents the probability of being at state $i$ at timestep $t$. Summing over $j$ for $\xi_t(i,j)$ leaves us with $\xi_t(i)$ which represents the probability of being at state $i$ at timestep $t$. This is identical to $\gamma_t(i)$. We can now state: 
+
+\begin{equation}
+    \gamma_t(i) = \sum_{j=1}^N \xi_t(i,j)
+\end{equation}
+
+For $\gamma_t(i)$, if we sum over $t$ we can get a number that can be used as the expected number of times $S_i$ is visited. Thus the expected number of transitions from $S_i$ can be calculated by:
+\begin{equation}
+    \sum_{t=1}^{T-1} \gamma_t(i)
+\end{equation}
+
+Similarly for $\xi_t(i)$, if we sum over $t$ we can get a number that can be used as the expected number of times $S_i$ transitions to $S_j$.Thus the expected number of transitions from $S_i$ to $S_j$ can be calculated by:
+\begin{equation}
+    \sum_{t=1}^{T-1} \xi_t(i,j)
+\end{equation}
+
+
+
+Now that we have created a set of tools we will need to tackle the learning problem itself. To build a improved $\lambda$, $\bar{\lambda}$, we need to find $\bar{\pi}$, $\bar{A}$ and $\bar{B}$.
+
+\begin{enumerate}[i]
+    \item $\bar{\pi}$ \\
+    Since $\gamma_t(i)$ represents the expected frequency in $S_i$ at time $t$, if we let $t$=1 this now is equvialent to $\bar{\pi}$ \\
+    \begin{equation}
+        \bar{\pi} = \gamma_1(i)
+    \end{equation}
+
+    \item $\bar{a_{ij}}$ \\
+    Here we can use the expected number of transitions from state $i$ to $j$ divided by expected number of transitions from $i$ in total. This will provide the appropriate transition probability. \\
+    \begin{equation}
+        \bar{a_{ij}} = \dfrac{\sum_{t=1}^{T-1} \xi_t(i,j)}{\sum_{t=1}^{T-1} \gamma_t(i)}
+    \end{equation}
+
+    \item $\bar{b_j(k)}$ \\
+    For the B matrix we will simply need to divide  the expected number of times the model is in state $j$ and observes $v_k$ by the expected number of times it is in $j$.
+    \begin{equation}
+        \bar{b_j(k)} = \dfrac{\sum_{t=1, s.t. O_t = v_k}^T \gamma_t(j)}{\sum_{t=1}^{T-1} \gamma_t(j)}
+    \end{equation} 
+\end{enumerate}
+
+We have used our $\lambda$ and $O$ to produce our parameters: $\alpha_t(i)$, $beta_t(i)$, $\gamma_t(i)$, $\xi_t(i,j)$. This is called parameter re-estimation. We have then used these parameters to produce our $\bar{\lambda}$ = $\{\bar{\pi}, \bar{a_{ij}}, \bar{b_j(k)} \}$. This is called expectation maximization. This method can be iterated and by definition each iteration should provide an improvement for lambda. Once lambda stabalizes and is no longer changing, we can assume a local optimumum has been reached. 
+
 
 
 \section{Modified HMM}
