@@ -1,0 +1,27 @@
+// A Generalized Point Process Model for Rainfall
+
+where the two cell type
+categorized as 'heavy' short-duration convective cells and 'light' long-durat stratiform cells
+
+
+* Bartlett-Lewis Rectangular Pulses Model (BLRP)
+*Neyman-Scott Recatangular Pulses Model (NSRP)
+*Generalized NSRP (GNSRP)
+
+GNSRP must be defined with the number of cell types. We use 2, one for heavy convective cells and one for light straiform cells.#
+
+
+BLRP - Each storm origin is followed by another Poisson process of cell origins, which is terminated after a time that is exponetially distributed. Cell originis are independently uniformly distrubited over hte interval from the strom origin to the termination point. 
+
+NSRP - Cell origins are independently displaced from each storm origin by distances that are exponentialy distrubuted. Thus, there is a greater probability that cells will cluster near the beggining of the storm. This is more realistic as rainfall has a tendencyt to be more inteense near the leading edge of some frontal systems (Browning 1985).
+
+In this paper, these discrepancies are resolved by allowing
+different 'types' of rain cell to exist within the same storm. This is appealing bedistinct precipitation areas have been identified in observational studies on rainf field
+
+A GNSRP(1) model is identical to the original NSRP model
+
+
+
+*** Through all his papers Coppertwait develops on his original model from 199*. 
+
+
