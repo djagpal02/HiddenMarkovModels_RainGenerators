@@ -24,7 +24,7 @@ double unif_real(double a, double b)
 }
 
 
-void output(int var, int sites,int days,int states,double delta[],double gamma[][3], double means[] )
+void output(int sites,int days,int states,double delta[],double gamma[][3], double means[] )
 {
     ////////////////////////////////////////////////// ABC ESTIMATION ////////////////////////////////////////////////////////
 
@@ -45,44 +45,19 @@ void output(int var, int sites,int days,int states,double delta[],double gamma[]
     // Set output file paramters
     std::ofstream output;
 
-    // Set third parameters
-    double x = 30, y = 0.005, z = 0.1;
 
-    
-    // Open output file
-    if (var == 1) // testing lambda
-    {
-        output.open ("lam_avg.csv");
-    }
-    else if (var == 2) // testing xi
-    {
-        output.open ("xi_avg.csv");
-    }
-    else // testing tau
-    {
-        output.open ("tau_avg.csv");
-    }
-    
+
+
+    output.open ("avg.csv");
+    double x = 0; 
     // Iterations
     for (int iter = 0; iter < maxit; iter++)
     {
-        if (var == 1) // testing lambda
-        {
-            x = unif_real(26,35);
-        }
-        else if (var == 2) // testing xi
-        {
-            y = unif_real(0.001,0.007);
-        }
-        else // testing tau
-        {
-            z = unif_real(0.07,0.2);
-        }
-
+        x += 0.01;
         // intialize parameters used to estimate
-        double lambdaE[3] = {10, 20, x};
-        double xiE[3] = {0.05, 0.01, y};
-        double tauE[3] = {1.1, 0.5, z};
+        double lambdaE[3] = {unif_real(5,15), unif_real(16,25), unif_real(26,35)};
+        double xiE[3] = {unif_real(0.03,0.07), unif_real(0.008,0.02), unif_real(0.001,0.007)};
+        double tauE[3] = {unif_real(0.8,1.4), unif_real(0.3,0.7), unif_real(0.07,0.2)};
 
         // run generator
         grando_generator(days, states, sites, delta, gamma, lambdaE, xiE, tauE, intensity_sim);
@@ -170,13 +145,11 @@ int main()
         means[i] = arr_sum(intensity_data[i], 25568)/25568;
     } 
 
-    std::thread first (output,1, sites, days, states, delta, gamma, means);
-    std::thread second (output,2,sites, days, states, delta, gamma, means);
-    std::thread third (output,3, sites, days, states, delta, gamma, means);
-    
+    std::thread first (output, sites, days, states, delta, gamma, means);
+
+
     first.join();
-    second.join();
-    third.join();
+
 
 
 
