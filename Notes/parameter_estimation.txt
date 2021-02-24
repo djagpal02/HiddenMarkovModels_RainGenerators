@@ -1,0 +1,25 @@
+Grando's Model has a large number of unknown parameters, which makes simultaneous solving extremly difficult. 
+To start we split the parameters into interal HMM and other. As such, we can now approximate the internal HMM values with unif[0,1] variables as they are probabilities. With these assumptions we can attempt to find the other parameters. 
+
+Given a n state model we still have n^2 parameters. In our case this is 9. Finding this parameters is still not a trivial task. Since we know these parameters are used for poission and exponential distributions, we can reduce dimensionality by calculating n parmeters and then expanding. In other words, we can caclulate the average for the full dataset. Since we know the minimum value must be 0 we inherintly know the maximum value must be twice the average. Using this information, we now have a range and mean for our parameters. Limiting our parameters on these two conditions, we can caclulate estimates. 
+
+A natural approach would be to split the range into n parts and find an estimate within each range. This ofcourse is not the only way, as the parameters could be skewed to one side but have a far reaching maxima on the other end. If we had a larger set of states, this would hold more imporatance, but with only three it is unlikely that the paramter values are clustered close to eachother, unless the true values are uniform. In such case, the paramter is not based on the hidden markov model state. 
+
+Lambda:
+
+lambda reprsents the mean number of storm discs per day. Naturally it must take values within the natural numbers. We do not have information on how many storm discs form on average per day but we can assume for simulation purposes that it is not more than 100.
+
+tau:
+
+tau represents 1/ the average intesntity per disc. Since the intensities are mostly 0 or numbers larger than 1, it suggests the value of tau is alot smaller than 1. Since we can not have a negative intensity, it  must take a decimal value between 0 and 1. 
+
+xi:
+
+xi represents 1/average radius of a storm disc. The use of this paramter is in the indiciator functino that determines whether a storm disc covers a site or not.  Since the radius is very unlikely to be under 1 the value of tau is most likley to between 0 and 1. 
+
+
+- Run simulation for lambda between 0 and 100 in intervals of 0.01 (10000 iteration), if we see the optima we look for the value of this. 
+
+- Run similuation for tau between 0 and 1 in intervals of 0.0001 (10000 iteration)
+
+- Run simulation for xi between 0 and 1 in intervals of 0.0001 (10000 iteration)

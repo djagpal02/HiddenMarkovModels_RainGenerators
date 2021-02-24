@@ -4,7 +4,7 @@
 #include <math.h> //Sqrt
 #include "grando_gen_head.h" // Created Functions
 
-int grando_generator(int days,int states,int sites,double delta[],double gamma[],double lambda[],double xi[],double tau[])
+void grando_generator(int days,int states,int sites,double delta[],double gamma[][3],double lambda[],double xi[],double tau[],double intensity_mat[][365*1])
 {
     /*
     From Grando: 
@@ -13,8 +13,8 @@ int grando_generator(int days,int states,int sites,double delta[],double gamma[]
     M = states
     */
 
-    // Set seed for random numbers 
-    srand((unsigned int)time(NULL));
+    // Set seed for random numbers - will call from main function so not needed within here
+    //srand((unsigned int)time(NULL));
     std::default_random_engine generator;
 
     // Set vectors containing co-ordinates
@@ -32,14 +32,12 @@ int grando_generator(int days,int states,int sites,double delta[],double gamma[]
     y_high = max(north, 30) + 200;
 
 
-    // Create rain intensity matrix
-    double intensity[days][sites];
     // Populate intensity matrix with 0. Need base value to add further rain intensities on.
-    for (int i=0;i < days; i++)
+    for (int i=0;i < sites; i++)
     {
-        for (int j=0; j< sites; j++)
+        for (int j=0; j< days; j++)
         {
-            intensity[i][j] = 0;
+            intensity_mat[i][j] = 0;
         }
     }
 
@@ -62,14 +60,14 @@ int grando_generator(int days,int states,int sites,double delta[],double gamma[]
                 curr_state = sampler(delta,states);
             }else
             {
-                curr_state = sampler(gamma,states);
+                // Transition probability using previous state to find gamma distribution
+                curr_state = sampler(gamma[prev_state],states);
             }
 
             // Generate number of storm discs
             std::poisson_distribution<int> pois(lambda[curr_state]);
             int N = pois(generator);
 
-            std::cout << N << "\n";
             // For each storm disc
             for (int k = 0; k < N; k++)
             {
@@ -92,25 +90,13 @@ int grando_generator(int days,int states,int sites,double delta[],double gamma[]
                 double dist = sqrt((east[i] - x)*(east[i] - x) + (north[i] - y)*(north[i] - y));
 
                 
-                std::cout << dist << ',' << R << '\n'; 
                 // Check if region is within storm disc
                 if (dist <= R)
                 {
-                    intensity[j][i] += sigma; 
+                    intensity_mat[i][j] += sigma; 
                 }
             }
         }
-    }
-
-
-    std::cout << "\n \n Results - row = site, column = day \n  \n";
-    for (int i =0; i < sites; i++)
-    {
-        for (int j=0; j < days; j++)
-        {
-            std::cout << intensity[j][i] << ' ';
-        }
-        std::cout << '\n';
     }
 }
 
