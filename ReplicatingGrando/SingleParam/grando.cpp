@@ -9,7 +9,7 @@
 
 double arr_sum(double arr[], int len)
 {
-    int sum = 0;
+    double sum = 0;
     for (int i = 0; i < len; i++)
     {
         sum += arr[i];
@@ -23,6 +23,22 @@ double unif_real(double a, double b)
     return r;
 }
 
+void data_mean(double means[],double intensity_data[][25568],int sites)
+{
+    for (int k = 0; k < sites; k++)
+    {
+        int sum = 0, size = 0;
+        for (int i = 0; i < 25568; i++)
+        {
+            if (intensity_data[k][i] != -9999)
+            {
+                size += 1;
+                sum += intensity_data[k][i];
+            }
+        }
+        means[k] = (sum*1.0)/size;
+    }
+}
 
 void output(int var, int sites,int days,int states,double delta[],double gamma[][3], double means[] )
 {
@@ -124,7 +140,7 @@ int main()
     for (int i = 0; i < states; i++)
     {
         // We take mod to ensure the sum will most likely be below RAND_MAX, 1000 is an arbitrary value chosen since this allows up to around 30 states
-        delta[i] = rand()% 1000;
+        delta[i] = unif_real(0,1);
     }
     // Get sum of states
     double sum = arr_sum(delta, states);
@@ -142,7 +158,7 @@ int main()
     {
         for (int j = 0; j < states; j++)
         {
-            gamma[i][j] = rand()% 1000;
+            gamma[i][j] = unif_real(0,1);
         }
     }
     // Ensure Right stochastic by dividing by row sums
@@ -165,10 +181,7 @@ int main()
 
     // Calculate means 
     double means[sites];
-    for (int i = 0; i < sites; i++)
-    {
-        means[i] = arr_sum(intensity_data[i], 25568)/25568;
-    } 
+    data_mean(means, intensity_data, sites);
 
     std::thread first (output,1, sites, days, states, delta, gamma, means);
     std::thread second (output,2,sites, days, states, delta, gamma, means);

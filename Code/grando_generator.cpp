@@ -4,7 +4,7 @@
 #include <math.h> //Sqrt
 #include "grando_gen_head.h" // Created Functions
 
-void grando_generator(int days,int states,int sites,double delta[],double gamma[][3],double lambda[],double xi[],double tau[],double intensity_mat[][365*5])
+void grando_generator(const int days,int states,int sites,double delta[],double gamma[][3],double lambda[],double xi[],double tau[],double intensity_mat[][365*5])
 {
     /*
     From Grando: 
@@ -14,7 +14,7 @@ void grando_generator(int days,int states,int sites,double delta[],double gamma[
     */
 
     // Set seed for random numbers - will call from main function so not needed within here
-    //srand((unsigned int)time(NULL));
+    srand((unsigned int)time(NULL));
     std::default_random_engine generator;
 
     // Set vectors containing co-ordinates

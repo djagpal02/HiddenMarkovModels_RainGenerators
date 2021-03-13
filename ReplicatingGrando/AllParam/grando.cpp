@@ -9,7 +9,7 @@
 
 double arr_sum(double arr[], int len)
 {
-    int sum = 0;
+    double sum = 0;
     for (int i = 0; i < len; i++)
     {
         sum += arr[i];
@@ -21,6 +21,23 @@ double unif_real(double a, double b)
 {
     double r = ((rand()*(b-a))/RAND_MAX) + a;
     return r;
+}
+
+void data_mean(double means[],double intensity_data[][25568],int sites)
+{
+    for (int k = 0; k < sites; k++)
+    {
+        int sum = 0, size = 0;
+        for (int i = 0; i < 25568; i++)
+        {
+            if (intensity_data[k][i] != -9999)
+            {
+                size += 1;
+                sum += intensity_data[k][i];
+            }
+        }
+        means[k] = (sum*1.0)/size;
+    }
 }
 
 
@@ -140,10 +157,7 @@ int main()
 
     // Calculate means 
     double means[sites];
-    for (int i = 0; i < sites; i++)
-    {
-        means[i] = arr_sum(intensity_data[i], 25568)/25568;
-    } 
+    data_mean(means, intensity_data, sites);
 
     std::thread first (output, sites, days, states, delta, gamma, means);
 
