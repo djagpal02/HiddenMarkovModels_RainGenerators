@@ -1,0 +1,19 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'main.blg'
+[91] biber:322> INFO - === Sun Mar 14, 2021, 17:20:07
+[108] Biber.pm:415> INFO - Reading 'main.bcf'
+[188] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[203] Biber.pm:4256> INFO - Processing section 0
+[204] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[204] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[215] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[216] bibtex.pm:1653> INFO - LaTeX decoding ...
+[229] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[289] Utils.pm:293> WARN - BibTeX subsystem: /tmp/biber_tmp_Jkrd/references.bib_5991.utf8, line 30, warning: undefined macro "Andreevich"
+[314] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[314] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[314] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[314] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[334] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[343] bbl.pm:755> INFO - Output to main.bbl
+[343] Biber.pm:128> INFO - WARNINGS: 1

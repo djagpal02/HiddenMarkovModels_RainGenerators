@@ -22,3 +22,18 @@
 \BOOKMARK [2][-]{subsection.4.5.1}{Baum-Welch Algorithm}{section.4.5}% 22
 \BOOKMARK [1][-]{section.4.6}{Modified HMM}{chapter.4}% 23
 \BOOKMARK [2][-]{subsection.4.6.1}{GMM}{section.4.6}% 24
+\BOOKMARK [0][-]{chapter.5}{Model Selection / Parameter Estimation}{}% 25
+\BOOKMARK [1][-]{section.5.1}{Maximum Liklihood Estimators}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.2}{Approximate Bayesian Computation}{chapter.5}% 27
+\BOOKMARK [0][-]{chapter.6}{Coppertwait's Rainfall Model}{}% 28
+\BOOKMARK [1][-]{section.6.1}{Point Processes}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.2}{Spacio-Temporal Rainfall Model}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.3}{Model Performance}{chapter.6}% 31
+\BOOKMARK [0][-]{chapter.7}{Grando's Rainfall Model}{}% 32
+\BOOKMARK [1][-]{section.7.1}{HMM Based Model}{chapter.7}% 33
+\BOOKMARK [1][-]{section.7.2}{Numerical Results}{chapter.7}% 34
+\BOOKMARK [1][-]{section.7.3}{High Dimenstional Parameter Estimation}{chapter.7}% 35
+\BOOKMARK [0][-]{chapter.8}{HMMs and Rainfall Models}{}% 36
+\BOOKMARK [1][-]{section.8.1}{Extending on Grando's Model}{chapter.8}% 37
+\BOOKMARK [1][-]{section.8.2}{Single State Model}{chapter.8}% 38
+\BOOKMARK [1][-]{section.8.3}{Single State Model Numerical Results}{chapter.8}% 39
