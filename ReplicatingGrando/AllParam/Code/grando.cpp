@@ -47,7 +47,7 @@ void output(int sites,int days,int states,double delta[],double gamma[][3], doub
 
 
     // Set maximum number of iterations
-    int maxit = 100;
+    int maxit = 200;
 
     // Create output intensity matrix 
     double intensity_sim[sites][365*5];
@@ -66,11 +66,9 @@ void output(int sites,int days,int states,double delta[],double gamma[][3], doub
 
 
     output.open ("avg.csv");
-    double x = 0; 
     // Iterations
     for (int iter = 0; iter < maxit; iter++)
     {
-        x += 0.01;
         // intialize parameters used to estimate
         double lambdaE[3] = {unif_real(5,15), unif_real(16,25), unif_real(26,35)};
         double xiE[3] = {unif_real(0.03,0.07), unif_real(0.008,0.02), unif_real(0.001,0.007)};

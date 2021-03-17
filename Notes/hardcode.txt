@@ -1,0 +1,18 @@
+
+
+loc Reader requirements :
+    // This requires the CSV to contain only numerical data.
+    // The end of each line must contain a ',' after the final numerical value.
+    also note format required
+    cg.csv
+
+    Number of simulation days hardcoded: 365*5 - 2 cpps and header 
+
+Inten_reader requirements:
+    // This requires the CSV to contain only numerical data.
+    // The end of each line must contain a ',' after the final numerical value.
+    // To do so simply add a header when in excel or equvialent and then save. Trailing Commas should apair on the text version of the file.
+    // Now you can remove the header from the text view. 
+    gd.csv
+    
+    Number of readings hardcoded: 25568 - 2 cpps and header 

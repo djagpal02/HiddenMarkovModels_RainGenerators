@@ -25,15 +25,18 @@
 \BOOKMARK [0][-]{chapter.5}{Model Selection / Parameter Estimation}{}% 25
 \BOOKMARK [1][-]{section.5.1}{Maximum Liklihood Estimators}{chapter.5}% 26
 \BOOKMARK [1][-]{section.5.2}{Approximate Bayesian Computation}{chapter.5}% 27
-\BOOKMARK [0][-]{chapter.6}{Coppertwait's Rainfall Model}{}% 28
-\BOOKMARK [1][-]{section.6.1}{Point Processes}{chapter.6}% 29
-\BOOKMARK [1][-]{section.6.2}{Spacio-Temporal Rainfall Model}{chapter.6}% 30
-\BOOKMARK [1][-]{section.6.3}{Model Performance}{chapter.6}% 31
-\BOOKMARK [0][-]{chapter.7}{Grando's Rainfall Model}{}% 32
-\BOOKMARK [1][-]{section.7.1}{HMM Based Model}{chapter.7}% 33
-\BOOKMARK [1][-]{section.7.2}{Numerical Results}{chapter.7}% 34
-\BOOKMARK [1][-]{section.7.3}{High Dimenstional Parameter Estimation}{chapter.7}% 35
-\BOOKMARK [0][-]{chapter.8}{HMMs and Rainfall Models}{}% 36
-\BOOKMARK [1][-]{section.8.1}{Extending on Grando's Model}{chapter.8}% 37
-\BOOKMARK [1][-]{section.8.2}{Single State Model}{chapter.8}% 38
-\BOOKMARK [1][-]{section.8.3}{Single State Model Numerical Results}{chapter.8}% 39
+\BOOKMARK [0][-]{chapter.6}{Spacio-Temporal Rainfall Models}{}% 28
+\BOOKMARK [1][-]{section.6.1}{Coppertwait}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.2}{Grando - HMM Based Model}{chapter.6}% 30
+\BOOKMARK [2][-]{subsection.6.2.1}{Model}{section.6.2}% 31
+\BOOKMARK [2][-]{subsection.6.2.2}{Model Fitting}{section.6.2}% 32
+\BOOKMARK [1][-]{section.6.3}{Numerical Results}{chapter.6}% 33
+\BOOKMARK [2][-]{subsection.6.3.1}{Code}{section.6.3}% 34
+\BOOKMARK [2][-]{subsection.6.3.2}{Analysis - Nine Parameter Estimation}{section.6.3}% 35
+\BOOKMARK [2][-]{subsection.6.3.3}{Analysis - Three Parameter Estimation}{section.6.3}% 36
+\BOOKMARK [1][-]{section.6.4}{High Dimenstional Parameter Estimation}{chapter.6}% 37
+\BOOKMARK [0][-]{chapter.7}{a}{}% 38
+\BOOKMARK [0][-]{chapter.8}{HMMs and Rainfall Models}{}% 39
+\BOOKMARK [1][-]{section.8.1}{Extending on Grando's Model}{chapter.8}% 40
+\BOOKMARK [1][-]{section.8.2}{Single State Model}{chapter.8}% 41
+\BOOKMARK [1][-]{section.8.3}{Single State Model Numerical Results}{chapter.8}% 42

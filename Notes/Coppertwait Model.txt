@@ -1,0 +1,26 @@
+- We will not delve into the details of point processes but they can be found in Grandos paper \ref
+
+- Same for the nealder mead process, also used by coppertwait \ref
+
+- MODEL 
+The model has been adjusted and improved over many years \ref all. We will focus on the 2010 model but start with the properties shared by all.
+
+
+
+Rainfall occurs in 2D cells (discs) - shape is arbritary
+Features of rainfall are represented by known distributions.
+1994: 
+- poisson rate lambda of storm origin
+- R.V> C of cell origin within each storm
+-cell origin exponentially distributed from storm origin by parameter \beta
+-each cell classed as one of n types
+-duration of cell exponential r.v. \eta_i for cell type i
+-Intensity of cell r.v. denoted X_i for cell type i
+-mean number of cells per storm is denoted \mew_C for a type i cell, mean intensity as \mew_i(i=1,..,n)
+
+
+
+Storm origins occur in a space-time poisson process \zeta_s 
+
+
+

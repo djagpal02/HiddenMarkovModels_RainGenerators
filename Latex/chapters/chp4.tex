@@ -341,7 +341,7 @@ We can combine \label{alpha} with induction to produce an iterative process that
 One can see that this method is far more efficient than \ref{ogivenlamsumq}. It requires $N^2$ multiplications for  $\alpha_t(i)$ and $a_{ij}$  for $T$ time periods. At each $T$ there are $N$ addition operations for the summation and  $N$ multiplication for the $b_j(O_{t+1})$, which is true for all but the first and last timestep, where there are $N$ multiplications and $N$ additions respectively. This gives us $(T-2)(N^2 + N + 1) + 2N$ calculations. Considering the order, we see that the previous method had order $O(TN^T)$ whereas F-B gives us an order of $O(TN^2)$. It is now feasible to compute $\prob (O | \lambda)$.
 
 \begin{example}
-    \label{motivfb}
+    \label{motivfb2}
     We attempt to solve the problem \ref{motivfb} again but this time using the F-B algorithm. Suppose we would like to find the probability of a string of 10 observations using model H. Here $N$ = 3 and $T$ = 10. 
     \begin{eqnarray}
         operations & = & (T-2)(N^2 + N + 1) + 2N \\

@@ -54,26 +54,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Approximate Bayesian Computation}{25}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Coppertwait's Rainfall Model}{26}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Spacio-Temporal Rainfall Models}{26}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Point Processes}{26}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Coppertwait}{26}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Spacio-Temporal Rainfall Model}{26}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Grando - HMM Based Model}{27}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Model Performance}{26}{section.6.3}%
+\contentsline {subsection}{\numberline {6.2.1}Model}{27}{subsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Grando's Rainfall Model}{27}{chapter.7}%
+\contentsline {subsection}{\numberline {6.2.2}Model Fitting}{27}{subsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}HMM Based Model}{27}{section.7.1}%
+\contentsline {section}{\numberline {6.3}Numerical Results}{28}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Numerical Results}{27}{section.7.2}%
+\contentsline {subsection}{\numberline {6.3.1}Code}{28}{subsection.6.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}High Dimenstional Parameter Estimation}{27}{section.7.3}%
+\contentsline {subsection}{\numberline {6.3.2}Analysis - Nine Parameter Estimation}{28}{subsection.6.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}HMMs and Rainfall Models}{28}{chapter.8}%
+\contentsline {subsection}{\numberline {6.3.3}Analysis - Three Parameter Estimation}{29}{subsection.6.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Extending on Grando's Model}{28}{section.8.1}%
+\contentsline {section}{\numberline {6.4}High Dimenstional Parameter Estimation}{29}{section.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Single State Model}{28}{section.8.2}%
+\contentsline {chapter}{\numberline {7}a}{34}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Single State Model Numerical Results}{28}{section.8.3}%
+\contentsline {chapter}{\numberline {8}HMMs and Rainfall Models}{35}{chapter.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Extending on Grando's Model}{35}{section.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Single State Model}{35}{section.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Single State Model Numerical Results}{35}{section.8.3}%
