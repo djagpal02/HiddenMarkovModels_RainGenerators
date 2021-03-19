@@ -1,0 +1,11 @@
+In this chapter we will extend on Grando's ideas, adapt her model and try to decide if HMMs are useful in rainfall models. To awnser the question we must solve a 21-dimensional problem. Before we attempt to tackle this, we try a single state model to determine the performance before introducing HMM.
+
+\section{Extending on Grando's Model}
+In \ref{grando} we followed Grando's methodology for consistency in replication. However, we now aim to extend on her work and thus will begin by modifying her algorithm for improved efficiency.
+
+Grando calculates the number of storm discs over the entire space (all sites),selects the discs within the current site and then repeats for all sites. This same process could be made more efficient by simulating for only one site at a time and removing the check to see if the disc covers a given site. Through this method we remove the generation, checking and discarding of a large number of poisson variables at each iteration. 
+
+
+\section{Single State Model}
+
+\section{Single State Model Numerical Results}

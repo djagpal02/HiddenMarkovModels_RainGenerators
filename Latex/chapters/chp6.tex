@@ -16,6 +16,7 @@ All of Coppertwaits models use a Neyman-Scott point processes to describe the ar
 The GNSRP Model, discussed in **ref paper 1994**, is a generalisation of the Neyman-Scott-Rectangular-Pulse (NSRP) Model with only one cell type. The key feature of the NSRP is that, in addition to those above, the distance from Cell origins to its Storm origin are independently exponentially distributed. Unlike other models that used and independent uniform distribution for this, NSRP accounted for the realistic effect that rainfall tends to be more intense near the center of the storm ** ref browning**.
 
 \section{Grando - HMM Based Model}
+\label{grando}
 \subsection{Model}
 Grando extended on Coppertwait's ideas in **ref paper**. She completely removes the double disc structure and attempts to enclose the correlations within the larger Storm discs from Coppertwait in Hidden Markov States.
 
@@ -68,7 +69,7 @@ C++ was used for the actual simulation as this was the slowest part of Grandos a
 
 Analysis was done using Python in Jupyter Notebooks. The C++ program created multiple CSV files as output and these were taken as input for analysis. 
 
-\subsection{Analysis - Nine Parameter Estimation}
+\subsection{Results - Nine Parameter Estimation}
 
 We begin with using ABC to estimate all parameters, found on pages 75-76 **Grando ref**. The parameters are picked as follows:
 
@@ -80,58 +81,58 @@ We begin with using ABC to estimate all parameters, found on pages 75-76 **Grand
 
 For each simulation we generate data for 365x5 days and calculate the normalised Euclidean distance between the mean of these and the mean of the whole given dataset. Due to random sampling we attempt to find estimates for all 9 parameters simultaneously. We completed 200 iterations on the personal desktop in 42.2841 seconds.
 
+
 \begin{figure}
-    \begin{subfigure}{.5\textwidth}
-      \centering
-      \includegraphics[width=\linewidth]{./AllParam/lambda_1.png}
-      \caption{$\lambda_1$ }
-      \label{allp:lambda1}
+    \centering
+    \begin{subfigure}{.3\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{./AllParam/lambda_1.png}
+        \caption{$\lambda_1$ }
+        \label{allp:lambda1}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
-      \centering
-      \includegraphics[width=\linewidth]{./AllParam/lambda_2.png}
-      \caption{$\lambda_2$ }
-      \label{allp:lambda2}
-    \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{./AllParam/lambda_2.png}
+        \caption{$\lambda_2$ }
+        \label{allp:lambda2}
+    \end{subfigure}    
+    \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{./AllParam/lambda_3.png}
         \caption{$\lambda_3$ }
         \label{allp:lambda3}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth} 
+    \begin{subfigure}{.3\textwidth} 
         \centering
         \includegraphics[width=\linewidth]{./AllParam/xi_1.png}
         \caption{$\xi_1$ }
         \label{allp:xi1}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{./AllParam/xi_2.png}
         \caption{$\xi_2$ }
         \label{allp:xi2}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{./AllParam/xi_3.png}
         \caption{$\xi_3$ }
         \label{allp:xi3}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{./AllParam/tau_1.png}
         \caption{$\tau_1$ }
         \label{allp:tau1}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}  
+    \begin{subfigure}{.3\textwidth}  
         \centering
         \includegraphics[width=\linewidth]{./AllParam/tau_2.png}
         \caption{$\tau_2$ }
         \label{allp:tau2}
     \end{subfigure}
-
-    \centering
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{./AllParam/tau_3.png}
         \caption{$\tau_3$ }
@@ -142,9 +143,11 @@ For each simulation we generate data for 365x5 days and calculate the normalised
       \label{allp}
 \end{figure}
     
-The results show ABC on nine parameters was not successful. Figure **ref** show for all parameters an extremly unifrom scatter suggesting the posterior distribution is still uniform in a neighbourhood of the true parameters. This is an exact match to Grando's results. 
+The results show ABC on nine parameters was not successful. Figure \ref{allp} shows for all parameters an extremly unifrom scatter suggesting the posterior distribution is still uniform in a neighbourhood of the true parameters. This is an exact match to Grando's results. 
 
-\subsection{Analysis - Three Parameter Estimation}
+\subsection{Results - Three Parameter Estimation}
+\label{subsec3param}
+
 Grando then decides to perform ABC on a subset of our nine parameters. She claims choosing only  $\lambda_i$,only $\xi_i$ or only $\tau_i$ does not yield better outcomes. She then goes on to test for only $\lambda_3$,$\xi_3$ and $\tau_3$, fixing all other parameters to abritary values. Once again, for consistency we choose values to match those of Grando.
 
 \begin{itemize}
@@ -155,32 +158,37 @@ Grando then decides to perform ABC on a subset of our nine parameters. She claim
 
 For each test we require three simulations. When computing for $\lambda_3$ we change its value from 30 to $\lambda_3 \sim \text{Unif(26,35)}$. Similarly, when computing for $\xi_3$, we change its value to $\xi_3 \sim \text{Unif(0.001,0.007)}$ and when computing for $\tau_3$ we change its value to $\tau_3 \sim \text{Unif(0.07,0.2)}$. At any given time there is one random variable between our nine that we are testing. For efficiency we process this over multiple threads. We completed 100 iterations and ran 5 attempts on the personal desktop. Attempt time ranged between 152.725 in to 199.386 seconds.
 
+The graphs found in Figures \ref{singlelam}, \ref{singlexi} and \ref{singletau} correspond to the ones found in Grando’s *** REF** paper pages 78-80. We have come accross unexpected results. Although the graphs show a similar pattern, there is an inconnsistency in values. 
+
+
 \begin{figure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
       \centering
       \includegraphics[width=\linewidth]{./SingleParam/lambda_3_1.png}
       \caption{Attempt 1}
       \label{singlelam:1}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
       \centering
       \includegraphics[width=\linewidth]{./SingleParam/lambda_3_2.png}
       \caption{Attempt 2}
       \label{singlelam:2}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{./SingleParam/lambda_3_3.png}
         \caption{Attempt 3}
         \label{singlelam:3}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth} 
+
+    \centering
+    \begin{subfigure}{.3\textwidth} 
         \centering
         \includegraphics[width=\linewidth]{./SingleParam/lambda_3_4.png}
         \caption{Attempt 4}
         \label{singlelam:4}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{./SingleParam/lambda_3_5.png}
         \caption{Attempt 5}
@@ -191,32 +199,45 @@ For each test we require three simulations. When computing for $\lambda_3$ we ch
     \label{singlelam}
 \end{figure}
 
+For $\lambda_3$ Grando's estimate was 80.436. This was after running the algorithm in a larger interval. Although we have no done this, our data is sufficient to draw conclusions. We are expecting a minimum distance, in other words we expect the graph be a parabola in y; the parameter values.
+\begin{itemize}
+    \item The negative slope of \ref{singlelam:1} and \ref{singlelam:3} suggests the true value is larger than our upper limit of 35. 
+    \item The positive slope of \ref{singlelam:2} and \ref{singlelam:5} suggests the true value is lower than our lower bound of 26. 
+    \item \ref{singlelam:4} suggests the true value is somewhere within our interval of [26,35]. 
+\end{itemize}
+It is clear that not all three can be true as each contridicts the other. This suggests the value of $\lambda_3$ is changing through new attempts.
+
+
+
+
 \begin{figure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
       \centering
       \includegraphics[width=\linewidth]{./SingleParam/xi_3_1.png}
       \caption{Attempt 1}
       \label{singlexi:1}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
       \centering
       \includegraphics[width=\linewidth]{./SingleParam/xi_3_2.png}
       \caption{Attempt 2}
       \label{singlexi:2}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{./SingleParam/xi_3_3.png}
         \caption{Attempt 3}
         \label{singlexi:3}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth} 
+    
+    \centering
+    \begin{subfigure}{.3\textwidth} 
         \centering
         \includegraphics[width=\linewidth]{./SingleParam/xi_3_4.png}
         \caption{Attempt 4}
         \label{singlexi:4}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{./SingleParam/xi_3_5.png}
         \caption{Attempt 5}
@@ -227,32 +248,49 @@ For each test we require three simulations. When computing for $\lambda_3$ we ch
     \label{singlexi}
 \end{figure}
 
+
+For $\xi_3$ Grando's estimate was 0.0027. From our results we can deduce the following:
+\begin{itemize}
+    \item Both \ref{singlexi:1} and \ref{singlexi:3} suggest the true value is around 0.003. 
+    \item \ref{singlexi:2} and \ref{singlelam:4} suggest the true value is between 0.005 and 0.006.
+    \item The negative gradient of \ref{singlexi:5} suggests the true value larger than our upper limit of 0.007.
+\end{itemize}
+Although it seems the value remains within the interval most of the time, it does not remain consistent. Again, as with $\lambda_3$, these changes in estimated value suggest the true value may be changing through new attempts.
+
+
+
+
+
+
+
 \begin{figure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
       \centering
       \includegraphics[width=\linewidth]{./SingleParam/tau_3_1.png}
       \caption{Attempt 1}
       \label{singletau:1}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
       \centering
       \includegraphics[width=\linewidth]{./SingleParam/tau_3_2.png}
       \caption{Attempt 2}
       \label{singletau:2}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{./SingleParam/tau_3_3.png}
         \caption{Attempt 3}
         \label{singletau:3}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth} 
+
+    \centering
+    \begin{subfigure}{.3\textwidth} 
         \centering
         \includegraphics[width=\linewidth]{./SingleParam/tau_3_4.png}
         \caption{Attempt 4}
         \label{singletau:4}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{./SingleParam/tau_3_5.png}
         \caption{Attempt 5}
@@ -263,4 +301,49 @@ For each test we require three simulations. When computing for $\lambda_3$ we ch
     \label{singletau}
 \end{figure}
 
-\section{High Dimenstional Parameter Estimation}
+
+For $\tau_3$ Grando's estimate was 0.0386. From our results we can deduce the following:
+\begin{itemize}
+    \item The positive slope of \ref{singlexi:1} and \ref{singlexi:3} suggest the true value is below our lower bound of 0.07.
+    \item \ref{singletau:2} suggests the true value is around 0.13.
+    \item \ref{singletau:4} suggests the true value is around 0.10.
+    \item The negative slope of \ref{singletau:5} suggests the true value is above our upper limit of 0.2.
+\end{itemize}
+Once again, multiple attempts provide contradicting results. This suggests the true value is chaning with each attempt.
+
+
+\subsection{Adjusted ABC Algorithm}
+
+From all \ref{singlelam}, \ref{singletau} and \ref{singlexi} we have the same indication; the parameter values are changing for new attempts. To justify this we must isolate the cause of this change. Our model requires our nine paramters to be constants. Furthermore, we have controlled the values of each in our testing, thus any change in paramter value must be caused by external factors. The only other factors within the model are the hidden markov paramters. 
+
+Looking closely at our simulation algorithm, one may notice for each attempt the HMM parameters are generated by a uniform random variable and then kept the same for each simulation. In other words, they only change on new attempts. When we estiamte the parameters using ABC, we are conditioning on the paramters values we have preset; in particular the HMM paramters. Since these vary for each attempt, the condition our algorithm is based on varies for each attempt. Thus, we can confirm the model is different for each attempt and the parameters estimates are infact also different for each attempt. 
+We can conclude ABC with the given algorithm has failed to provide parameter estiamtes. The increase in efficiency of the ABC algorithm has allowed for multiple attempts which has highlighted a flaw in the  algorithm itself. 
+
+We can further highlight this issue through an adjustment to the ABC algorithm. We move the generation of HMM paramters to within the iterative process. This forces a new set of HMM paramters for each simulation. Whilst this would not be accurate to the model, this randomisation prevents the method providing parameter estiamtes that fit to a particular set of HMM paramters. We use this for three parameter estiamtion. We increase the number of iterations to 1000, to ensure we can find a pattern if there is one as there is an increase in randomisation. Using the same paramter values as \ref{subsec3param}, computation on the personal desktop took 652.842 seconds.
+
+\begin{figure}
+    \begin{subfigure}{.3\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{./Adj_ABC/lam_3.png}
+      \caption{$\lambda_3$}
+      \label{adj:1}
+    \end{subfigure}
+    \begin{subfigure}{.3\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{./Adj_ABC/xi_3.png}
+      \caption{$\xi_3$}
+      \label{adj:2}
+    \end{subfigure}
+    \begin{subfigure}{.3\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{./Adj_ABC/tau_3.png}
+        \caption{$\tau_3$}
+        \label{adj:3}
+    \end{subfigure}
+
+    \caption{Parameter values plotted against corresponding normalised Euclidean Distance between simulation and data means for simulation calculated using adjusted ABC algorithm}
+    \label{adj}
+\end{figure}
+
+
+As we can see from Figures \ref{adj}, we have a somewhat uniform scatter. This suggests we are unable to find an parameter estimate for our non-HMM paramters without fixing the HMM paramters. Thus we must search for an alternative method of parameter estimation. Our method must support high-dimensional paramter estimation in our current model we have 21 unkowns. 

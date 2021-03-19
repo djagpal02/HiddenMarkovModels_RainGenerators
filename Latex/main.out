@@ -32,11 +32,14 @@
 \BOOKMARK [2][-]{subsection.6.2.2}{Model Fitting}{section.6.2}% 32
 \BOOKMARK [1][-]{section.6.3}{Numerical Results}{chapter.6}% 33
 \BOOKMARK [2][-]{subsection.6.3.1}{Code}{section.6.3}% 34
-\BOOKMARK [2][-]{subsection.6.3.2}{Analysis - Nine Parameter Estimation}{section.6.3}% 35
-\BOOKMARK [2][-]{subsection.6.3.3}{Analysis - Three Parameter Estimation}{section.6.3}% 36
-\BOOKMARK [1][-]{section.6.4}{High Dimenstional Parameter Estimation}{chapter.6}% 37
-\BOOKMARK [0][-]{chapter.7}{a}{}% 38
-\BOOKMARK [0][-]{chapter.8}{HMMs and Rainfall Models}{}% 39
-\BOOKMARK [1][-]{section.8.1}{Extending on Grando's Model}{chapter.8}% 40
-\BOOKMARK [1][-]{section.8.2}{Single State Model}{chapter.8}% 41
-\BOOKMARK [1][-]{section.8.3}{Single State Model Numerical Results}{chapter.8}% 42
+\BOOKMARK [2][-]{subsection.6.3.2}{Results - Nine Parameter Estimation}{section.6.3}% 35
+\BOOKMARK [2][-]{subsection.6.3.3}{Results - Three Parameter Estimation}{section.6.3}% 36
+\BOOKMARK [2][-]{subsection.6.3.4}{Adjusted ABC Algorithm}{section.6.3}% 37
+\BOOKMARK [0][-]{chapter.7}{HMM based Rainfall Models}{}% 38
+\BOOKMARK [1][-]{section.7.1}{Extending on Grando's Model}{chapter.7}% 39
+\BOOKMARK [1][-]{section.7.2}{Single State Model}{chapter.7}% 40
+\BOOKMARK [1][-]{section.7.3}{Single State Model Numerical Results}{chapter.7}% 41
+\BOOKMARK [0][-]{chapter.8}{HMMs based Rainfall Models}{}% 42
+\BOOKMARK [1][-]{section.8.1}{Extending on Grando's Model}{chapter.8}% 43
+\BOOKMARK [1][-]{section.8.2}{Single State Model}{chapter.8}% 44
+\BOOKMARK [1][-]{section.8.3}{Single State Model Numerical Results}{chapter.8}% 45

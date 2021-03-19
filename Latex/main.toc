@@ -68,15 +68,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.3.1}Code}{28}{subsection.6.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.2}Analysis - Nine Parameter Estimation}{28}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.2}Results - Nine Parameter Estimation}{28}{subsection.6.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.3}Analysis - Three Parameter Estimation}{29}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.3}Results - Three Parameter Estimation}{29}{subsection.6.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}High Dimenstional Parameter Estimation}{29}{section.6.4}%
+\contentsline {subsection}{\numberline {6.3.4}Adjusted ABC Algorithm}{31}{subsection.6.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}a}{34}{chapter.7}%
+\contentsline {chapter}{\numberline {7}HMM based Rainfall Models}{34}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}HMMs and Rainfall Models}{35}{chapter.8}%
+\contentsline {section}{\numberline {7.1}Extending on Grando's Model}{34}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Single State Model}{34}{section.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Single State Model Numerical Results}{34}{section.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}HMMs based Rainfall Models}{35}{chapter.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.1}Extending on Grando's Model}{35}{section.8.1}%
 \defcounter {refsection}{0}\relax 
