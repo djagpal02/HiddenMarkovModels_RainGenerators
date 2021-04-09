@@ -1,0 +1,35 @@
+Maximum observation is 743, we set the max observations to 750
+
+we test for the 3 state model
+
+3 attempts with 100000 iterations, calculate the square difference of frequency for each mm of rain and select model with lowest.
+
+we stick with 1000 observations per month to ensure we do not reach proabilities for alpha and beta that are too small for the computer to compute.
+
+
+3 attempts, all 12 months are computed simulationly via seperate threads
+
+attempt1 time - 1074.76 seconds
+attempt2 time - 1081.38 seconds 
+attempt3 time - 1076.16 seconds
+
+
+
+out of sample test - using data rows 0-1000 for learning and 1000-2000 for testing
+
+to improve results further, one can increase the number of attempts as each they converge to local optima and there may be a more optimum optima available. This should inturn provide a better B matrix, which should inturn allow for better simulation
+
+
+Month - Attempt
+0 - 1
+1 - 3
+2 - 2
+3 - 1
+4 - 1
+5 - 1
+6 - 1
+7 - 2
+8 - 2
+9 - 3
+10 - 3
+11 - 2

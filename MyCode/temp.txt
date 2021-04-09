@@ -1,0 +1,1 @@
+g++ -pthread Baum_Welch.cpp bw.h bw.cpp HMM_sim.cpp -o un
