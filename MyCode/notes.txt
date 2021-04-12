@@ -21,7 +21,7 @@ to improve results further, one can increase the number of attempts as each they
 
 
 Month - Attempt
-0 - 1
+0 - 1 
 1 - 3
 2 - 2
 3 - 1
@@ -33,3 +33,5 @@ Month - Attempt
 9 - 3
 10 - 3
 11 - 2
+
+month 0 - lambda 1 = 0.62, tau 1 = 0.05, lamda 2 = 0.92, tau 2 = 0.25, lambda 3 = 0.76, tau 3 = 0.06

@@ -15,7 +15,7 @@ void grando_generator(int days,int states,int sites,double delta[],double gamma[
 
     // Set seed for random numbers - will call from main function so not needed within here
     //srand((unsigned int)time(NULL));
-    std::default_random_engine generator;
+    std::default_random_engine generator(std::random_device{}());
 
     // Set vectors containing co-ordinates
     int east[sites], north[sites], height[sites];

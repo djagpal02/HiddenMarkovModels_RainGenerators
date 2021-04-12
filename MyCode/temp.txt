@@ -1,1 +1,3 @@
 g++ -pthread Baum_Welch.cpp bw.h bw.cpp HMM_sim.cpp -o un
+
+g++ pe.cpp pe.h compare.cpp BSample.cpp MSample.cpp -o pe
