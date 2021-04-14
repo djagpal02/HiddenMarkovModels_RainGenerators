@@ -25,21 +25,44 @@
 \BOOKMARK [0][-]{chapter.5}{Model Selection / Parameter Estimation}{}% 25
 \BOOKMARK [1][-]{section.5.1}{Maximum Liklihood Estimators}{chapter.5}% 26
 \BOOKMARK [1][-]{section.5.2}{Approximate Bayesian Computation}{chapter.5}% 27
-\BOOKMARK [0][-]{chapter.6}{Spacio-Temporal Rainfall Models}{}% 28
-\BOOKMARK [1][-]{section.6.1}{Coppertwait}{chapter.6}% 29
-\BOOKMARK [1][-]{section.6.2}{Grando - HMM Based Model}{chapter.6}% 30
-\BOOKMARK [2][-]{subsection.6.2.1}{Model}{section.6.2}% 31
-\BOOKMARK [2][-]{subsection.6.2.2}{Model Fitting}{section.6.2}% 32
-\BOOKMARK [1][-]{section.6.3}{Numerical Results}{chapter.6}% 33
-\BOOKMARK [2][-]{subsection.6.3.1}{Code}{section.6.3}% 34
-\BOOKMARK [2][-]{subsection.6.3.2}{Results - Nine Parameter Estimation}{section.6.3}% 35
-\BOOKMARK [2][-]{subsection.6.3.3}{Results - Three Parameter Estimation}{section.6.3}% 36
-\BOOKMARK [2][-]{subsection.6.3.4}{Adjusted ABC Algorithm}{section.6.3}% 37
-\BOOKMARK [0][-]{chapter.7}{HMM based Rainfall Models}{}% 38
-\BOOKMARK [1][-]{section.7.1}{Extending on Grando's Model}{chapter.7}% 39
-\BOOKMARK [1][-]{section.7.2}{Single State Model}{chapter.7}% 40
-\BOOKMARK [1][-]{section.7.3}{Single State Model Numerical Results}{chapter.7}% 41
-\BOOKMARK [0][-]{chapter.8}{HMMs based Rainfall Models}{}% 42
-\BOOKMARK [1][-]{section.8.1}{Extending on Grando's Model}{chapter.8}% 43
-\BOOKMARK [1][-]{section.8.2}{Single State Model}{chapter.8}% 44
-\BOOKMARK [1][-]{section.8.3}{Single State Model Numerical Results}{chapter.8}% 45
+\BOOKMARK [1][-]{section.5.3}{Kolmogorov\205Smirnov test}{chapter.5}% 28
+\BOOKMARK [0][-]{chapter.6}{Replicating Existing Rainfall Models}{}% 29
+\BOOKMARK [1][-]{section.6.1}{Coppertwait}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.2}{Grando - HMM Based Model}{chapter.6}% 31
+\BOOKMARK [2][-]{subsection.6.2.1}{Model}{section.6.2}% 32
+\BOOKMARK [2][-]{subsection.6.2.2}{Model Fitting}{section.6.2}% 33
+\BOOKMARK [1][-]{section.6.3}{Numerical Results}{chapter.6}% 34
+\BOOKMARK [2][-]{subsection.6.3.1}{Code}{section.6.3}% 35
+\BOOKMARK [2][-]{subsection.6.3.2}{Results - Nine Parameter Estimation}{section.6.3}% 36
+\BOOKMARK [2][-]{subsection.6.3.3}{Results - Three Parameter Estimation}{section.6.3}% 37
+\BOOKMARK [2][-]{subsection.6.3.4}{Adjusted ABC Algorithm}{section.6.3}% 38
+\BOOKMARK [0][-]{chapter.7}{Extending HMM based Rainfall Models}{}% 39
+\BOOKMARK [1][-]{section.7.1}{Disk Structure}{chapter.7}% 40
+\BOOKMARK [1][-]{section.7.2}{Split monthly}{chapter.7}% 41
+\BOOKMARK [1][-]{section.7.3}{High dimensionality}{chapter.7}% 42
+\BOOKMARK [0][-]{chapter.8}{Simple HMM Rainfall Model}{}% 43
+\BOOKMARK [1][-]{section.8.1}{Applying Baum Welch to Rainfall data}{chapter.8}% 44
+\BOOKMARK [2][-]{subsection.8.1.1}{Methodology}{section.8.1}% 45
+\BOOKMARK [2][-]{subsection.8.1.2}{Local optimum vs global Optimum}{section.8.1}% 46
+\BOOKMARK [1][-]{section.8.2}{Analysis}{chapter.8}% 47
+\BOOKMARK [2][-]{subsection.8.2.1}{Convergence Log}{section.8.2}% 48
+\BOOKMARK [2][-]{subsection.8.2.2}{Selecting the optimum optima}{section.8.2}% 49
+\BOOKMARK [2][-]{subsection.8.2.3}{Results}{section.8.2}% 50
+\BOOKMARK [0][-]{chapter.9}{Generalising the Observation Matrix}{}% 51
+\BOOKMARK [1][-]{section.9.1}{Generalising the model}{chapter.9}% 52
+\BOOKMARK [1][-]{section.9.2}{Finding a function for Observation Matrix}{chapter.9}% 53
+\BOOKMARK [1][-]{section.9.3}{Parameter Estimation}{chapter.9}% 54
+\BOOKMARK [2][-]{subsection.9.3.1}{Methodology}{section.9.3}% 55
+\BOOKMARK [2][-]{subsection.9.3.2}{Results}{section.9.3}% 56
+\BOOKMARK [0][-]{chapter.10}{Results}{}% 57
+\BOOKMARK [1][-]{section.10.1}{Our Datasets}{chapter.10}% 58
+\BOOKMARK [2][-]{subsection.10.1.1}{Train/Test Split}{section.10.1}% 59
+\BOOKMARK [2][-]{subsection.10.1.2}{HMM only Simulation}{section.10.1}% 60
+\BOOKMARK [2][-]{subsection.10.1.3}{Model Simulation}{section.10.1}% 61
+\BOOKMARK [1][-]{section.10.2}{Results}{chapter.10}% 62
+\BOOKMARK [2][-]{subsection.10.2.1}{CDFs}{section.10.2}% 63
+\BOOKMARK [2][-]{subsection.10.2.2}{Kologmorov-smirnof Tests}{section.10.2}% 64
+\BOOKMARK [0][-]{chapter.11}{Future Research}{}% 65
+\BOOKMARK [1][-]{section.11.1}{HMM only}{chapter.11}% 66
+\BOOKMARK [1][-]{section.11.2}{Our Model}{chapter.11}% 67
+\BOOKMARK [1][-]{section.11.3}{HMMs for rainfall generation}{chapter.11}% 68

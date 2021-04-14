@@ -34,4 +34,4 @@ Month - Attempt
 10 - 3
 11 - 2
 
-month 0 - lambda 1 = 0.62, tau 1 = 0.05, lamda 2 = 0.92, tau 2 = 0.25, lambda 3 = 0.76, tau 3 = 0.06
+

@@ -1,0 +1,65 @@
+Dissertation Work log
+
+Replicating Grando
+- All Param
+- Single Param
+***********
+My Model
+-Adapting Grandos model
+
+Data Prep
+-Splitting into Months
+-Focusing on only one site
+-Discreteising observation data
+******************
+Baum Welch
+- Calculate Matrix A B and vector Pi through iteration on recorded data
+- Simulate using new parameters
+(Works for all months - split over 12 threads)
+- 3 attempts
+
+Analysis - Jupyter notebooks
+- Convergence log - see if it converges or not
+- square difference between frequences in simulation and training data
+- Choose attempt with smallest difference
+- Hist with 0 comparison
+- Hist without 0 comparison
+
+*********
+
+Parameter Estimation
+- For given min and max lambda and tau, simulate rainfall, calculate frequencies and find absolute difference ebtween this and freq in row given by matrix B.
+- Analysis done in R
+- Plot 3D graph of lambda, tau and residual, look for minimum
+- Repeat, optimising min and max lam and tau each time 
+- Look for hyperbola in tau-residual and lam-residual graphs and find minimum. 
+- Record minimum values as parameter estimates
+
+Model Generation
+- Simply go through HMM and other model features using parameter estimates found in prev.
+
+
+******
+
+Distribution Matching
+- Kologmorov -smirnof test for matching distributions
+- Analysis done on R file
+- For each month find ks p value for training data - HMM simulation , training data - Model Simulation, Test data - HMM simulation and Test data - Model simulation
+- Plot graphs of ecdf for all 3 datasets
+
+
+conclusion
+-HMMs have significant potential in describing rainfall patterns. For all K-S tests on training data we had insufficient evidence to reject the null hypothesis; the two datasets come from the same distribution. For the test set ( at 5% significance) we reject for only 4 out of 12 months. Considering the model parameters were selected from only 3 random starts of Baum-Welch, I am convinced that through an increased number of attempts and thus finding a more optimum local optimum we can find superior performance.
+-Deriving the Cowpertwait/Grando parameters from the B matrix was not successful. We rejected the null hypothesis for every test, both training and test data.  
+-Future work could entail increasing the number of attempts as mentioned in (1). Although our chosen model did not produce the desired result, finding a function of random variables that produce the rows of the B matrix would allow for simpler simulation and thus may be an area of interest. 
+
+- Could try a model with higher number of states
+
+
+
+
+
+
+
+
+
