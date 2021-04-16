@@ -42,7 +42,7 @@
 \BOOKMARK [1][-]{section.7.3}{High dimensionality}{chapter.7}% 42
 \BOOKMARK [0][-]{chapter.8}{Simple HMM Rainfall Model}{}% 43
 \BOOKMARK [1][-]{section.8.1}{Applying Baum Welch to Rainfall data}{chapter.8}% 44
-\BOOKMARK [2][-]{subsection.8.1.1}{Methodology}{section.8.1}% 45
+\BOOKMARK [2][-]{subsection.8.1.1}{Building the Observation Matrix}{section.8.1}% 45
 \BOOKMARK [2][-]{subsection.8.1.2}{Local optimum vs global Optimum}{section.8.1}% 46
 \BOOKMARK [1][-]{section.8.2}{Analysis}{chapter.8}% 47
 \BOOKMARK [2][-]{subsection.8.2.1}{Convergence Log}{section.8.2}% 48
@@ -56,13 +56,7 @@
 \BOOKMARK [2][-]{subsection.9.3.2}{Results}{section.9.3}% 56
 \BOOKMARK [0][-]{chapter.10}{Results}{}% 57
 \BOOKMARK [1][-]{section.10.1}{Our Datasets}{chapter.10}% 58
-\BOOKMARK [2][-]{subsection.10.1.1}{Train/Test Split}{section.10.1}% 59
-\BOOKMARK [2][-]{subsection.10.1.2}{HMM only Simulation}{section.10.1}% 60
-\BOOKMARK [2][-]{subsection.10.1.3}{Model Simulation}{section.10.1}% 61
-\BOOKMARK [1][-]{section.10.2}{Results}{chapter.10}% 62
-\BOOKMARK [2][-]{subsection.10.2.1}{CDFs}{section.10.2}% 63
-\BOOKMARK [2][-]{subsection.10.2.2}{Kologmorov-smirnof Tests}{section.10.2}% 64
-\BOOKMARK [0][-]{chapter.11}{Future Research}{}% 65
-\BOOKMARK [1][-]{section.11.1}{HMM only}{chapter.11}% 66
-\BOOKMARK [1][-]{section.11.2}{Our Model}{chapter.11}% 67
-\BOOKMARK [1][-]{section.11.3}{HMMs for rainfall generation}{chapter.11}% 68
+\BOOKMARK [1][-]{section.10.2}{Results}{chapter.10}% 59
+\BOOKMARK [2][-]{subsection.10.2.1}{CDFs}{section.10.2}% 60
+\BOOKMARK [2][-]{subsection.10.2.2}{Kologmorov-smirnof Tests}{section.10.2}% 61
+\BOOKMARK [0][-]{chapter.11}{Future Research}{}% 62

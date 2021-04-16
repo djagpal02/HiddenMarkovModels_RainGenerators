@@ -15,7 +15,7 @@ attempt3 time - 1076.16 seconds
 
 
 
-out of sample test - using data rows 0-1000 for learning and 1000-2000 for testing
+out of sample test - using data rows 0-1000 for learning and 1000+ for testing
 
 to improve results further, one can increase the number of attempts as each they converge to local optima and there may be a more optimum optima available. This should inturn provide a better B matrix, which should inturn allow for better simulation
 

@@ -1,5 +1,7 @@
-\section{HMM only}
+Our testing in chapter 10 **ref** suggests the HMM on its own does have potential.For this we used only 3 random starts of Baum-Welch. It is highly likely that increasing this number would increase the likelihood of achieving a better fit by finidng a superior optima.  
 
-\section{Our Model}
+Our generalised model was not succesful. However if we can find a function of random variables that fits the rows of the observation matrix perfectly, then hypothetically we can expect to have matching performance to that of the HMM only model. 
 
-\section{HMMs for rainfall generation}
+We tested a three state model, however this was an arbritaray choice. For future research, one may consider increasing this number as it may allow for a superior fit to the data. This, of course, must be done after careful considerations of computational cost as the algorithms used in testing are extremly sensitive to increase in value of this paramter.
+
+To conclude, can hidden markov models be used to simulate rainfall? From our testing we have insufficient evidence to suggest not.

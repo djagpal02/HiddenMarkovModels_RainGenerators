@@ -1,7 +1,7 @@
 library(stats)
 
 # Month data
-m = month11[[1]]
+m = month0[[1]]
 
 x1 = m[1:1000]
 x2 = m[1001:2138] 

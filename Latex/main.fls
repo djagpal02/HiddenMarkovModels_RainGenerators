@@ -430,10 +430,64 @@ INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp7.tex
 INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp7.tex
 INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp8.tex
 INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp8.tex
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/HMM_Only/function.png
+INPUT ./images/HMM_Only/function.png
+INPUT ./images/HMM_Only/function.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/HMM_Only/convLog.png
+INPUT ./images/HMM_Only/convLog.png
+INPUT ./images/HMM_Only/convLog.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/HMM_Only/0_freq_data.png
+INPUT ./images/HMM_Only/0_freq_data.png
+INPUT ./images/HMM_Only/0_freq_data.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/HMM_Only/0_freq_sim.png
+INPUT ./images/HMM_Only/0_freq_sim.png
+INPUT ./images/HMM_Only/0_freq_sim.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/HMM_Only/_freq_data.png
+INPUT ./images/HMM_Only/_freq_data.png
+INPUT ./images/HMM_Only/_freq_data.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/HMM_Only/_freq_sim.png
+INPUT ./images/HMM_Only/_freq_sim.png
+INPUT ./images/HMM_Only/_freq_sim.png
 INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp9.tex
 INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp9.tex
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/lam_1.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/tau_1.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/lam_2.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/tau_2.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/lam_3.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/tau_3.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png
+INPUT ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png
 INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp10.tex
 INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp10.tex
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/CDF/recorded.png
+INPUT ./images/CDF/recorded.png
+INPUT ./images/CDF/recorded.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/CDF/HMM.png
+INPUT ./images/CDF/HMM.png
+INPUT ./images/CDF/HMM.png
+INPUT /home/dil/Desktop/MMathProject/Latex/./images/CDF/model.png
+INPUT ./images/CDF/model.png
+INPUT ./images/CDF/model.png
 INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp11.tex
 INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp11.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
