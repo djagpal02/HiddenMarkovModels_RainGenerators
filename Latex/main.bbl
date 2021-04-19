@@ -19,7 +19,7 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
-    \entry{baum1972inequality}{article}{}
+    \entry{Baum}{article}{}
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{1}{}{%
@@ -43,7 +43,7 @@
       \field{labeltitlesource}{title}
       \field{title}{An inequality and associated maximization technique in statistical estimation for probabilistic functions of Markov processes}
     \endentry
-    \entry{baum1967inequality}{article}{}
+    \entry{Baum1967}{article}{}
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{2}{}{%
@@ -83,7 +83,7 @@
       \field{pages}{360\bibrangedash 363}
       \range{pages}{4}
     \endentry
-    \entry{baum1966}{article}{}
+    \entry{Baum1966}{article}{}
       \name{author}{2}{}{%
         {{un=2,uniquepart=given,hash=2afdffde7bc0ec8fe20955d90c4f3922}{%
            family={Baum},
@@ -131,7 +131,371 @@
       \verb https://doi.org/10.1214/aoms/1177699147
       \endverb
     \endentry
-    \entry{dempster1977maximum}{article}{}
+    \entry{Cowpertwait2009a}{article}{}
+      \name{author}{1}{}{%
+        {{un=2,uniquepart=given,hash=a0858c190a7b9cd620440aff090a8da0}{%
+           family={Cowpertwait},
+           familyi={C\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=2}}%
+      }
+      \strng{namehash}{a0858c190a7b9cd620440aff090a8da0}
+      \strng{fullhash}{a0858c190a7b9cd620440aff090a8da0}
+      \strng{bibnamehash}{a0858c190a7b9cd620440aff090a8da0}
+      \strng{authorbibnamehash}{a0858c190a7b9cd620440aff090a8da0}
+      \strng{authornamehash}{a0858c190a7b9cd620440aff090a8da0}
+      \strng{authorfullhash}{a0858c190a7b9cd620440aff090a8da0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ANZIAM Journal}
+      \field{title}{A Neyman-Scott model with continuous distributions of storm types}
+      \field{volume}{51}
+      \field{year}{2009}
+      \true{nocite}
+      \field{pages}{C97\bibrangedash C108}
+      \range{pages}{-1}
+    \endentry
+    \entry{Cowpertwait2007}{article}{}
+      \name{author}{3}{}{%
+        {{un=2,uniquepart=given,hash=a0858c190a7b9cd620440aff090a8da0}{%
+           family={Cowpertwait},
+           familyi={C\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=9e9a6becc4d757c20886fa08729c7319}{%
+           family={Isham},
+           familyi={I\bibinitperiod},
+           given={Valerie},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1def878f2ba50c698ac52a62fe92c0cb}{%
+           family={Onof},
+           familyi={O\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society London}%
+      }
+      \strng{namehash}{700ae1b7c1e5a1158634a1a651247458}
+      \strng{fullhash}{700ae1b7c1e5a1158634a1a651247458}
+      \strng{bibnamehash}{700ae1b7c1e5a1158634a1a651247458}
+      \strng{authorbibnamehash}{700ae1b7c1e5a1158634a1a651247458}
+      \strng{authornamehash}{700ae1b7c1e5a1158634a1a651247458}
+      \strng{authorfullhash}{700ae1b7c1e5a1158634a1a651247458}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{number}{2086}
+      \field{title}{Point process models of rainfall: developments for fine-scale structure}
+      \field{volume}{463}
+      \field{year}{2007}
+      \true{nocite}
+      \field{pages}{2569\bibrangedash 2587}
+      \range{pages}{19}
+    \endentry
+    \entry{Cowpertwait2009}{article}{}
+      \name{author}{3}{}{%
+        {{un=2,uniquepart=given,hash=a0858c190a7b9cd620440aff090a8da0}{%
+           family={Cowpertwait},
+           familyi={C\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=e4ec1cded0e393dfe9199694471e421c}{%
+           family={Salinger},
+           familyi={S\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c8a45a4f354bcd46ea0241da7df095a}{%
+           family={Mullan},
+           familyi={M\bibinitperiod},
+           given={Brett},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{b5432668a05aac6160c79817dfb80c64}
+      \strng{fullhash}{b5432668a05aac6160c79817dfb80c64}
+      \strng{bibnamehash}{b5432668a05aac6160c79817dfb80c64}
+      \strng{authorbibnamehash}{b5432668a05aac6160c79817dfb80c64}
+      \strng{authornamehash}{b5432668a05aac6160c79817dfb80c64}
+      \strng{authorfullhash}{b5432668a05aac6160c79817dfb80c64}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Hydrology (New Zealand)}
+      \field{title}{A spatial-temporal stochastic rainfall model for Auckland City: Scenarios for current and future climates}
+      \field{year}{2009}
+      \true{nocite}
+      \field{pages}{95\bibrangedash 109}
+      \range{pages}{15}
+    \endentry
+    \entry{Cowpertwait1994}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=a685c79aafd725046e956a4dc8c69d2a}{%
+           family={Cowpertwait},
+           familyi={C\bibinitperiod},
+           given={Paul\bibnamedelima SP},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society London}%
+      }
+      \strng{namehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{fullhash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{bibnamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authorbibnamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authornamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authorfullhash}{a685c79aafd725046e956a4dc8c69d2a}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A: Mathematical and Physical Sciences}
+      \field{number}{1929}
+      \field{title}{A generalized point process model for rainfall}
+      \field{volume}{447}
+      \field{year}{1994}
+      \true{nocite}
+      \field{pages}{23\bibrangedash 37}
+      \range{pages}{15}
+    \endentry
+    \entry{Cowpertwait1995}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=a685c79aafd725046e956a4dc8c69d2a}{%
+           family={Cowpertwait},
+           familyi={C\bibinitperiod},
+           given={Paul\bibnamedelima SP},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society London}%
+      }
+      \strng{namehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{fullhash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{bibnamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authorbibnamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authornamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authorfullhash}{a685c79aafd725046e956a4dc8c69d2a}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A: Mathematical and Physical Sciences}
+      \field{number}{1938}
+      \field{title}{A generalized spatial-temporal model of rainfall based on a clustered point process}
+      \field{volume}{450}
+      \field{year}{1995}
+      \true{nocite}
+      \field{pages}{163\bibrangedash 175}
+      \range{pages}{13}
+    \endentry
+    \entry{Cowpertwait1998}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=a685c79aafd725046e956a4dc8c69d2a}{%
+           family={Cowpertwait},
+           familyi={C\bibinitperiod},
+           given={Paul\bibnamedelima SP},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{fullhash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{bibnamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authorbibnamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authornamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authorfullhash}{a685c79aafd725046e956a4dc8c69d2a}
+      \field{extraname}{3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences}
+      \field{number}{1971}
+      \field{title}{A Poisson-cluster model of rainfall: some high-order moments and extreme values}
+      \field{volume}{454}
+      \field{year}{1998}
+      \true{nocite}
+      \field{pages}{885\bibrangedash 898}
+      \range{pages}{14}
+    \endentry
+    \entry{Cowpertwait2006}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=a685c79aafd725046e956a4dc8c69d2a}{%
+           family={Cowpertwait},
+           familyi={C\bibinitperiod},
+           given={Paul\bibnamedelima SP},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{fullhash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{bibnamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authorbibnamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authornamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authorfullhash}{a685c79aafd725046e956a4dc8c69d2a}
+      \field{extraname}{4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Hydrology}
+      \field{number}{3-4}
+      \field{title}{A spatial--temporal point process model of rainfall for the Thames catchment, UK}
+      \field{volume}{330}
+      \field{year}{2006}
+      \true{nocite}
+      \field{pages}{586\bibrangedash 595}
+      \range{pages}{10}
+    \endentry
+    \entry{Cowpertwait2010}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=a685c79aafd725046e956a4dc8c69d2a}{%
+           family={Cowpertwait},
+           familyi={C\bibinitperiod},
+           given={Paul\bibnamedelima SP},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{fullhash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{bibnamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authorbibnamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authornamehash}{a685c79aafd725046e956a4dc8c69d2a}
+      \strng{authorfullhash}{a685c79aafd725046e956a4dc8c69d2a}
+      \field{extraname}{5}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Water Resources Research}
+      \field{number}{12}
+      \field{title}{A spatial-temporal point process model with a continuous distribution of storm types}
+      \field{volume}{46}
+      \field{year}{2010}
+      \true{nocite}
+    \endentry
+    \entry{Cowpertwait2002}{article}{}
+      \name{author}{3}{}{%
+        {{un=2,uniquepart=given,hash=2c4682e2660256f116fd8975d51c23b1}{%
+           family={Cowpertwait},
+           familyi={C\bibinitperiod},
+           given={PSP},
+           giveni={P\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=a6203ad99b6804c973154429f0b40278}{%
+           family={Kilsby},
+           familyi={K\bibinitperiod},
+           given={CG},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f72ff21a91eac0bd09818420b587a19}{%
+           family={O'Connell},
+           familyi={O\bibinitperiod},
+           given={PE},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{fafff5a0f22fb4714d09b0c09d317f1c}
+      \strng{fullhash}{fafff5a0f22fb4714d09b0c09d317f1c}
+      \strng{bibnamehash}{fafff5a0f22fb4714d09b0c09d317f1c}
+      \strng{authorbibnamehash}{fafff5a0f22fb4714d09b0c09d317f1c}
+      \strng{authornamehash}{fafff5a0f22fb4714d09b0c09d317f1c}
+      \strng{authorfullhash}{fafff5a0f22fb4714d09b0c09d317f1c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Water Resources Research}
+      \field{number}{8}
+      \field{title}{A space-time Neyman-Scott model of rainfall: Empirical analysis of extremes}
+      \field{volume}{38}
+      \field{year}{2002}
+      \true{nocite}
+      \field{pages}{6\bibrangedash 1}
+      \range{pages}{-4}
+    \endentry
+    \entry{Daley2007}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1ce92f780a283d0f9a62868a2bd2db7a}{%
+           family={Daley},
+           familyi={D\bibinitperiod},
+           given={Daryl\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3947448e3214768478f859d354a85f05}{%
+           family={Vere-Jones},
+           familyi={V\bibinithyphendelim J\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{49638e48a0049c9c5dadda2e70d0e8a2}
+      \strng{fullhash}{49638e48a0049c9c5dadda2e70d0e8a2}
+      \strng{bibnamehash}{49638e48a0049c9c5dadda2e70d0e8a2}
+      \strng{authorbibnamehash}{49638e48a0049c9c5dadda2e70d0e8a2}
+      \strng{authornamehash}{49638e48a0049c9c5dadda2e70d0e8a2}
+      \strng{authorfullhash}{49638e48a0049c9c5dadda2e70d0e8a2}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An introduction to the theory of point processes: volume II: general theory and structure}
+      \field{year}{2007}
+      \true{nocite}
+    \endentry
+    \entry{Dempster1977}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=163970f51407af0c8008e39a2f105946}{%
            family={Dempster},
@@ -176,7 +540,7 @@
       \field{pages}{1\bibrangedash 22}
       \range{pages}{22}
     \endentry
-    \entry{forney1973viterbi}{article}{}
+    \entry{Forney1973}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f9968f60540ad6ce88fc28b99b77b602}{%
            family={Forney},
@@ -208,58 +572,56 @@
       \field{pages}{268\bibrangedash 278}
       \range{pages}{11}
     \endentry
-    \entry{grimmett2020probability}{book}{}
-      \true{moreauthor}
-      \true{morelabelname}
+    \entry{Grando2019}{thesis}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f7ee7b6c321faec5e8b88377509b4d89}{%
-           family={GRIMMETT},
+        {{un=0,uniquepart=base,hash=a58e31b2eb0a0d6f115bb0a9adbd4505}{%
+           family={Grando},
            familyi={G\bibinitperiod},
-           given={GEOFFREY\bibnamedelima STIRZAKER},
-           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Debora},
+           giveni={D\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Oxford university press}%
-      }
-      \strng{namehash}{453b6066f7451b3ca58d73b89de968a9}
-      \strng{fullhash}{453b6066f7451b3ca58d73b89de968a9}
-      \strng{bibnamehash}{453b6066f7451b3ca58d73b89de968a9}
-      \strng{authorbibnamehash}{453b6066f7451b3ca58d73b89de968a9}
-      \strng{authornamehash}{453b6066f7451b3ca58d73b89de968a9}
-      \strng{authorfullhash}{453b6066f7451b3ca58d73b89de968a9}
+      \strng{namehash}{a58e31b2eb0a0d6f115bb0a9adbd4505}
+      \strng{fullhash}{a58e31b2eb0a0d6f115bb0a9adbd4505}
+      \strng{bibnamehash}{a58e31b2eb0a0d6f115bb0a9adbd4505}
+      \strng{authorbibnamehash}{a58e31b2eb0a0d6f115bb0a9adbd4505}
+      \strng{authornamehash}{a58e31b2eb0a0d6f115bb0a9adbd4505}
+      \strng{authorfullhash}{a58e31b2eb0a0d6f115bb0a9adbd4505}
       \field{sortinit}{G}
       \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Probability and random processes}
-      \field{year}{2020}
+      \field{title}{Data-driven models and random generators of rainfall}
+      \field{type}{mathesis}
+      \field{year}{2019}
+      \true{nocite}
     \endentry
-    \entry{markov2006example}{article}{}
+    \entry{Markov}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=fd81ee830feeb596ef2d3e2bfa7501ec}{%
+        {{un=0,uniquepart=base,hash=be36cd6d6d1c62ca45f7b81fd30ff01c}{%
            family={Markov},
            familyi={M\bibinitperiod},
-           given={Andre{ı̆}},
+           given={Andre},
            giveni={A\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{fd81ee830feeb596ef2d3e2bfa7501ec}
-      \strng{fullhash}{fd81ee830feeb596ef2d3e2bfa7501ec}
-      \strng{bibnamehash}{fd81ee830feeb596ef2d3e2bfa7501ec}
-      \strng{authorbibnamehash}{fd81ee830feeb596ef2d3e2bfa7501ec}
-      \strng{authornamehash}{fd81ee830feeb596ef2d3e2bfa7501ec}
-      \strng{authorfullhash}{fd81ee830feeb596ef2d3e2bfa7501ec}
+      \strng{namehash}{be36cd6d6d1c62ca45f7b81fd30ff01c}
+      \strng{fullhash}{be36cd6d6d1c62ca45f7b81fd30ff01c}
+      \strng{bibnamehash}{be36cd6d6d1c62ca45f7b81fd30ff01c}
+      \strng{authorbibnamehash}{be36cd6d6d1c62ca45f7b81fd30ff01c}
+      \strng{authornamehash}{be36cd6d6d1c62ca45f7b81fd30ff01c}
+      \strng{authorfullhash}{be36cd6d6d1c62ca45f7b81fd30ff01c}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{An example of statistical investigation of the text Eugene Onegin concerning the connection of samples in chains}
+      \true{nocite}
     \endentry
-    \entry{1165342}{article}{}
+    \entry{Rabiner1986}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=33e22f6bc9c087b12ae5ceda19cf93ad}{%
            family={{Rabiner}},
@@ -297,7 +659,116 @@
       \verb 10.1109/MASSP.1986.1165342
       \endverb
     \endentry
-    \entry{viterbi1967error}{article}{}
+    \entry{Ross2004}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bf5f2440b50cd085a0515d2dd4c3cf92}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Sheldon\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{bf5f2440b50cd085a0515d2dd4c3cf92}
+      \strng{fullhash}{bf5f2440b50cd085a0515d2dd4c3cf92}
+      \strng{bibnamehash}{bf5f2440b50cd085a0515d2dd4c3cf92}
+      \strng{authorbibnamehash}{bf5f2440b50cd085a0515d2dd4c3cf92}
+      \strng{authornamehash}{bf5f2440b50cd085a0515d2dd4c3cf92}
+      \strng{authorfullhash}{bf5f2440b50cd085a0515d2dd4c3cf92}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to probability and statistics for engineers and scientists}
+      \field{year}{2004}
+    \endentry
+    \entry{Sharma2020}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=61912a7e229bef9c9fe9b036c648aad5}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{61912a7e229bef9c9fe9b036c648aad5}
+      \strng{fullhash}{61912a7e229bef9c9fe9b036c648aad5}
+      \strng{bibnamehash}{61912a7e229bef9c9fe9b036c648aad5}
+      \strng{authorbibnamehash}{61912a7e229bef9c9fe9b036c648aad5}
+      \strng{authornamehash}{61912a7e229bef9c9fe9b036c648aad5}
+      \strng{authorfullhash}{61912a7e229bef9c9fe9b036c648aad5}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Hidden Markov Models And Their Applications In Stock Market Prediction}
+      \field{type}{mathesis}
+      \field{year}{2020}
+      \true{nocite}
+    \endentry
+    \entry{Toni2009}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=199d095d48e61cde3962f614838314a2}{%
+           family={Toni},
+           familyi={T\bibinitperiod},
+           given={Tina},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=629ebac104654770f464d8f62aafb5ef}{%
+           family={Welch},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e62b34039f11204bf0785f1643b6782}{%
+           family={Strelkowa},
+           familyi={S\bibinitperiod},
+           given={Natalja},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=898508ce70ce6ff85e8bc209c287f086}{%
+           family={Ipsen},
+           familyi={I\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd8a5f01d0ee7eda8e6e1d48b37dac83}{%
+           family={Stumpf},
+           familyi={S\bibinitperiod},
+           given={Michael\bibnamedelima PH},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society London}%
+      }
+      \strng{namehash}{c4965ec409bdcbc6dd7d89aea07ea5e6}
+      \strng{fullhash}{3c51af1af83b8a418c1a0a92f182a7f6}
+      \strng{bibnamehash}{c4965ec409bdcbc6dd7d89aea07ea5e6}
+      \strng{authorbibnamehash}{c4965ec409bdcbc6dd7d89aea07ea5e6}
+      \strng{authornamehash}{c4965ec409bdcbc6dd7d89aea07ea5e6}
+      \strng{authorfullhash}{3c51af1af83b8a418c1a0a92f182a7f6}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Royal Society Interface}
+      \field{number}{31}
+      \field{title}{Approximate Bayesian computation scheme for parameter inference and model selection in dynamical systems}
+      \field{volume}{6}
+      \field{year}{2009}
+      \field{pages}{187\bibrangedash 202}
+      \range{pages}{16}
+    \endentry
+    \entry{Viterbi1967}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f37f074a31ffeb5806ff996411f6a838}{%
            family={Viterbi},

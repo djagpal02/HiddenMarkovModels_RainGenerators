@@ -1,10 +1,10 @@
-PWD /home/dil/Desktop/MMathProject/Latex
+PWD /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/dil/Desktop/MMathProject/Latex/main.tex
-OUTPUT /home/dil/Desktop/MMathProject/Latex/main.log
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.tex
+OUTPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -238,9 +238,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT /home/dil/Desktop/MMathProject/Latex/main.aux
-INPUT /home/dil/Desktop/MMathProject/Latex/main.aux
-OUTPUT /home/dil/Desktop/MMathProject/Latex/main.aux
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.aux
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.aux
+OUTPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -255,20 +255,20 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /home/dil/Desktop/MMathProject/Latex/main.out
-INPUT /home/dil/Desktop/MMathProject/Latex/main.out
-INPUT /home/dil/Desktop/MMathProject/Latex/main.out
-INPUT /home/dil/Desktop/MMathProject/Latex/main.out
-OUTPUT /home/dil/Desktop/MMathProject/Latex/main.pdf
-INPUT /home/dil/Desktop/MMathProject/Latex/main.out
-INPUT /home/dil/Desktop/MMathProject/Latex/main.out
-OUTPUT /home/dil/Desktop/MMathProject/Latex/main.out
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.out
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.out
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.out
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.out
+OUTPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.pdf
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.out
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.out
+OUTPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.out
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-OUTPUT /home/dil/Desktop/MMathProject/Latex/main.bcf
-INPUT /home/dil/Desktop/MMathProject/Latex/main.bbl
-INPUT /home/dil/Desktop/MMathProject/Latex/main.bbl
-INPUT /home/dil/Desktop/MMathProject/Latex/main.bbl
+OUTPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.bcf
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.bbl
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.bbl
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -293,8 +293,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy7.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /home/dil/Desktop/MMathProject/Latex/main.toc
-INPUT /home/dil/Desktop/MMathProject/Latex/main.toc
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/Abstract.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/Abstract.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.toc
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -316,196 +318,46 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
-OUTPUT /home/dil/Desktop/MMathProject/Latex/main.toc
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/preface.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/preface.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp1.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp1.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp2.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp2.tex
+OUTPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.toc
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp1.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp1.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp2.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp2.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp3.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp3.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp4.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp4.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp5.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp5.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp6.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp6.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./AllParam/lambda_1.png
-INPUT ./images/./AllParam/lambda_1.png
-INPUT ./images/./AllParam/lambda_1.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./AllParam/lambda_2.png
-INPUT ./images/./AllParam/lambda_2.png
-INPUT ./images/./AllParam/lambda_2.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./AllParam/lambda_3.png
-INPUT ./images/./AllParam/lambda_3.png
-INPUT ./images/./AllParam/lambda_3.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./AllParam/xi_1.png
-INPUT ./images/./AllParam/xi_1.png
-INPUT ./images/./AllParam/xi_1.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./AllParam/xi_2.png
-INPUT ./images/./AllParam/xi_2.png
-INPUT ./images/./AllParam/xi_2.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./AllParam/xi_3.png
-INPUT ./images/./AllParam/xi_3.png
-INPUT ./images/./AllParam/xi_3.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./AllParam/tau_1.png
-INPUT ./images/./AllParam/tau_1.png
-INPUT ./images/./AllParam/tau_1.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./AllParam/tau_2.png
-INPUT ./images/./AllParam/tau_2.png
-INPUT ./images/./AllParam/tau_2.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./AllParam/tau_3.png
-INPUT ./images/./AllParam/tau_3.png
-INPUT ./images/./AllParam/tau_3.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/lambda_3_1.png
-INPUT ./images/./SingleParam/lambda_3_1.png
-INPUT ./images/./SingleParam/lambda_3_1.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/lambda_3_2.png
-INPUT ./images/./SingleParam/lambda_3_2.png
-INPUT ./images/./SingleParam/lambda_3_2.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/lambda_3_3.png
-INPUT ./images/./SingleParam/lambda_3_3.png
-INPUT ./images/./SingleParam/lambda_3_3.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/lambda_3_4.png
-INPUT ./images/./SingleParam/lambda_3_4.png
-INPUT ./images/./SingleParam/lambda_3_4.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/lambda_3_5.png
-INPUT ./images/./SingleParam/lambda_3_5.png
-INPUT ./images/./SingleParam/lambda_3_5.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/xi_3_1.png
-INPUT ./images/./SingleParam/xi_3_1.png
-INPUT ./images/./SingleParam/xi_3_1.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/xi_3_2.png
-INPUT ./images/./SingleParam/xi_3_2.png
-INPUT ./images/./SingleParam/xi_3_2.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/xi_3_3.png
-INPUT ./images/./SingleParam/xi_3_3.png
-INPUT ./images/./SingleParam/xi_3_3.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/xi_3_4.png
-INPUT ./images/./SingleParam/xi_3_4.png
-INPUT ./images/./SingleParam/xi_3_4.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/xi_3_5.png
-INPUT ./images/./SingleParam/xi_3_5.png
-INPUT ./images/./SingleParam/xi_3_5.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/tau_3_1.png
-INPUT ./images/./SingleParam/tau_3_1.png
-INPUT ./images/./SingleParam/tau_3_1.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/tau_3_2.png
-INPUT ./images/./SingleParam/tau_3_2.png
-INPUT ./images/./SingleParam/tau_3_2.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/tau_3_3.png
-INPUT ./images/./SingleParam/tau_3_3.png
-INPUT ./images/./SingleParam/tau_3_3.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/tau_3_4.png
-INPUT ./images/./SingleParam/tau_3_4.png
-INPUT ./images/./SingleParam/tau_3_4.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./SingleParam/tau_3_5.png
-INPUT ./images/./SingleParam/tau_3_5.png
-INPUT ./images/./SingleParam/tau_3_5.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./Adj_ABC/lam_3.png
-INPUT ./images/./Adj_ABC/lam_3.png
-INPUT ./images/./Adj_ABC/lam_3.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./Adj_ABC/xi_3.png
-INPUT ./images/./Adj_ABC/xi_3.png
-INPUT ./images/./Adj_ABC/xi_3.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/./Adj_ABC/tau_3.png
-INPUT ./images/./Adj_ABC/tau_3.png
-INPUT ./images/./Adj_ABC/tau_3.png
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp7.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp7.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp8.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp8.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/HMM_Only/function.png
-INPUT ./images/HMM_Only/function.png
-INPUT ./images/HMM_Only/function.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/HMM_Only/convLog.png
-INPUT ./images/HMM_Only/convLog.png
-INPUT ./images/HMM_Only/convLog.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/HMM_Only/0_freq_data.png
-INPUT ./images/HMM_Only/0_freq_data.png
-INPUT ./images/HMM_Only/0_freq_data.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/HMM_Only/0_freq_sim.png
-INPUT ./images/HMM_Only/0_freq_sim.png
-INPUT ./images/HMM_Only/0_freq_sim.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/HMM_Only/_freq_data.png
-INPUT ./images/HMM_Only/_freq_data.png
-INPUT ./images/HMM_Only/_freq_data.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/HMM_Only/_freq_sim.png
-INPUT ./images/HMM_Only/_freq_sim.png
-INPUT ./images/HMM_Only/_freq_sim.png
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp9.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp9.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/lam_1.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/tau_1.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/lam_2.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/tau_2.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/lam_3.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/Parameter Estimation on Attempt _1/param_1/tau_3.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png
-INPUT ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp10.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp10.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/CDF/recorded.png
-INPUT ./images/CDF/recorded.png
-INPUT ./images/CDF/recorded.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/CDF/HMM.png
-INPUT ./images/CDF/HMM.png
-INPUT ./images/CDF/HMM.png
-INPUT /home/dil/Desktop/MMathProject/Latex/./images/CDF/model.png
-INPUT ./images/CDF/model.png
-INPUT ./images/CDF/model.png
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp11.tex
-INPUT /home/dil/Desktop/MMathProject/Latex/chapters/chp11.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp3.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp3.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp4.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp4.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp5.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp5.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp6.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp6.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp7.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp7.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp8.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp8.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp9.tex
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp9.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
-INPUT /home/dil/Desktop/MMathProject/Latex/main.aux
-INPUT /home/dil/Desktop/MMathProject/Latex/main.out
-INPUT /home/dil/Desktop/MMathProject/Latex/main.out
-INPUT /home/dil/Desktop/MMathProject/Latex/main.run.xml
-OUTPUT /home/dil/Desktop/MMathProject/Latex/main.run.xml
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.aux
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.out
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.out
+INPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.run.xml
+OUTPUT /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.run.xml
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb

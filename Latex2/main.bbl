@@ -1,0 +1,335 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{baum1972inequality}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=2,uniquepart=given,hash=2afdffde7bc0ec8fe20955d90c4f3922}{%
+           family={Baum},
+           familyi={B\bibinitperiod},
+           given={Leonard\bibnamedelima E},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=2}}%
+      }
+      \strng{namehash}{244c6bf68eab694487731f3594dbb017}
+      \strng{fullhash}{244c6bf68eab694487731f3594dbb017}
+      \strng{bibnamehash}{244c6bf68eab694487731f3594dbb017}
+      \strng{authorbibnamehash}{244c6bf68eab694487731f3594dbb017}
+      \strng{authornamehash}{244c6bf68eab694487731f3594dbb017}
+      \strng{authorfullhash}{244c6bf68eab694487731f3594dbb017}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An inequality and associated maximization technique in statistical estimation for probabilistic functions of Markov processes}
+    \endentry
+    \entry{baum1967inequality}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{un=2,uniquepart=given,hash=2afdffde7bc0ec8fe20955d90c4f3922}{%
+           family={Baum},
+           familyi={B\bibinitperiod},
+           given={Leonard\bibnamedelima E},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=dd1a4a4f34eed56b06f0718c66045c4a}{%
+           family={Eagon},
+           familyi={E\bibinitperiod},
+           given={John\bibnamedelima Alonzo},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{959be0fc43ba65884b39a2cb31fadd8d}
+      \strng{fullhash}{959be0fc43ba65884b39a2cb31fadd8d}
+      \strng{bibnamehash}{959be0fc43ba65884b39a2cb31fadd8d}
+      \strng{authorbibnamehash}{959be0fc43ba65884b39a2cb31fadd8d}
+      \strng{authornamehash}{959be0fc43ba65884b39a2cb31fadd8d}
+      \strng{authorfullhash}{959be0fc43ba65884b39a2cb31fadd8d}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bulletin of the American Mathematical Society}
+      \field{number}{3}
+      \field{title}{An inequality with applications to statistical estimation for probabilistic functions of Markov processes and to a model for ecology}
+      \field{volume}{73}
+      \field{year}{1967}
+      \field{pages}{360\bibrangedash 363}
+      \range{pages}{4}
+    \endentry
+    \entry{baum1966}{article}{}
+      \name{author}{2}{}{%
+        {{un=2,uniquepart=given,hash=2afdffde7bc0ec8fe20955d90c4f3922}{%
+           family={Baum},
+           familyi={B\bibinitperiod},
+           given={Leonard\bibnamedelima E.},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=8ea4b0d08cb69e7a6c9b2b460ece7f63}{%
+           family={Petrie},
+           familyi={P\bibinitperiod},
+           given={Ted},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{dc326c411d6679b8e62158a8d19be609}
+      \strng{fullhash}{dc326c411d6679b8e62158a8d19be609}
+      \strng{bibnamehash}{dc326c411d6679b8e62158a8d19be609}
+      \strng{authorbibnamehash}{dc326c411d6679b8e62158a8d19be609}
+      \strng{authornamehash}{dc326c411d6679b8e62158a8d19be609}
+      \strng{authorfullhash}{dc326c411d6679b8e62158a8d19be609}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ann. Math. Statist.}
+      \field{month}{12}
+      \field{number}{6}
+      \field{title}{Statistical Inference for Probabilistic Functions of Finite State Markov Chains}
+      \field{volume}{37}
+      \field{year}{1966}
+      \field{pages}{1554\bibrangedash 1563}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1214/aoms/1177699147
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1214/aoms/1177699147
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1214/aoms/1177699147
+      \endverb
+    \endentry
+    \entry{dempster1977maximum}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=163970f51407af0c8008e39a2f105946}{%
+           family={Dempster},
+           familyi={D\bibinitperiod},
+           given={Arthur\bibnamedelima P},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4279cdc0481b4faaaf6bbcd8c96ffa28}{%
+           family={Laird},
+           familyi={L\bibinitperiod},
+           given={Nan\bibnamedelima M},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49a367b6280de8a239f8bbdd573f996f}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={Donald\bibnamedelima B},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{b9b674540b4dab965def96255d7c60f0}
+      \strng{fullhash}{b9b674540b4dab965def96255d7c60f0}
+      \strng{bibnamehash}{b9b674540b4dab965def96255d7c60f0}
+      \strng{authorbibnamehash}{b9b674540b4dab965def96255d7c60f0}
+      \strng{authornamehash}{b9b674540b4dab965def96255d7c60f0}
+      \strng{authorfullhash}{b9b674540b4dab965def96255d7c60f0}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Royal Statistical Society: Series B (Methodological)}
+      \field{number}{1}
+      \field{title}{Maximum likelihood from incomplete data via the EM algorithm}
+      \field{volume}{39}
+      \field{year}{1977}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 22}
+      \range{pages}{22}
+    \endentry
+    \entry{forney1973viterbi}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f9968f60540ad6ce88fc28b99b77b602}{%
+           family={Forney},
+           familyi={F\bibinitperiod},
+           given={G\bibnamedelima David},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Ieee}%
+      }
+      \strng{namehash}{f9968f60540ad6ce88fc28b99b77b602}
+      \strng{fullhash}{f9968f60540ad6ce88fc28b99b77b602}
+      \strng{bibnamehash}{f9968f60540ad6ce88fc28b99b77b602}
+      \strng{authorbibnamehash}{f9968f60540ad6ce88fc28b99b77b602}
+      \strng{authornamehash}{f9968f60540ad6ce88fc28b99b77b602}
+      \strng{authorfullhash}{f9968f60540ad6ce88fc28b99b77b602}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{number}{3}
+      \field{title}{The viterbi algorithm}
+      \field{volume}{61}
+      \field{year}{1973}
+      \field{pages}{268\bibrangedash 278}
+      \range{pages}{11}
+    \endentry
+    \entry{grimmett2020probability}{book}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f7ee7b6c321faec5e8b88377509b4d89}{%
+           family={GRIMMETT},
+           familyi={G\bibinitperiod},
+           given={GEOFFREY\bibnamedelima STIRZAKER},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford university press}%
+      }
+      \strng{namehash}{453b6066f7451b3ca58d73b89de968a9}
+      \strng{fullhash}{453b6066f7451b3ca58d73b89de968a9}
+      \strng{bibnamehash}{453b6066f7451b3ca58d73b89de968a9}
+      \strng{authorbibnamehash}{453b6066f7451b3ca58d73b89de968a9}
+      \strng{authornamehash}{453b6066f7451b3ca58d73b89de968a9}
+      \strng{authorfullhash}{453b6066f7451b3ca58d73b89de968a9}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Probability and random processes}
+      \field{year}{2020}
+    \endentry
+    \entry{markov2006example}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fd81ee830feeb596ef2d3e2bfa7501ec}{%
+           family={Markov},
+           familyi={M\bibinitperiod},
+           given={Andre{ı̆}},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fd81ee830feeb596ef2d3e2bfa7501ec}
+      \strng{fullhash}{fd81ee830feeb596ef2d3e2bfa7501ec}
+      \strng{bibnamehash}{fd81ee830feeb596ef2d3e2bfa7501ec}
+      \strng{authorbibnamehash}{fd81ee830feeb596ef2d3e2bfa7501ec}
+      \strng{authornamehash}{fd81ee830feeb596ef2d3e2bfa7501ec}
+      \strng{authorfullhash}{fd81ee830feeb596ef2d3e2bfa7501ec}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An example of statistical investigation of the text Eugene Onegin concerning the connection of samples in chains}
+    \endentry
+    \entry{1165342}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=33e22f6bc9c087b12ae5ceda19cf93ad}{%
+           family={{Rabiner}},
+           familyi={R\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15f1466127bb6f5bad9ae4554dcc8683}{%
+           family={{Juang}},
+           familyi={J\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8b36bd44aefcefb1d28f65b1195112e1}
+      \strng{fullhash}{8b36bd44aefcefb1d28f65b1195112e1}
+      \strng{bibnamehash}{8b36bd44aefcefb1d28f65b1195112e1}
+      \strng{authorbibnamehash}{8b36bd44aefcefb1d28f65b1195112e1}
+      \strng{authornamehash}{8b36bd44aefcefb1d28f65b1195112e1}
+      \strng{authorfullhash}{8b36bd44aefcefb1d28f65b1195112e1}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE ASSP Magazine}
+      \field{number}{1}
+      \field{title}{An introduction to hidden Markov models}
+      \field{volume}{3}
+      \field{year}{1986}
+      \field{pages}{4\bibrangedash 16}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/MASSP.1986.1165342
+      \endverb
+    \endentry
+    \entry{viterbi1967error}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f37f074a31ffeb5806ff996411f6a838}{%
+           family={Viterbi},
+           familyi={V\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f37f074a31ffeb5806ff996411f6a838}
+      \strng{fullhash}{f37f074a31ffeb5806ff996411f6a838}
+      \strng{bibnamehash}{f37f074a31ffeb5806ff996411f6a838}
+      \strng{authorbibnamehash}{f37f074a31ffeb5806ff996411f6a838}
+      \strng{authornamehash}{f37f074a31ffeb5806ff996411f6a838}
+      \strng{authorfullhash}{f37f074a31ffeb5806ff996411f6a838}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on Information Theory}
+      \field{number}{2}
+      \field{title}{Error bounds for convolutional codes and an asymptotically optimum decoding algorithm}
+      \field{volume}{13}
+      \field{year}{1967}
+      \field{pages}{260\bibrangedash 269}
+      \range{pages}{10}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

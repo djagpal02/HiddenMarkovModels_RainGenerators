@@ -123,7 +123,7 @@ void bw(int N, int M, int batch_size ,int iter , char filename[], std::string mo
         // Alpha_1
         for (int i = 0; i < N; i++)
         {
-            alpha[i][0] = pi[i]*B[i][observations[1]];
+            alpha[i][0] = pi[i]*B[i][observations[0]];
         }
 
         // Inductive step
@@ -210,7 +210,7 @@ void bw(int N, int M, int batch_size ,int iter , char filename[], std::string mo
         // Pi
         for (int i = 0; i < N; i++)
         {
-            pi_bar[i] = gamma[i][1];
+            pi_bar[i] = gamma[i][0];
         }
         // Get sum of states
         long double sum = arr_sum(pi_bar, N);

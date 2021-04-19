@@ -1,0 +1,289 @@
+\section{History}
+Andrei Markov discovered the Markov model while analyzing the relationship between consecutive letters from the text in the Russian novel "Eugene Onegin". A translation can be found here \cite{markov2006example}. With a two-state model (states Vowel and Consonant) he proved that the probability of letters being in a particular state is not independent. Given the current state, he could probabilistically predict the next. With various probabilities to and from each state, this chain of states formed the foundation of the Markov Chain.
+
+\section{Markov Chain}
+A Markov chain is a network of connected states. At any given time the model is said to be in a particular state. At a regular discrete interval, the model can change states depending on the probabilities. To define a Markov chain, we must first address the Markov property \cite{grimmett2020probability}.
+
+\begin{definition}
+\label{markovproperty}
+    Markov Property \\
+    Let \{$X_t$ ; t $\in \mathbb{N}_0$\} denote a stochastic proccess \ref{stochasticp}, where t represents time. The process has the Markov property if and only if,
+    \begin{equation}
+        \prob \{X_{n+1} = i_{n+1} | X_n = i_n, X_{n-1} = i_{n-1},...,X_0 = i_0\} = \prob \{X_{n+1} = i_{n+1} | X_n = i_n\}
+    \end{equation}
+\end{definition}
+
+
+We can now define a Markov chain.
+
+\begin{definition}
+\label{markovchain}
+    Markov Chain \\
+    A stochastic process \{$X_t$ ; t $>$ 0\} is a Markov Chain if and only if it satisfies the Markov property \ref{markovproperty}.
+\end{definition}
+
+To store the sequence of states a Markov chain has been through, we use the set $Q = \{q_t ; t \in \mathbb{N}_0\}$, where $q_t$ represents the state at time $t$. We will use this notation throughout the paper.
+
+\begin{example}
+    \label{stateseq}
+    Given a Markov Model with states S = $\{S_1,S_2,S_3\}$, if the model starts at $S_2$ and then goes to $S_3$ and then back to $S_2$ the state sequence $Q$ will be $Q = \{q_1 = S_2, q_2 = S_3, q_3 = S_2\}$.
+\end{example}
+
+From the Markov property, we can see that the only thing that influences $q_t$ is $q_{t-1}$. We can use this to make predictions for $q_{t+1}$ based on the outward transition probabilities from state $q_t$. By calculating all outward transition probabilities from the state at $q_t$, we can construct a probability measure that we may use to predict future states.
+\\
+i.e. 
+\\
+Given a Markov chain with N states including $i$ and $j$ and discrete time $t \in \mathbb{N}_0$, we can use 
+\begin{equation}
+    \label{probmeas}
+    \prob (q_t = S_j | q_{t-1} = S_i)_{1 \leq i,j \leq N}
+\end{equation}
+as a probility measure to help predict future states.
+
+These probabilities can vary with time, but this can make the model quite complicated. Thus, we usually assume the probabilities are constant. These unique Markov models are called time-homogenous. 
+
+\begin{definition}
+\label{timehomogenous}
+    Time homogenous \\
+    Let \{$X_t$ ; t $\in \mathbb{N}_0$\} denote a stochastic proccess \ref{stochasticp}, where t represents discrete time, and $p(i,j)$ represent the transition probability from state i to state j. If 
+    \begin{equation}
+        \prob \{X_n = j | X_{n-1} = i\} = p(i,j),       \forall n \in \mathbb{N}_0
+    \end{equation}
+    then the process is time-homogenous.
+\end{definition}
+
+For a discrete Markov model with N states, there are N$^2$ total transitions, where $p(i,j) = 0$ represents an impossible transition. We must store each of these probabilities. Given a time-homogenous Markov chain, we can create a 2-dimensional N x N matrix of transition probabilities $p$. Unique Markov chains have unique transition matrices. These matrices can be defined as below:
+
+\begin{equation}
+    \label{pmat}
+    p = \{ p(i,j) = \prob \{ X_n = j | X_{n-1} = i \}\}_{1 \leq i,j \leq N}
+\end{equation}
+
+All $p$ matrices have some essential properties. The first is that all values within $p$ must be within $[0,1]$ which comes naturally as all values are probabilities and thus by definition, it must lie within $[0,1]$. The second is that all rows, columns or both form stochastic vectors. If it is the rows, then the matrix is defined as a right-stochastic matrix; if it is the columns, it is called a left-stochastic matrix.\\
+
+To demonstrate, we will present an example where the states represent the weather.  
+
+\begin{example}
+\label{weathermarkovchain}
+    Let \{$X_t; t \in \mathbb{N}_0$\} denote a Markov Chain, with state-space S = \{rainy, sunny, cloudy\}, where t represents the number of days from the start. Since all states can eventually reach all other states, we say this model is ergodic. When all states within a model connect to all others, the model is always ergodic.
+    
+    \begin{center}
+    \begin{tikzpicture}
+        \node[state] at(-3,0) (s) {Sunny};
+        \node[state] at(3,0)  (r) {Rainy};
+        \node[state] at(0,-3)  (c) {Cloudy};
+
+        \draw[every loop]
+            (s) edge[bend right=20, auto=left] node {0.4} (r)
+            (s) edge[bend right=20, auto=right] node {0.2} (c)
+            (s) edge[loop left] node {0.4} (s)       
+            (r) edge[bend right=20, auto=left] node {0.4} (c)
+            (r) edge[bend right=20, auto=right] node {0.3} (s)
+            (r) edge[loop right] node {0.3} (r) 
+            (c) edge[bend right=20, auto=right] node {0.5} (r)
+            (c) edge[bend right=20, auto=left] node {0.2} (s)
+            (c) edge[loop below] node {0.3} (c);
+    \end{tikzpicture}
+    \\
+
+    Arrows indicated the transition between states and adjacent values correspond to the probability of this transition. 
+    \end{center}
+\end{example}
+
+Using \ref{weathermarkovchain} we can create a matrix $p$. To make this clear, we first create a table with our states labelled for rows and columns, where the $p(i,j)$ is the cell corresponding to row $i$ and column $j$.
+
+\begin{center}
+    \begin{tabular}{c c c c}
+        x      & Sunny & Rainy & Cloudy \\
+        Sunny  & 0.4   & 0.4   & 0.2 \\
+        Rainy  & 0.3   & 0.3   & 0.4 \\ 
+        Cloudy & 0.2   & 0.5   & 0.3 
+    \end{tabular}
+\end{center}
+
+This content of this table forms the matrix $p$. 
+
+\begin{equation}
+p = 
+\begin{bmatrix}
+    0.4 & 0.4 & 0.2 \\
+    0.3 & 0.3 & 0.4 \\
+    0.2 & 0.5 & 0.3 
+    \end{bmatrix}
+\end{equation}
+
+Now that we have a Markov Model with its $p$, we must reflect on its potential uses. Some natural questions one may ask are:
+\begin{enumerate}
+    \item Given at time $t$ the state was $S_i$, what is the most likely state time $t+1$?
+    \item What is the probability of getting a particular state sequence $O$?
+    \item What is the probability of staying within a state for d time steps?
+\end{enumerate}
+
+This first problem we will address using the matrix $p$. The motivation for creating the matrix $p$ was to build a matrix where $p_{ij}$ contains the probability of moving from state $i$ to state $j$. Thus, we look at the current row and find the maximum probability and its corresponding $j$.
+\begin{example}
+    Let us refer back to \ref{weathermarkovchain} and assume the current state is Cloudy. We can see that 0.2 $<$ 0.3 $<$ 0.5 and that 0.5 corresponds to Rainy. Thus our the most likely next state would be Rainy. 
+    \\
+    \\
+    Note: If the current state were sunny, we would have two maximums of 0.4. In such a case, the process is equally likely to go to either. 
+\end{example}
+
+The second problem provides a state sequence $Q = \{q_t,q_{t+1},q_{t+2}...\}$ and asks what the probability of this occuring is, i.e. $\prob (Q | model)$. This can be simplified quite easily as shown below.
+\begin{eqnarray}
+    \label{markovchainstateseqprob}
+    \prob (Q | model) & = & \prob (\{q_t,q_{t+1},q_{t+2}...\} | model) \\
+                      & = & \prob (q_{t}) \prob (q_{t+1}| q_{t}) \prob (q_{t+2}| q_{t+1})... \\
+                      & = & \prob (q_t) p(q_t,q_{t+1}) p(q_{t+1}q_{t+2}) ...
+\end{eqnarray}
+
+\begin{example}
+    We can now use \ref{markovchainstateseqprob} to demonstrate the probability of a state squence from \ref{weathermarkovchain}. Let $Q = \{$Sunny, Sunny, Cloudy, Rainy\}. Given that we start from Sunny: 
+    \begin{eqnarray}
+        \prob (Q | model) & = & \prob (\{Sunny, Sunny, Cloudy, Rainy\} | model) \\
+                          & = & \prob (Sunny) \prob (Sunny| Sunny) \prob (Cloudy| Sunny) \prob (Rainy| Cloudy)\\
+                          & = & 1 * 0.4 * 0.2 * 0.5 \\
+                          & = & 0.04 
+    \end{eqnarray}
+\end{example}
+
+The third problem asks how long is the model likely to stay in any given state. Assume that the model stays in state $S_i$ for $d$ days. We can create a state sequence for this, $Q = \{q_t = S_i ,q_{t+1} = S_i, ..., q_{t+d-1} = S_i, q_{t+d} \neq S_i\}$.  Using the state sequence probabililty calculation from before we can compute the following equation:
+\begin{equation}
+    \prob (Q | model) = p(i,i)^{d-1} (1 - p(i,i)) = p_i(d)
+\end{equation}
+
+We label this $p_i(d)$ to represent the discrete probability density function of the duration d in state i. From this we can calculate the expected stay in any particular state. This is done using the following formula:
+\begin{eqnarray}
+    \label{expectedstay}
+    \bar{d_i} & = & \sum_{d=1}^{\infty} d  p_i(d) \\
+              & = & \dfrac{1}{1 - p(i,i)}
+\end{eqnarray} 
+
+\begin{example}
+    Reffering back to \ref{weathermarkovchain}, suppose we would like to see how many days in a row we expect it to be sunny. We see that $p(Sunny,Sunny)$ = 0.4. Now we can use \ref{expectedstay} to find, 
+    \begin{eqnarray}
+        \bar{d_{Sunny}} & = & \sum_{d=1}^{\infty} d  p_{Sunny}(d) \\
+              & = & \dfrac{1}{1 - p(Sunny, Sunny)} \\
+              & = & \dfrac{1}{1 - 0.4} \\
+              & = & 1.67
+    \end{eqnarray}
+    Thus we expect it to remain sunny for 1.67 days. Since we are dealing with discrete data, it is more appropriate to round up to 2 days. 
+\end{example}
+
+The Markov model we have been discussing so far is observable as we can observe its events. Not all Markov models, however, are observable.
+
+
+\section{Motivating the Hidden Markov Model}
+
+Sometimes we do not observe our states but only see the effect of a state change. To help develop this idea, we borrow an example from \cite{1165342}.
+
+\begin{example}
+    \label{motivhmmcoin}
+    Suppose someone is hiding behind a barrier or curtain, where we cannot see what they are doing. This person is doing some experiment with flipping coins and shouting heads or tails at regular intervals. We do not know:
+    \begin{enumerate}[i]
+        \item How many coins there are.
+        \item If the coin/s is/are fair.
+    \end{enumerate}
+    Since the problem is quite vague, we must experiment with various models and see which fits best the data. Since the only thing we can observe is the outcome, heads or tails, we will refer to this as our observation. Let us start with the simplest. 
+    \begin{enumerate}
+        \item 1-Fair Coin \\ In this model we have two states, heads and tails. There is a 0.5 probability for the model to change state and equally for staying in the same. The simplicity of this model comes at the cost of many assumptions that may not necessarily hold.
+        \begin{center}
+            \begin{tikzpicture}
+                \node[state] at(-3,0) (H) {Heads};
+                \node[state] at(3,0)  (T) {Tails};
+                
+                \draw[every loop]
+                    (H) edge[loop, auto=left] node {0.5} (H)
+                    (H) edge[bend right=20, auto=left] node {0.5} (T)
+                    (T) edge[loop, auto=left] node {0.5} (T)
+                    (T) edge[bend right=20, auto=left] node {0.5} (H);
+            \end{tikzpicture}
+            
+            \begin{tabular}{c c}
+                $\prob (Heads)$  & 0.5 \\
+                $\prob (Tails)$  & 0.5  \\  
+            \end{tabular}
+        \end{center}
+        \item 2-Fair Coins \\ This model also has two states, but this time they represent two different coins. Both can produce heads and tails. Thus we do not know which produced the observation. The fact that they are both fair coins means that as an external observer, we will not see a difference between this model and the 1-Fair Coin. However, it is clear that the observations are now independent of the hidden states transitions, as they are equally likely regardless of the state. In the 1-Fair Coin model, we can determine perfectly which state the model is in from the observation, but here this is no longer possible.
+        \begin{center}
+            \begin{tikzpicture}
+                \node[state] at(-3,0) (1) {Coin 1};
+                \node[state] at(3,0)  (2) {Coin 2};
+                
+                \draw[every loop]
+                    (1) edge[loop, auto=left] node {0.5} (1)
+                    (1) edge[bend right=20, auto=left] node {0.5} (2)
+                    (2) edge[loop, auto=left] node {0.5} (2)
+                    (2) edge[bend right=20, auto=left] node {0.5} (1);
+            \end{tikzpicture}
+    
+            \begin{tabular}{c c c}
+                & $\prob (Coin 1)$ & $\prob (Coin 2)$ \\
+                $\prob (Heads)$  & 0.5   & 0.5 \\
+                $\prob (Tails)$  & 0.5   & 0.5 \\
+            \end{tabular}
+        \end{center}
+        \item  2-Biased Coins \\ Although this model is similar to 2-Fair Coins, the change in $\prob (Heads)$ and $\prob (Tails)$ for each state has a large impact on the observation probabilities. If the model is in state one heads is more likely and if the state is in state two tails is more likely. As an observer we can now say if we see tails, it was most likely from state two and if we see heads, it was most likely from state one. The change between these two states must be an unrelated probability, such as a third coin or another source of randomness.
+        \begin{center}
+            \begin{tikzpicture}
+                \node[state] at(-3,0) (1) {Coin 1};
+                \node[state] at(3,0)  (2) {Coin 2};
+                
+                \draw[every loop]
+                    (1) edge[loop, auto=left] node {0.5} (1)
+                    (1) edge[bend right=20, auto=left] node {0.5} (2)
+                    (2) edge[loop, auto=left] node {0.5} (2)
+                    (2) edge[bend right=20, auto=left] node {0.5} (1);
+            \end{tikzpicture}
+    
+            \begin{tabular}{c c c}
+                & $\prob (Coin 1)$ & $\prob (Coin 2)$ \\
+                $\prob (Heads)$  & 0.75   & 0.25 \\
+                $\prob (Tails)$  & 0.25   & 0.75 \\
+            \end{tabular}
+        \end{center}
+        \item 3-Biased Coins \\ Similar to the 2-Biased Coins model, the probabilities for heads and tails vary with the three states.
+        \begin{center}
+            \begin{tikzpicture}
+                \node[state] at(-3,0) (1) {Coin 1};
+                \node[state] at(3,0)  (2) {Coin 2};
+                \node[state] at(0,-3)  (3) {Coin 3};
+        
+                \draw[every loop]
+                    (1) edge[bend right=20, auto=left] node{} (2)
+                    (1) edge[bend right=20, auto=right] node{} (3)
+                    (1) edge[loop left] node{} (1)       
+                    (2) edge[bend right=20, auto=left] node{} (3)
+                    (2) edge[bend right=20, auto=right] node{} (1)
+                    (2) edge[loop right] node{} (2) 
+                    (3) edge[bend right=20, auto=right] node{} (2)
+                    (3) edge[bend right=20, auto=left] node{} (1)
+                    (3) edge[loop below] node{} (3);
+            \end{tikzpicture}
+            \begin{tabular}{c c c c}
+                & $\prob (Coin 1)$ & $\prob (Coin 2)$ & $\prob (Coin 3)$\\
+                $\prob (Heads)$  & 0.6   & 0.25 & 0.45 \\
+                $\prob (Tails)$  & 0.4   & 0.75 & 0.55 \\
+            \end{tabular}
+            \end{center}
+    \end{enumerate}
+\end{example}
+
+After contemplating which model is best, an important conclusion one may make, is that it is quite challenging to decide on the number of states without a priori information. We must ensure that there are enough states, such that the model does not overgeneralize but also not so many that it requires too much data to train. Naturally, one would assume choosing the larger number of states is more suitable as they can take the shape of a model with fewer states, while it is not for the opposite. However, larger models require much more data to be statistically reliable, as there are too many unknown variables. Below we show this for our models and where the unknowns come from (-s being from the state transition probabilities and -O being from the observation probabilities). 
+
+\begin{center}
+    \begin{tabular}{c c c}
+        Model  & Number of Unknowns & From\\
+        1-Fair Coin    & 0 & - \\
+        2-Fair Coins   & 1 & 1-S\\ 
+        2-Biased Coins & 4 & 2-S 2-O\\
+        3-Biased Coins & 9 & 6-S 3-O
+    \end{tabular}
+\end{center}
+
+Hence, the best approach is to base the model state size on the amount of available data, which is not always guaranteed to give reliable results but can sometimes be the only option. For example, when limited by data.
+
+One may notice that the first model has 0 unknowns. It has this because each state links with only one observation. Thus, as an observer, we can assert what state the model is in from an observation. Thus, the states are no longer hidden, and the model is simply a standard Markov model. 
+
+Another essential detail the avid reader may have noticed is in the case of 2-Biased Coins and 3-Biased Coins it is possible to make a reasonable guess of what state the model is in, i.e. which coin is flipped, based on the observation. Furthermore, the statistical properties of predictions generated using 1-Fair Coin and 2-Fair Coins should be identical but for 2-Biased Coins and 3-Biased Coins be somewhat unique. Due to this, unless the underlying system is entirely fair, like in one and two, it should be possible to determine which model best fits the data and determine the model.
+
+
+We now arrive at the core idea behind hidden Markov models. Although we cannot directly observe the model or its properties, we can create a model that fits the data the best through sufficient observation data. 
