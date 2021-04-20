@@ -1,13 +1,13 @@
 %\label{Hidden_Markov}
 
-Before we try to apply Hidden Markov Models (HMMs) to rainfall, we must first understand how they work. In this chapter we will build an understanding for the basic principles behind HMMs, along with developing and awnsering a few key questions.
+Before we try to apply Hidden Markov Models (HMMs) to rainfall, we must first understand how they work. This chapter will build an understanding of the basic principles behind HMMs, along with developing and answering a few key questions.
 
 \section{Definition}
 \label{Hidden_Markov:Definition}
 
-In this section we will define a HMM and introduce notation that will be used throughout this paper. 
+This section will define a HMM and introduce notation used throughout this paper. 
 
-A hidden Markov model is a doubly stochastic process, where the underlying process is Markovian and hidden; \cite{Rabiner1986}. This comes from the fact that there are two stochastic processes, one determining the transition between states and one determining the output observation. Braum and his colleagues developed this in \cite{Baum1967} and \cite{Baum1966}. 
+A hidden Markov model is a doubly stochastic process, where the underlying process is Markovian and hidden; \cite{Rabiner1986}. This definition comes from the fact that there are two stochastic processes, one determining the transition between states and another determining the output observation. Braum and his colleagues developed this in \cite{Baum1967} and \cite{Baum1966}. 
 
 To define a HMM, we require five things. These are as follows:
 To define a hidden Markov model, we need five things.
@@ -58,12 +58,12 @@ Before we continue, we will also provide some more notation, which will be used 
 \section{Using HMM}
 \label{Hidden_Markov:Using_HMM}
 
-As with all models, we can use HMM to simulate processes. In this section we will demonstrate how to do so for a HMM with known parameters as well as propose a few questions one may ask.
+As with all models, we can use HMM to simulate processes. In this section, we will demonstrate how to do so for a HMM with known parameters and propose a few questions one may ask.
 
     \subsection{Simulation}
     \label{Hidden_Markov:Using_HMM:Simulation}
 
-    Simulating a process is usually our reason for building a model.   Thus, in this subsection, we will demonstrate how to simulate a HMM to generate a observation sequence.
+    Simulating a process is usually our reason for building a model.   Thus, in this subsection, we will demonstrate how to simulate a HMM to generate an observation sequence.
 
     Let H = $\{N,M,A,B,\pi\}$ be a HMM. To generate a sequence of $T$ observations $O$ we do the following steps:
      \begin{enumerate}
@@ -114,7 +114,7 @@ As with all models, we can use HMM to simulate processes. In this section we wil
             \caption{A chain representing the HMM with hidden states the weather and observable states mood.The solid lines represent transitions between hidden states, and the dashed represent observable.}
         \end{figure}
        
-        From context we can deduce the following:
+        From the context, we can deduce the following:
         \begin{center}
                     N = 3, number of hidden states
 
@@ -163,7 +163,7 @@ As with all models, we can use HMM to simulate processes. In this section we wil
                     \end{equation}
         \end{center}
 
-        We can now use \ref{Hidden_Markov:Using_HMM:Simulation:Method} to create an observation sequence   $O$ = $\{o_1, o_2, o_3\}$. We will require multiple random variables generated using various probability measures. We will generate uniform random variabes through python using the "rand.py" file. We will then combine these with inversion sampling to select the state.
+        We can now use \ref{Hidden_Markov:Using_HMM:Simulation:Method} to create an observation sequence   $O$ = $\{o_1, o_2, o_3\}$. We will require multiple random variables generated using various probability measures. We will generate uniform random variables through python using the "rand.py" file. We will then combine these with inversion sampling to select the state.
 
         \begin{enumerate}[i]
             \item We generate a r.v. = 0.0058. Using Pi as the probaility   distribution, we select Sunny. We can now set $q_1$ = $s_1$.
@@ -180,7 +180,7 @@ As with all models, we can use HMM to simulate processes. In this section we wil
     \subsection{Key Problems}
     \label{Hidden_Markov:Using_HMM:Key_Problems}
 
-    To ensure the validity of a model, one may ask questions regarding the probabilities of certain occurances. We discuss these questions in this subsection.
+    To ensure the validity of a model, one may ask questions regarding the probabilities of certain occurrences. We discuss these questions in this subsection.
 
     We will focus on three famous questions highlighted in  \cite{Rabiner1986}. 
     \begin{enumerate}
@@ -190,15 +190,15 @@ As with all models, we can use HMM to simulate processes. In this section we wil
         \item \label{Hidden_Markov:Using_HMM:Key_Problems:Questions:Third} Learning \\ Given a set of observation $O =   \{o_1,o_2,...,o_T\}$, how can we learn the model H = $\{N,M,A,B,  \pi\}$ that would generate them?
     \end{enumerate}
     
-    In the coming sections, we will be motivating uses and developing  solutions for each problem. 
+    In the coming sections, we will be motivating uses and developing solutions for each problem. 
 
 
 \section{Problem 1: Evaluation}
 \label{Hidden_Markov:Evaluation}
 
-In this section we will tackle the Evaluation problem for HMM; \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:First}. We will first attempt using a simple approach and then find a more efficient implementation; the Forward-Backward Algorithm.
+This section will tackle the Evaluation problem for HMM; \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:First}. We will first attempt using a simple approach and then find a more efficient implementation; the Forward-Backward Algorithm.
 
-We are looking for the probability that a given model generated a sequence of observations, i.e. $\prob (O | \lambda)$. This probability has many useful applications. For example, we may have multiple potential models $\lambda_i$ and cannot decide which one is  most suitable. We can calculate this probability for each $\lambda_i$ and the select the one with the largest.
+We are looking for the probability that a given model generated a sequence of observations, i.e. $\prob (O | \lambda)$. This probability has many applications. For example, we may have multiple potential models $\lambda_i$ and cannot decide which one is most suitable. We can calculate this probability for each $\lambda_i$ and then select the one with the largest.
 
 To find this probability, we must consider the hidden internal states of the model. Since our probability of observations $\{b_j(k)\}$ is conditioned on the hidden state, we can start by calculating this probability conditioned on these states. Let us assume we have the state sequence $Q = \{q_1,q_2,...,q_t\}$. For $\prob (O | Q, \lambda)$ we can find the product of all the probabilities of an observation given the models state at all times $t$. In essence, this breaks the  $\prob (O | Q, \lambda)$ into T parts. 
 \begin{equation}
@@ -218,7 +218,7 @@ Thus we can rewrite \ref{Hidden_Markov:Evaluation:Equation1} as:
     \prob (O | Q, \lambda) = b_{q_1}(O_1) b_{q_2}(O_2)  ...  b_{q_T}(O_T)
 \end{equation}
 
-Our next objective is to remove $Q$ from the conditioned part of the probability. To do this, we must first calculate $\prob (Q | \lambda)$. This is simply the probability of transitioning from $q_1$ to $q_2$, $q_2$ to $q_3$ etc. More formally we can use matrix $A$ to find the probability of each of these transitions, and since we are finding the total for the entire sequence, we multiply them all together. We start with $\pi_{q_1}$ as we also need the probability of starting at $q_1$.
+Our next objective is to remove $Q$ from the conditioned part of the probability. To do this, we must first calculate $\prob (Q | \lambda)$. This is simply the probability of transitioning from $q_1$ to $q_2$, $q_2$ to $q_3$ etc. More formally, we can use matrix $A$ to find the probability of each of these transitions, and since we are finding the total for the entire sequence, we multiply them all together. We start with $\pi_{q_1}$ as we also need the probability of starting at $q_1$.
 \begin{equation}
     \label{Hidden_Markov:Evaluation:Equation3_InQandLambda}
     \prob ( Q | \lambda) = \pi_{q_1} a_{q_1q_2} a_{q_2q_3} ... a_{q_{T-1}q_T}
@@ -238,7 +238,7 @@ This is the joint probability of observations and the internal states. In other 
                         & = & \sum_{q_1,q_2,...,q_T} \pi_{q_1} b_{q_1}(O_1) a_{q_1q_2} b_{q_2}(O_2) a_{q_2q_3} ... a_{q_{T-1}q_T} b_{q_T}(O_T)
 \end{eqnarray} 
 
-Unforuntately calculating this is infeasible as it requires too many computations. For $T$ timesteps and $N$ states, to find every possible $Q$, we must sum over $N^T$ state sequences. For each timestep we require a multiplication to $a_{q_{i-1}q_{i}}$ and $b_{q_i}(O_i)$, except the last where there are no transitions, which leads to $2T-1$ multiplications for each state sequence. Lastly, we require $N^T$ addition operations to sum the result for each state sequence. Our final total number of operations of $(2T-1)N^T + (N^T-1)$. 
+Unfortunately, calculating this is infeasible as it requires too many computations. For $T$ timesteps and $N$ states, to find every possible $Q$, we must sum over $N^T$ state sequences. For each timestep we require a multiplication to $a_{q_{i-1}q_{i}}$ and $b_{q_i}(O_i)$, except the last where there are no transitions, which leads to $2T-1$ multiplications for each state sequence. Lastly, we require $N^T$ addition operations to sum the result for each state sequence. Our final total number of operations of $(2T-1)N^T + (N^T-1)$. 
 
 \begin{example}
     \label{Hidden_Markov:Evaluation:motivfb}
@@ -251,14 +251,14 @@ Unforuntately calculating this is infeasible as it requires too many computation
 \end{example}
 
 
-We have a problem as even with a small model we require a considerable number of calculations. For a moderate to large-sized model, we would require an infeasible amount of calculations. To overcome this problem, we look for a more efficient method.
+We have a problem as even with a small model; we require a considerable number of calculations. For a moderate to large-sized model, we would require an infeasible amount of calculations. To overcome this problem, we look for a more efficient method.
 
 
 
     \subsection{Forward-Backward Algorithm}
     \label{Hidden_Markov:Evaluation:Forward_Backward_Algorithm}
 
-    The Forward-Backward (FB) algorithm offers an alternative, more efficient, method to find $\prob (O \ | \ H)$. In this subsection we will demonstrate its use. Our explanations take motivation from \cite{Rabiner1986}.
+    The Forward-Backward (FB) algorithm offers an alternative, more efficient method to find $\prob (O \ | \ H)$. In this subsection, we will demonstrate its use. Our explanations take motivation from \cite{Rabiner1986}.
 
     To use FB, we must first introduce two helper functions $\alpha$ and $\beta$. We will start by discussing the former. 
 
@@ -396,7 +396,7 @@ We have a problem as even with a small model we require a considerable number of
                     & = & 118
         \end{eqnarray}
 
-        118 is many orders of magnitude smaller than 1180979, which was the requirement without FB algorithm. Thus it is a significant improvement. The improvement against the base method will be even more drastic for larger models, as FB has a fixed $N^2$ instead of the $N^T$ term.  
+        118 is many orders of magnitude smaller than 1180979, which was the requirement without the FB algorithm. Thus it is a significant improvement. The improvement against the base method will be even more drastic for larger models, as FB has a fixed $N^2$ instead of the $N^T$ term.  
     \end{example}
 
 
@@ -405,7 +405,7 @@ We have a problem as even with a small model we require a considerable number of
         \label{Hidden_Markov:Evaluation:Forward_Backward_Algorithm:Beta}
         \beta_t(i) = \prob (O_{t+1},O_{t+2},,...,O_T | q_t=S_i, \lambda)
     \end{equation}
-    This represents the probability of seeing the observations $O_{t+1}$ up to $O_T$ given that at time $t$ the model $\lambda$ is at state $S_i$. Once again we calculate this using induction.
+    This represents the probability of seeing the observations $O_{t+1}$ up to $O_T$ given that at time $t$ the model $\lambda$ is at state $S_i$. Once again, we calculate this using induction.
 
     \begin{enumerate}
         \item Base case \\
@@ -449,7 +449,7 @@ We have a problem as even with a small model we require a considerable number of
 \section{Problem 2: Decoding}
 \label{Hidden_Markov:Decoding}
 
-    In this section we will address the decoding problem \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:Second}. We will use the two helper functions developed in \ref{Hidden_Markov:Evaluation} togther with the Viterbi Algorithm to do so. We will use ideas presented in \cite{Rabiner1986} and \cite{Forney1973}.
+    This section will address the decoding problem \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:Second}. We will use the two helper functions developed in \ref{Hidden_Markov:Evaluation} together with the Viterbi Algorithm to do so. We will use ideas presented in \cite{Rabiner1986} and \cite{Forney1973}.
 
     The problem searches for the sequence of states that best explains the sequence of observations. However, the definition of 'best' is quite vague and open to interpretations. An obvious appraoch would be to look for each time $t$, find the most likely state, given all observations and the model. Lets define this probaility as $\gamma$.
     \begin{equation}
@@ -554,7 +554,7 @@ We have a problem as even with a small model we require a considerable number of
     \subsection{Viterbi Algorithm}
     \label{Hidden_Markov:Decoding:Vierbi_Algorithm}
 
-    In this subsection we will demonstrate the application of the Viterbi Algorithm.
+    In this subsection, we will demonstrate the application of the Viterbi Algorithm.
 
     The Viterbi Algorithm was developed in \cite{Viterbi1967} and explored in further depth by in \cite{Forney1973}. It follows a similar lattice structure of the helper functions in the FB algorithm \ref{Hidden_Markov:Evaluation:Forward_Backward_Algorithm}. Similar to how we broke \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:First} into smaller pieces, we do the same to $\prob (Q | O, \lambda)$.
 
@@ -637,7 +637,7 @@ We have a problem as even with a small model we require a considerable number of
 \section{Problem 3: Learning}
 \label{Hidden_Markov:Learning}
 
-HMMs have a large number of parameters. Obtaining these is a high-dimensional optimisation problem. In this section we utilise the Baum-Welch Algorithm to simulatenously solve for all HMM parameters.
+HMMs have a large number of parameters. Obtaining these is a high-dimensional optimisation problem. In this section, we utilise the Baum-Welch Algorithm to solve all HMM parameters simultaneously.
 
 The learning problem \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:Third} addresses how can we learn a model from given sequence of observations?  Given the sequence of observations $O$ = $\{O_1,O_2,...,O_T\}$ we want to find the most suitable $\lambda$ = $(A,B,\pi)$.
 
@@ -645,7 +645,7 @@ The learning problem \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:Third} 
     \subsection{Baum-Welch Algorithm}
     \label{Hidden_Markov:Learning:Baum_Welch}
 
-    In this subsection we will demonstrate the Baum-Welch Algorithm. Explanations have been inspired by \cite{Baum}.
+    In this subsection, we will demonstrate the Baum-Welch Algorithm. Explanations have been inspired by \cite{Baum}.
 
     For the Baum-Welch algorithm we will need all three parameters intrudced earlier; $\alpha$ \ref{Hidden_Markov:Evaluation:Forward_Backward_Algorithm:Alpha}, $\beta$ \ref{Hidden_Markov:Evaluation:Forward_Backward_Algorithm:Beta} and $\gamma$ \ref{Hidden_Markov:Decoding:gamma}. We will also need a new parameter $\xi_t(i,j)$. This will capture the probability of being in some state $S_i$ at time $t$ and then $S_j$ at time $t+1$ given the observations and the model. 
     \begin{equation}
@@ -739,7 +739,7 @@ The learning problem \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:Third} 
             \end{bmatrix}
         \]
 
-        $\xi_t(i,j)$ produces a result which ressembles a transition matrix for each timestep. We will have 5-1 = 4 of these.
+        $\xi_t(i,j)$ produces a result that resembles a transition matrix for each timestep. We will have 5-1 = 4 of these.
 
         \begin{itemize}
             \item \[
@@ -772,19 +772,19 @@ The learning problem \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:Third} 
             \]
         \end{itemize}
 
-        Using these along with \ref{Hidden_Markov:Learning:Baum_Welch:Reestimation} will allow us to re-estimate our A,B and $\pi$ parameters.
+        Using these along with \ref{Hidden_Markov:Learning:Baum_Welch:Reestimation} will allow us to re-estimate our A, B and $\pi$ parameters.
 
         $\pi$ is the first column of the $\gamma$ matrix. Thus our new inital distribution is 
         \begin{equation}
-            \bar{\pi} = \{0.522979,	0.303949,	0.173072\}
+            \bar{\pi} = \{0.522979, 0.303949,   0.173072\}
         \end{equation}
         
         The number of transtions from state $i$ to $j$ can be taken as the sum of a particular position over all $\eta$ matrices. These can be divded by the sum of the corresponding $\gamma$ row, disregarding the last timestep.
         \begin{equation}
             \bar{a_{ij}} = \begin{bmatrix}
-                0.307672  &	0.425369  &	0.266959 \\
-                0.223609  &	0.297603  &	0.478789 \\
-                0.151871  &	0.495204  &	0.352925
+                0.307672  & 0.425369  & 0.266959 \\
+                0.223609  & 0.297603  & 0.478789 \\
+                0.151871  & 0.495204  & 0.352925
             \end{bmatrix}
         \end{equation}
 

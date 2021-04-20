@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.26)  18 APR 2021 19:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.25)  20 APR 2021 09:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.tex
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.tex
+**/home/dil/Desktop/MMathProject/Latex/main.tex
+(/home/dil/Desktop/MMathProject/Latex/main.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
@@ -758,7 +758,7 @@ File: biblatex.cfg
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count442
 \l__pdf_internal_box=\box82
-) (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.aux)
+) (/home/dil/Desktop/MMathProject/Latex/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -820,7 +820,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 53.
 LaTeX Info: Redefining \pageref on input line 53.
 LaTeX Info: Redefining \nameref on input line 53.
- (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.out) (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.out)
+ (/home/dil/Desktop/MMathProject/Latex/main.out) (/home/dil/Desktop/MMathProject/Latex/main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -836,7 +836,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.bbl)
+ (/home/dil/Desktop/MMathProject/Latex/main.bbl)
 Package biblatex Info: Reference section=0 on input line 53.
 Package biblatex Info: Reference segment=0 on input line 53.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
@@ -854,9 +854,9 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 Non-PDF special ignored!
 <special> papersize=597.50787pt,845.04684pt
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/Abstract.tex) [1
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/dil/Desktop/MMathProject/Latex/chapters/Abstract.tex) [1
 
-] (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.toc [2
+] (/home/dil/Desktop/MMathProject/Latex/main.toc [2
 
 ])
 \tf@toc=\write6
@@ -864,7 +864,7 @@ Non-PDF special ignored!
 
  [3]
 Chapter 1.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp1.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+(/home/dil/Desktop/MMathProject/Latex/chapters/chp1.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.70 	\newpage
@@ -872,7 +872,7 @@ l.70 	\newpage
 
 ]
 Chapter 2.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp2.tex [2
+(/home/dil/Desktop/MMathProject/Latex/chapters/chp2.tex [2
 
 ] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 711.
@@ -881,62 +881,311 @@ File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 711.
- [14] [15]) [16]
+ [14]) [15]
 Chapter 3.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp3.tex [17
+(/home/dil/Desktop/MMathProject/Latex/chapters/chp3.tex [16
 
-] [18]) [19]
+] [17]
+<./images/ABC example/posterior.png, id=522, 749.80125pt x 289.08pt>
+File: ./images/ABC example/posterior.png Graphic file (type png)
+<use ./images/ABC example/posterior.png>
+Package pdftex.def Info: ./images/ABC example/posterior.png  used on input line 130.
+(pdftex.def)             Requested size: 211.26027pt x 81.4491pt.
+<./images/ABC example/prior.png, id=523, 749.80125pt x 289.08pt>
+File: ./images/ABC example/prior.png Graphic file (type png)
+<use ./images/ABC example/prior.png>
+Package pdftex.def Info: ./images/ABC example/prior.png  used on input line 136.
+(pdftex.def)             Requested size: 211.26027pt x 81.4491pt.
+<./images/ABC example/data.png, id=524, 749.80125pt x 289.08pt>
+File: ./images/ABC example/data.png Graphic file (type png)
+<use ./images/ABC example/data.png>
+Package pdftex.def Info: ./images/ABC example/data.png  used on input line 143.
+(pdftex.def)             Requested size: 211.26027pt x 81.4491pt.
+ [18]) [19 <./images/ABC example/posterior.png (PNG copy)> <./images/ABC example/prior.png (PNG copy)> <./images/ABC example/data.png (PNG copy)>] [20]
 Chapter 4.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp4.tex) [20
+(/home/dil/Desktop/MMathProject/Latex/chapters/chp4.tex [21
 
-]
+] [22] [23]
+<./images/./AllParam/lambda_1.png, id=578, 383.4325pt x 262.9825pt>
+File: ./images/./AllParam/lambda_1.png Graphic file (type png)
+<use ./images/./AllParam/lambda_1.png>
+Package pdftex.def Info: ./images/./AllParam/lambda_1.png  used on input line 114.
+(pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
+<./images/./AllParam/lambda_2.png, id=580, 383.4325pt x 262.9825pt>
+File: ./images/./AllParam/lambda_2.png Graphic file (type png)
+<use ./images/./AllParam/lambda_2.png>
+Package pdftex.def Info: ./images/./AllParam/lambda_2.png  used on input line 120.
+(pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
+<./images/./AllParam/lambda_3.png, id=581, 383.4325pt x 262.9825pt>
+File: ./images/./AllParam/lambda_3.png Graphic file (type png)
+<use ./images/./AllParam/lambda_3.png>
+Package pdftex.def Info: ./images/./AllParam/lambda_3.png  used on input line 126.
+(pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
+<./images/./AllParam/xi_1.png, id=582, 400.49625pt x 262.9825pt>
+File: ./images/./AllParam/xi_1.png Graphic file (type png)
+<use ./images/./AllParam/xi_1.png>
+Package pdftex.def Info: ./images/./AllParam/xi_1.png  used on input line 132.
+(pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
+<./images/./AllParam/xi_2.png, id=583, 400.49625pt x 262.9825pt>
+File: ./images/./AllParam/xi_2.png Graphic file (type png)
+<use ./images/./AllParam/xi_2.png>
+Package pdftex.def Info: ./images/./AllParam/xi_2.png  used on input line 138.
+(pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
+<./images/./AllParam/xi_3.png, id=584, 400.49625pt x 262.9825pt>
+File: ./images/./AllParam/xi_3.png Graphic file (type png)
+<use ./images/./AllParam/xi_3.png>
+Package pdftex.def Info: ./images/./AllParam/xi_3.png  used on input line 144.
+(pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
+<./images/./AllParam/tau_1.png, id=585, 388.45125pt x 262.9825pt>
+File: ./images/./AllParam/tau_1.png Graphic file (type png)
+<use ./images/./AllParam/tau_1.png>
+Package pdftex.def Info: ./images/./AllParam/tau_1.png  used on input line 150.
+(pdftex.def)             Requested size: 140.84256pt x 95.35178pt.
+<./images/./AllParam/tau_2.png, id=586, 394.47375pt x 262.9825pt>
+File: ./images/./AllParam/tau_2.png Graphic file (type png)
+<use ./images/./AllParam/tau_2.png>
+Package pdftex.def Info: ./images/./AllParam/tau_2.png  used on input line 156.
+(pdftex.def)             Requested size: 140.84256pt x 93.89514pt.
+<./images/./AllParam/tau_3.png, id=587, 394.47375pt x 262.9825pt>
+File: ./images/./AllParam/tau_3.png Graphic file (type png)
+<use ./images/./AllParam/tau_3.png>
+Package pdftex.def Info: ./images/./AllParam/tau_3.png  used on input line 162.
+(pdftex.def)             Requested size: 140.84256pt x 93.89514pt.
+ [24] [25 <./images/./AllParam/lambda_1.png> <./images/./AllParam/lambda_2.png> <./images/./AllParam/lambda_3.png> <./images/./AllParam/xi_1.png> <./images/./AllParam/xi_2.png> <./images/./AllParam/xi_3.png> <./images/./AllParam/tau_1.png> <./images/./AllParam/tau_2.png> <./images/./AllParam/tau_3.png>]
+<./images/./SingleParam/lambda_3_1.png, id=613, 383.4325pt x 262.9825pt>
+File: ./images/./SingleParam/lambda_3_1.png Graphic file (type png)
+<use ./images/./SingleParam/lambda_3_1.png>
+Package pdftex.def Info: ./images/./SingleParam/lambda_3_1.png  used on input line 194.
+(pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
+<./images/./SingleParam/lambda_3_2.png, id=614, 383.4325pt x 262.9825pt>
+File: ./images/./SingleParam/lambda_3_2.png Graphic file (type png)
+<use ./images/./SingleParam/lambda_3_2.png>
+Package pdftex.def Info: ./images/./SingleParam/lambda_3_2.png  used on input line 200.
+(pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
+<./images/./SingleParam/lambda_3_3.png, id=615, 383.4325pt x 262.9825pt>
+File: ./images/./SingleParam/lambda_3_3.png Graphic file (type png)
+<use ./images/./SingleParam/lambda_3_3.png>
+Package pdftex.def Info: ./images/./SingleParam/lambda_3_3.png  used on input line 206.
+(pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
+<./images/./SingleParam/lambda_3_4.png, id=616, 383.4325pt x 262.9825pt>
+File: ./images/./SingleParam/lambda_3_4.png Graphic file (type png)
+<use ./images/./SingleParam/lambda_3_4.png>
+Package pdftex.def Info: ./images/./SingleParam/lambda_3_4.png  used on input line 214.
+(pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
+<./images/./SingleParam/lambda_3_5.png, id=617, 383.4325pt x 262.9825pt>
+File: ./images/./SingleParam/lambda_3_5.png Graphic file (type png)
+<use ./images/./SingleParam/lambda_3_5.png>
+Package pdftex.def Info: ./images/./SingleParam/lambda_3_5.png  used on input line 220.
+(pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
+<./images/./SingleParam/xi_3_1.png, id=623, 400.49625pt x 262.9825pt>
+File: ./images/./SingleParam/xi_3_1.png Graphic file (type png)
+<use ./images/./SingleParam/xi_3_1.png>
+Package pdftex.def Info: ./images/./SingleParam/xi_3_1.png  used on input line 243.
+(pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
+<./images/./SingleParam/xi_3_2.png, id=624, 400.49625pt x 262.9825pt>
+File: ./images/./SingleParam/xi_3_2.png Graphic file (type png)
+<use ./images/./SingleParam/xi_3_2.png>
+Package pdftex.def Info: ./images/./SingleParam/xi_3_2.png  used on input line 249.
+(pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
+<./images/./SingleParam/xi_3_3.png, id=625, 400.49625pt x 262.9825pt>
+File: ./images/./SingleParam/xi_3_3.png Graphic file (type png)
+<use ./images/./SingleParam/xi_3_3.png>
+Package pdftex.def Info: ./images/./SingleParam/xi_3_3.png  used on input line 255.
+(pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
+<./images/./SingleParam/xi_3_4.png, id=626, 400.49625pt x 262.9825pt>
+File: ./images/./SingleParam/xi_3_4.png Graphic file (type png)
+<use ./images/./SingleParam/xi_3_4.png>
+Package pdftex.def Info: ./images/./SingleParam/xi_3_4.png  used on input line 263.
+(pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
+<./images/./SingleParam/xi_3_5.png, id=627, 400.49625pt x 262.9825pt>
+File: ./images/./SingleParam/xi_3_5.png Graphic file (type png)
+<use ./images/./SingleParam/xi_3_5.png>
+Package pdftex.def Info: ./images/./SingleParam/xi_3_5.png  used on input line 269.
+(pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
+ [26 <./images/./SingleParam/lambda_3_1.png> <./images/./SingleParam/lambda_3_2.png> <./images/./SingleParam/lambda_3_3.png> <./images/./SingleParam/lambda_3_4.png> <./images/./SingleParam/lambda_3_5.png>]
+<./images/./SingleParam/tau_3_1.png, id=645, 394.47375pt x 262.9825pt>
+File: ./images/./SingleParam/tau_3_1.png Graphic file (type png)
+<use ./images/./SingleParam/tau_3_1.png>
+Package pdftex.def Info: ./images/./SingleParam/tau_3_1.png  used on input line 296.
+(pdftex.def)             Requested size: 140.84256pt x 93.89514pt.
+<./images/./SingleParam/tau_3_2.png, id=646, 394.47375pt x 262.9825pt>
+File: ./images/./SingleParam/tau_3_2.png Graphic file (type png)
+<use ./images/./SingleParam/tau_3_2.png>
+Package pdftex.def Info: ./images/./SingleParam/tau_3_2.png  used on input line 302.
+(pdftex.def)             Requested size: 140.84256pt x 93.89514pt.
+<./images/./SingleParam/tau_3_3.png, id=647, 394.47375pt x 262.9825pt>
+File: ./images/./SingleParam/tau_3_3.png Graphic file (type png)
+<use ./images/./SingleParam/tau_3_3.png>
+Package pdftex.def Info: ./images/./SingleParam/tau_3_3.png  used on input line 308.
+(pdftex.def)             Requested size: 140.84256pt x 93.89514pt.
+<./images/./SingleParam/tau_3_4.png, id=648, 394.47375pt x 262.9825pt>
+File: ./images/./SingleParam/tau_3_4.png Graphic file (type png)
+<use ./images/./SingleParam/tau_3_4.png>
+Package pdftex.def Info: ./images/./SingleParam/tau_3_4.png  used on input line 316.
+(pdftex.def)             Requested size: 140.84256pt x 93.89514pt.
+<./images/./SingleParam/tau_3_5.png, id=649, 396.48125pt x 262.9825pt>
+File: ./images/./SingleParam/tau_3_5.png Graphic file (type png)
+<use ./images/./SingleParam/tau_3_5.png>
+Package pdftex.def Info: ./images/./SingleParam/tau_3_5.png  used on input line 322.
+(pdftex.def)             Requested size: 140.84256pt x 93.42163pt.
+ [27 <./images/./SingleParam/xi_3_1.png> <./images/./SingleParam/xi_3_2.png> <./images/./SingleParam/xi_3_3.png> <./images/./SingleParam/xi_3_4.png> <./images/./SingleParam/xi_3_5.png>]
+<./images/./Adj_ABC/lam_3.png, id=670, 383.4325pt x 262.9825pt>
+File: ./images/./Adj_ABC/lam_3.png Graphic file (type png)
+<use ./images/./Adj_ABC/lam_3.png>
+Package pdftex.def Info: ./images/./Adj_ABC/lam_3.png  used on input line 354.
+(pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
+<./images/./Adj_ABC/xi_3.png, id=671, 400.49625pt x 262.9825pt>
+File: ./images/./Adj_ABC/xi_3.png Graphic file (type png)
+<use ./images/./Adj_ABC/xi_3.png>
+Package pdftex.def Info: ./images/./Adj_ABC/xi_3.png  used on input line 360.
+(pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
+<./images/./Adj_ABC/tau_3.png, id=672, 394.47375pt x 262.9825pt>
+File: ./images/./Adj_ABC/tau_3.png Graphic file (type png)
+<use ./images/./Adj_ABC/tau_3.png>
+Package pdftex.def Info: ./images/./Adj_ABC/tau_3.png  used on input line 366.
+(pdftex.def)             Requested size: 140.84256pt x 93.89514pt.
+ [28 <./images/./SingleParam/tau_3_1.png> <./images/./SingleParam/tau_3_2.png> <./images/./SingleParam/tau_3_3.png> <./images/./SingleParam/tau_3_4.png> <./images/./SingleParam/tau_3_5.png> <./images/./Adj_ABC/lam_3.png> <./images/./Adj_ABC/xi_3.png> <./images/./Adj_ABC/tau_3.png>]) [29]
 Chapter 5.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp5.tex) [21
+(/home/dil/Desktop/MMathProject/Latex/chapters/chp5.tex [30
 
-]
+]) [31]
 Chapter 6.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp6.tex) [22
+(/home/dil/Desktop/MMathProject/Latex/chapters/chp6.tex [32
 
 ]
+<./images/HMM_Only/function.png, id=710, 947.54pt x 925.4575pt>
+File: ./images/HMM_Only/function.png Graphic file (type png)
+<use ./images/HMM_Only/function.png>
+Package pdftex.def Info: ./images/HMM_Only/function.png  used on input line 45.
+(pdftex.def)             Requested size: 211.26027pt x 206.32669pt.
+<./images/HMM_Only/convLog.png, id=711, 381.425pt x 262.9825pt>
+File: ./images/HMM_Only/convLog.png Graphic file (type png)
+<use ./images/HMM_Only/convLog.png>
+Package pdftex.def Info: ./images/HMM_Only/convLog.png  used on input line 51.
+(pdftex.def)             Requested size: 211.26027pt x 145.65604pt.
+ [33]
+<./images/HMM_Only/0_freq_data.png, id=720, 390.45876pt x 262.9825pt>
+File: ./images/HMM_Only/0_freq_data.png Graphic file (type png)
+<use ./images/HMM_Only/0_freq_data.png>
+Package pdftex.def Info: ./images/HMM_Only/0_freq_data.png  used on input line 96.
+(pdftex.def)             Requested size: 211.26027pt x 142.28932pt.
+<./images/HMM_Only/0_freq_sim.png, id=721, 390.45876pt x 263.98625pt>
+File: ./images/HMM_Only/0_freq_sim.png Graphic file (type png)
+<use ./images/HMM_Only/0_freq_sim.png>
+Package pdftex.def Info: ./images/HMM_Only/0_freq_sim.png  used on input line 102.
+(pdftex.def)             Requested size: 211.26027pt x 142.83241pt.
+<./images/HMM_Only/_freq_data.png, id=722, 390.45876pt x 262.9825pt>
+File: ./images/HMM_Only/_freq_data.png Graphic file (type png)
+<use ./images/HMM_Only/_freq_data.png>
+Package pdftex.def Info: ./images/HMM_Only/_freq_data.png  used on input line 109.
+(pdftex.def)             Requested size: 211.26027pt x 142.28932pt.
+<./images/HMM_Only/_freq_sim.png, id=723, 390.45876pt x 262.9825pt>
+File: ./images/HMM_Only/_freq_sim.png Graphic file (type png)
+<use ./images/HMM_Only/_freq_sim.png>
+Package pdftex.def Info: ./images/HMM_Only/_freq_sim.png  used on input line 115.
+(pdftex.def)             Requested size: 211.26027pt x 142.28932pt.
+) [34 <./images/HMM_Only/function.png> <./images/HMM_Only/convLog.png>] [35 <./images/HMM_Only/0_freq_data.png> <./images/HMM_Only/0_freq_sim.png> <./images/HMM_Only/_freq_data.png> <./images/HMM_Only/_freq_sim.png>]
 Chapter 7.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp7.tex) [23
+(/home/dil/Desktop/MMathProject/Latex/chapters/chp7.tex [36
 
 ]
+<./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png, id=748, 567.62062pt x 289.08pt>
+File: ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png Graphic file (type png)
+<use ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png>
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png  used on input line 61.
+(pdftex.def)             Requested size: 375.57779pt x 191.283pt.
+<./images/Parameter Estimation on Attempt _1/param_1/lam_1.png, id=749, 567.62062pt x 289.08pt>
+File: ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png Graphic file (type png)
+<use ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png>
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png  used on input line 68.
+(pdftex.def)             Requested size: 211.26027pt x 107.5931pt.
+<./images/Parameter Estimation on Attempt _1/param_1/tau_1.png, id=750, 567.62062pt x 289.08pt>
+File: ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png Graphic file (type png)
+<use ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png>
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png  used on input line 74.
+(pdftex.def)             Requested size: 211.26027pt x 107.5931pt.
+<./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png, id=751, 567.62062pt x 289.08pt>
+File: ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png Graphic file (type png)
+<use ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png>
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png  used on input line 85.
+(pdftex.def)             Requested size: 375.57779pt x 191.283pt.
+<./images/Parameter Estimation on Attempt _1/param_1/lam_2.png, id=752, 567.62062pt x 289.08pt>
+File: ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png Graphic file (type png)
+<use ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png>
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png  used on input line 92.
+(pdftex.def)             Requested size: 211.26027pt x 107.5931pt.
+<./images/Parameter Estimation on Attempt _1/param_1/tau_2.png, id=753, 567.62062pt x 289.08pt>
+File: ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png Graphic file (type png)
+<use ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png>
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png  used on input line 98.
+(pdftex.def)             Requested size: 211.26027pt x 107.5931pt.
+<./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png, id=754, 567.62062pt x 289.08pt>
+File: ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png Graphic file (type png)
+<use ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png>
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png  used on input line 109.
+(pdftex.def)             Requested size: 375.57779pt x 191.283pt.
+<./images/Parameter Estimation on Attempt _1/param_1/lam_3.png, id=755, 567.62062pt x 289.08pt>
+File: ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png Graphic file (type png)
+<use ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png>
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png  used on input line 116.
+(pdftex.def)             Requested size: 211.26027pt x 107.5931pt.
+<./images/Parameter Estimation on Attempt _1/param_1/tau_3.png, id=756, 567.62062pt x 289.08pt>
+File: ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png Graphic file (type png)
+<use ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png>
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png  used on input line 122.
+(pdftex.def)             Requested size: 211.26027pt x 107.5931pt.
+ [37] [38 <./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png (PNG copy)> <./images/Parameter Estimation on Attempt _1/param_1/lam_1.png> <./images/Parameter Estimation on Attempt _1/param_1/tau_1.png>] [39 <./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png (PNG copy)> <./images/Parameter Estimation on Attempt _1/param_1/lam_2.png> <./images/Parameter Estimation on Attempt _1/param_1/tau_2.png>] [40 <./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png (PNG copy)> <./images/Parameter Estimation on Attempt _1/param_1/lam_3.png> <./images/Parameter Estimation on Attempt _1/param_1/tau_3.png>]) [41]
 Chapter 8.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp8.tex) [24
+(/home/dil/Desktop/MMathProject/Latex/chapters/chp8.tex
+<./images/CDF/recorded.png, id=799, 371.13657pt x 289.08pt>
+File: ./images/CDF/recorded.png Graphic file (type png)
+<use ./images/CDF/recorded.png>
+Package pdftex.def Info: ./images/CDF/recorded.png  used on input line 28.
+(pdftex.def)             Requested size: 140.84256pt x 109.70596pt.
+<./images/CDF/HMM.png, id=800, 371.13657pt x 289.08pt>
+File: ./images/CDF/HMM.png Graphic file (type png)
+<use ./images/CDF/HMM.png>
+Package pdftex.def Info: ./images/CDF/HMM.png  used on input line 34.
+(pdftex.def)             Requested size: 140.84256pt x 109.70596pt.
+<./images/CDF/model.png, id=801, 371.13657pt x 289.08pt>
+File: ./images/CDF/model.png Graphic file (type png)
+<use ./images/CDF/model.png>
+Package pdftex.def Info: ./images/CDF/model.png  used on input line 40.
+(pdftex.def)             Requested size: 140.84256pt x 109.70596pt.
+ [42
 
-]
+]) [43 <./images/CDF/recorded.png> <./images/CDF/HMM.png> <./images/CDF/model.png>] [44]
 Chapter 9.
-(/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/chapters/chp9.tex) [25
+(/home/dil/Desktop/MMathProject/Latex/chapters/chp9.tex) [45
 
-] [26
+] [46
 
-] [27]
+] [47]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
- (/home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.aux)
+ (/home/dil/Desktop/MMathProject/Latex/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0B58B027FEF1435BB3F2FC0E1BE310FF;3211.
+(rerunfilecheck)             Checksum: 94B5A074234DB2EE185B4AA226A82AEC;3214.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
  ) 
 Here is how much of TeX's memory you used:
- 26803 strings out of 481239
- 515395 string characters out of 5920377
- 1144262 words of memory out of 5000000
- 41369 multiletter control sequences out of 15000+600000
- 543497 words of font info for 70 fonts, out of 8000000 for 9000
+ 27276 strings out of 481239
+ 527079 string characters out of 5920377
+ 1150804 words of memory out of 5000000
+ 41742 multiletter control sequences out of 15000+600000
+ 545151 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,70p,1008b,1281s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on /home/diljeet/Desktop/MMath/HiddenMarkovModels_RainGenerators/Latex/main.pdf (31 pages, 253764 bytes).
+ 60i,11n,70p,977b,1279s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on /home/dil/Desktop/MMathProject/Latex/main.pdf (51 pages, 993085 bytes).
 PDF statistics:
- 703 PDF objects out of 1000 (max. 8388607)
- 646 compressed objects within 7 object streams
- 225 named destinations out of 1000 (max. 500000)
- 413 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 975 PDF objects out of 1000 (max. 8388607)
+ 803 compressed objects within 9 object streams
+ 268 named destinations out of 1000 (max. 500000)
+ 653 words of extra memory for PDF output out of 10000 (max. 10000000)
 

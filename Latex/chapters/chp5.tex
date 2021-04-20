@@ -1,10 +1,31 @@
 %\label{Extending_HMM_Based_Rainfall_Models}
+While we have demonstrated Grando's Methodology was flawed, her ideas have are yet to be explored. In this chapter, we will extend Grando's ideas and adapt her model. 
 
 \section{Disc Structure}
 \label{Extending_HMM_Based_Rainfall_Models:Disc_Structure}
+Cowpertwait's disk structure for rain models is derived from nature. This makes it extremely appealing as a model. Giving Grando good reason to translate these ideas to her HMM-based model. However, for our goal of rain simulation, her model has some unnecessary complexity. 
+
+Grando calculates the number of storm discs over the entire space (all sites) but then only selects discs above the current site. She repeats this for all sites. We can expect most storm discs not to cover all sites, suggesting this method will generate many potential discs and then reject most of them. This method is extremely inefficient and computationally expensive. To solve this issue, one may propose the following:
+\begin{itemize}
+    \item Simulate the number and size of discs over the entire map of sites and determine which storms are above which sites. This method stops the unnecessary iteration through all sites and provides the same results as the parameter estimates will account for this change.
+    \item Simulate the number and size of discs overall sites independently. Here we ignore the spatial data of the sites. This prevents us from understanding which sites the same disc's cover, but this is not important to us and can thus be left as is. Furthermore, we can remove the assumption of the shape of the disc as it is no longer relevant, allowing our model to be further generalised. This allows us to remove the radius parameters for each state, reducing total parameters by the number of states.
+\end{itemize}
+
+While both methods mentioned above allow for improvement, ultimately, it does not matter which we pick. The model will fit the given parameters, and the orientation of the parameters does not make a difference as they will adjust to compensate, resulting in a model that produces a similar output. As such, for our model, we decide to go with the second method. Since we will be calculating each site independently, we decide to calculate parameters for each separately rather than combining these results. 
 
 \section{Seasonal Effects}
 \label{Extending_HMM_Based_Rainfall_Models:Seasonal_Effects}
 
+Rainfall is not consistent throughout the year. A simulation of rainfall in summer would likely have significantly different statistical properties to one from the winter. Grando's model does not account for this, as such a simulation using this model could produce an output more likely in winter or summer, one cannot tell. 
+
+To address these concerns, we utilise Cowpertwait's method, splitting the data into months. This method allows for simulating for particular months as well as a better fit for the overall data. Since our data is a time series of rainfall amounts with not much other information, we divide our data into the average number of days in a month; 30. We then label the first twelve groups 0 to 11 and fill each group cycling through 0-11. The exact methodology and Jupyter notebook can be found in the "DataPrep" folder under "MyCode" within the code files. 
+
+Another necessary modification was changing the missing values. The given data contained "-9999" for any days with missing data. Removing these values could create unequal sized datasets for each month. To avoid this, we decided to set these values to a particular number. Unfortunately, any value we select will cause the data mean to shift towards the value. We set this value as the mean of the months' rainfall, ignoring the missing data to solve this. 
+
 \section{High Dimensionality}
 \label{Extending_HMM_Based_Rainfall_Models:High_Dimensionality}
+
+
+HMMs with even a few states contain a large number of parameters. Grando's model contains 21. Through our adjustments made to the disc structure, we have reduced this to 18. High dimensionality is a common problem but, unfortunately, does not have straightforward solutions. We could introduce new assumptions and simplify the data using dimensionality reduction methods, but this may limit our ability to fit our model well. 
+
+To address this problem, we revert to \ref{Hidden_Markov:Learning:Baum_Welch}. Instead of approaching this problem by starting the parameter estimation from the non-hmm parameters, we approach from HMM parameters. Momentarily ignoring the non-HMM parameters, we know that Baum-Welch can be used to estimate 12 of these 18 parameters. While this is not all, this is a significant decrease in dimensions. However, our model does not have an observation matrix, which the Baum-Welch algorithm requires. We address this in the following chapter.

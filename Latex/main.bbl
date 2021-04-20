@@ -278,7 +278,6 @@
       \field{title}{A generalized point process model for rainfall}
       \field{volume}{447}
       \field{year}{1994}
-      \true{nocite}
       \field{pages}{23\bibrangedash 37}
       \range{pages}{15}
     \endentry
@@ -414,7 +413,6 @@
       \field{title}{A spatial-temporal point process model with a continuous distribution of storm types}
       \field{volume}{46}
       \field{year}{2010}
-      \true{nocite}
     \endentry
     \entry{Cowpertwait2002}{article}{}
       \name{author}{3}{}{%
@@ -596,7 +594,6 @@
       \field{title}{Data-driven models and random generators of rainfall}
       \field{type}{mathesis}
       \field{year}{2019}
-      \true{nocite}
     \endentry
     \entry{Markov}{article}{}
       \name{author}{1}{}{%
