@@ -1,0 +1,86 @@
+*Def*
+- Hidden Markov Models are doubly stochastic process.
+-two layers, a hidden layer and an observed layer.
+
+*Example*
+- Assume we are locked inside and cannot see the weather. 
+- We can only see a friend who comes in every day
+- We observe if he is happy or sad, this is the observed layer, 
+- the weather outside is the hidden layer. 
+
+*Example Properties*
+N is the number of hidden states -3
+M is the number of observable outputs. -2
+A is the state transition matrix. - Probs between states
+B is the observation probability matrix. - Dashed Probs
+pi is a vector containing all initial state probabilities. - Not given in diagram 
+
+It is Markovian as the next state depends on the current state.
+
+*************************************
+*Cowpertwait
+- Prevalent Rainfall model in the industry is by Cowperthwait
+- 2D discs, bigger one holds smaller ones
+-Smaller ones have associated rainfall intensities 
+-All discs under the same larger disc are correlated
+
+*Grando*
+- Grando Extends on this idea with her model 
+-Uses an underlying HMM system to account for correlations within larger disks
+-Has additional parameters to determine radius, intensity and number of discs.
+
+*Fitting*
+-She uniformly randomly generates HMM parameters and then attempts to estimate the remaining. 
+-In her testing, she uses two methods, Nelder-Mead and ABC.
+-ABC performs superior. As such, we test using this. 
+-ABC is a parameter estimation method. 
+-We replicate her results in c++  with multithreading for faster implementation. 3-5mins vs 15-40 hours.
+
+*Result*
+-Method does not work as it seems like ABC is fitting to the current iterations of HMM parameters.
+-It produces different estimates for different attempts. , see graph
+-We check by randomly generating for each iteration of simulation rather than each attempt of ABC. 
+-We observe a uniform scatter, suggesting our assumptions were correct. -This method does not work.
+
+************************************
+
+*Our model*
+-We make modifications.
+-Remove disk structure, simply the number of discs at a given point and the sum of each disc's intensities.
+- Seasonal Effects, split data monthly as the weather does not remain consistent over a year, 
+-more rain in winter, less in summer etc
+-Simulate for particular sites rather than generalising over multiple sites
+
+*Baum-Welch*
+-To overcome high dimensionality, use known methods to fit HMM - Baum-Welch finds local optima, but we run multiple attempts in order to find a superior fit,
+- Higher iterations = more likely to have global optimum
+- Discretise observations to create an observation matrix
+
+*Results*
+-We implement all, but the first point, once again in c++
+-A comparison of simulated frequencies can be seen. 
+
+***************************************
+
+*Generalising Observation Matrix*
+- Observation Matrix has size 3x750,
+-Max  amount of rainfall is 750mm (for data used)
+-Data in integers, therefore no loss inaccuracy. 
+-Aim to reduce the number of parameters  through a function of RV to generate an observation matrix
+-Theoretically identical performance for a perfect function
+
+-We use -  simply number of discs at a given point, the sum of intensities of each disc - as our approximation, arbitrary choice
+- Use 3D graph + 2D graphs for parameter estimation. Run simulation compare to data, square diff between frequencies as residual, minimise for this 
+
+*****************************************
+*Results*
+-Obtained PEs, input into the model and generate simulations for each month.
+-Results obtained through Kolmogorov-Smirnov tests between samples.
+-Can see HMM did well, but our generalisation did not do so well. HMM did well for both in-sample and out of sample.
+
+*Future research* 
+-Different number of states, more complexity required?
+-More attempts of Baum-Welch as local vs global optima
+-Improved generalisation, i.e. random variable function
+
+To conclude, testing shows potential, insufficient evidence to suggest HMMs are unsuitable for rainfall simulation.

@@ -2183,27 +2183,31 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Rabiner1986</bcf:citekey>
-    <bcf:citekey order="2">Baum1967</bcf:citekey>
-    <bcf:citekey order="3">Baum1966</bcf:citekey>
-    <bcf:citekey order="4">Rabiner1986</bcf:citekey>
+    <bcf:citekey order="1">Cowpertwait1994</bcf:citekey>
+    <bcf:citekey order="2">Grando2019</bcf:citekey>
+    <bcf:citekey order="3">Grando2019</bcf:citekey>
+    <bcf:citekey order="4">Grando2019</bcf:citekey>
     <bcf:citekey order="5">Rabiner1986</bcf:citekey>
-    <bcf:citekey order="6">Rabiner1986</bcf:citekey>
-    <bcf:citekey order="7">Forney1973</bcf:citekey>
-    <bcf:citekey order="8">Viterbi1967</bcf:citekey>
-    <bcf:citekey order="9">Forney1973</bcf:citekey>
-    <bcf:citekey order="10">Baum</bcf:citekey>
-    <bcf:citekey order="11">Baum</bcf:citekey>
-    <bcf:citekey order="12">Ross2004</bcf:citekey>
-    <bcf:citekey order="13">Toni2009</bcf:citekey>
-    <bcf:citekey order="14">Ross2004</bcf:citekey>
-    <bcf:citekey order="15">Cowpertwait1994</bcf:citekey>
-    <bcf:citekey order="16">Cowpertwait2010</bcf:citekey>
-    <bcf:citekey order="17">Cowpertwait1994</bcf:citekey>
-    <bcf:citekey order="18">Cowpertwait1994</bcf:citekey>
-    <bcf:citekey order="19">Grando2019</bcf:citekey>
-    <bcf:citekey order="20">Grando2019</bcf:citekey>
-    <bcf:citekey order="21">Grando2019</bcf:citekey>
+    <bcf:citekey order="6">Baum1967</bcf:citekey>
+    <bcf:citekey order="7">Baum1966</bcf:citekey>
+    <bcf:citekey order="8">Rabiner1986</bcf:citekey>
+    <bcf:citekey order="9">Rabiner1986</bcf:citekey>
+    <bcf:citekey order="10">Rabiner1986</bcf:citekey>
+    <bcf:citekey order="11">Forney1973</bcf:citekey>
+    <bcf:citekey order="12">Viterbi1967</bcf:citekey>
+    <bcf:citekey order="13">Forney1973</bcf:citekey>
+    <bcf:citekey order="14">Baum</bcf:citekey>
+    <bcf:citekey order="15">Baum</bcf:citekey>
+    <bcf:citekey order="16">Ross2004</bcf:citekey>
+    <bcf:citekey order="17">Toni2009</bcf:citekey>
+    <bcf:citekey order="18">Ross2004</bcf:citekey>
+    <bcf:citekey order="19">Cowpertwait1994</bcf:citekey>
+    <bcf:citekey order="20">Cowpertwait2010</bcf:citekey>
+    <bcf:citekey order="21">Cowpertwait1994</bcf:citekey>
+    <bcf:citekey order="22">Cowpertwait1994</bcf:citekey>
+    <bcf:citekey order="23">Grando2019</bcf:citekey>
+    <bcf:citekey order="24">Grando2019</bcf:citekey>
+    <bcf:citekey order="25">Grando2019</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

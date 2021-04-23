@@ -1,107 +1,54 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Hidden Markov Models}{2}{chapter.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Definition}{2}{section.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Using HMM}{3}{section.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Simulation}{3}{subsection.2.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Key Problems}{5}{subsection.2.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Problem 1: Evaluation}{5}{section.2.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Forward-Backward Algorithm}{7}{subsection.2.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Problem 2: Decoding}{10}{section.2.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Viterbi Algorithm}{11}{subsection.2.4.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Problem 3: Learning}{13}{section.2.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Baum-Welch Algorithm}{13}{subsection.2.5.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Model Selection}{16}{chapter.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Maximum Likelihood Estimators}{16}{section.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Likelihood}{16}{subsection.3.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Maximum Liklihood Estimators}{16}{subsection.3.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Approximate Bayesian Computation}{18}{section.3.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Kolmogorov-Smirnov Test}{19}{section.3.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Replicating Existing Rainfall Models}{21}{chapter.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Cowpertwait}{21}{section.4.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Grando}{22}{section.4.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Model}{22}{subsection.4.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Fitting}{23}{subsection.4.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Replicating Grando}{23}{section.4.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Code}{23}{subsection.4.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Results}{24}{subsection.4.3.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Nine Parameter Estimation}{24}{section*.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Three Parameter Estimation}{24}{section*.12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Adjusted Algorithm}{27}{section*.16}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Extending HMM based Rainfall Models}{30}{chapter.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Disc Structure}{30}{section.5.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Seasonal Effects}{31}{section.5.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}High Dimensionality}{31}{section.5.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Simple Rainfall HMM}{32}{chapter.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Baum-Welch}{32}{section.6.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}Building the Observation Matrix}{32}{subsection.6.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Local vs Global Optimum}{33}{subsection.6.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Analysis}{33}{section.6.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Convergence}{33}{subsection.6.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Selecting an Optimum}{33}{subsection.6.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}Results}{34}{subsection.6.2.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Generalising the Observation Matrix}{36}{chapter.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Generalised Model}{36}{section.7.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Function for Observation Matrix}{36}{section.7.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Parameter Estimation}{36}{section.7.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.1}Methodology}{37}{subsection.7.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.2}Estimation}{37}{subsection.7.3.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Results}{42}{chapter.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Datasets}{42}{section.8.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Analysis}{42}{section.8.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.1}CDFs}{42}{subsection.8.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.2}Kolmogorov–Smirnov tests}{43}{subsection.8.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Future Research}{45}{chapter.9}%
+\contentsline {chapter}{\numberline {2}Hidden Markov Models}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Definition}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Using HMM}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Simulation}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Key Problems}{6}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Problem 1: Evaluation}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Forward-Backward Algorithm}{8}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Problem 2: Decoding}{11}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Viterbi Algorithm}{12}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Problem 3: Learning}{14}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Baum-Welch Algorithm}{14}{subsection.2.5.1}%
+\contentsline {chapter}{\numberline {3}Model Selection}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Maximum Likelihood Estimators}{17}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Likelihood}{17}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Maximum Liklihood Estimators}{17}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Approximate Bayesian Computation}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Kolmogorov-Smirnov Test}{20}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Replicating Existing Rainfall Models}{22}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Cowpertwait}{22}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Grando}{23}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Model}{23}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Fitting}{24}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Replicating Grando}{24}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Code}{24}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Results}{25}{subsection.4.3.2}%
+\contentsline {subsubsection}{Nine Parameter Estimation}{25}{section*.10}%
+\contentsline {subsubsection}{Three Parameter Estimation}{25}{section*.12}%
+\contentsline {subsubsection}{Adjusted Algorithm}{28}{section*.16}%
+\contentsline {chapter}{\numberline {5}Extending HMM based Rainfall Models}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Disc Structure}{31}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Seasonal Effects}{32}{section.5.2}%
+\contentsline {section}{\numberline {5.3}High Dimensionality}{32}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Simple Rainfall HMM}{33}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Baum-Welch}{33}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Building the Observation Matrix}{33}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Local vs Global Optimum}{34}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Analysis}{34}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Convergence}{34}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Selecting an Optimum}{34}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Results}{35}{subsection.6.2.3}%
+\contentsline {chapter}{\numberline {7}Generalising the Observation Matrix}{37}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Generalised Model}{37}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Function for Observation Matrix}{37}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Parameter Estimation}{37}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Methodology}{38}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Estimation}{38}{subsection.7.3.2}%
+\contentsline {chapter}{\numberline {8}Results}{43}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Datasets}{43}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Analysis}{43}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}CDFs}{43}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Kolmogorov–Smirnov tests}{44}{subsection.8.2.2}%
+\contentsline {chapter}{\numberline {9}Future Research}{46}{chapter.9}%

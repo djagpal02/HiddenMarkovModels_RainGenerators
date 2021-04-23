@@ -68,8 +68,9 @@ The program "BaumWelch" requires the data split into months in CSV files. For ea
 
     For our example of month 0, we had the following results:
     \begin{center}
-    \begin{tabular}{c c}
+    \begin{tabular}{c | c}
         Attempt & Sum of Square difference \\
+        \hline
         1 & 656 \\
         2 & 672 \\
         3 & 1692
@@ -79,8 +80,9 @@ The program "BaumWelch" requires the data split into months in CSV files. For ea
     As such, we selected attempt 1 for our testing. The attempt selected for each month is in the below table.
 
     \begin{center}
-    \begin{tabular}{c c c c c c c c c c c c c}
+    \begin{tabular}{c | c | c | c | c | c | c | c | c | c | c | c | c}
         Month   &  0  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\
+        \hline
         Attempt &  1  & 3 & 2 & 1 & 1 & 1 & 1 & 2 & 2 & 3 & 3  & 2 
     \end{tabular}  
     \end{center}

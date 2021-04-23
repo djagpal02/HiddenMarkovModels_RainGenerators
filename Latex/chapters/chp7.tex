@@ -99,7 +99,7 @@ According to \ref{model}, we have two unknown parameters for each row of each ob
         \caption{}
         \label{pe2:3}
         \end{subfigure}
-        \caption{First iteration of parmeter estimation. Parameters set to: $\lambda$ between 0 and 2, $\tau$ between 0 and 0.5. Graphs show clear drop in residual where $\lambda \in [0.5,0.75]$ and $\tau \in [0,0.1]$.}
+        \caption{Second iteration of parmeter estimation. Parameters set to: $\lambda$ between 0 and 2, $\tau$ between 0 and 0.5. Graphs show clear drop in residual where $\lambda \in [0.5,0.75]$ and $\tau \in [0,0.1]$.}
         \label{pe2}
     \end{figure}
 
@@ -123,7 +123,7 @@ According to \ref{model}, we have two unknown parameters for each row of each ob
         \caption{}
         \label{pe3:3}
         \end{subfigure}
-        \caption{First iteration of parmeter estimation. Parameters set to: $\lambda$ between 0.5 and 0.75, $\tau$ between 0 and 0.1. Graphs show minimum $\lambda$ at around 0.625 and minimum $\tau$ at around 0.05.}
+        \caption{Third iteration of parmeter estimation. Parameters set to: $\lambda$ between 0.5 and 0.75, $\tau$ between 0 and 0.1. Graphs show minimum $\lambda$ at around 0.625 and minimum $\tau$ at around 0.05.}
         \label{pe3}
     \end{figure}
 
@@ -132,9 +132,10 @@ According to \ref{model}, we have two unknown parameters for each row of each ob
     We repeat this process for every row of the observation matrix for every month. The results are as given:
 
     \begin{center}
-        \begin{tabular}{c c c c c c c}
+        \begin{tabular}{c | c | c | c | c | c | c}
             \label{petable}
             Month   &   $\lambda_1$ &   $\lambda_2$ &   $\lambda_3$ &   $\tau_1$    &   $\tau_2$    &   $\tau_3$   \\
+            \hline
                 0   &   0.625       &   0.9         &   0.775       &   0.05    &   0.2     &   0.06    \\
                 1   &   0.265       &   3.25        &   1.95        &   0.06    &   0.15    &   0.055   \\
                 2   &   0.42        &   3.3         &   4           &   0.09    &   0.11    &   0.1     \\
