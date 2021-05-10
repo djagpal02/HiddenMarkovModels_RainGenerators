@@ -13,7 +13,7 @@
 \BOOKMARK [0][-]{chapter.3}{Model Selection}{}% 13
 \BOOKMARK [1][-]{section.3.1}{Maximum Likelihood Estimators}{chapter.3}% 14
 \BOOKMARK [2][-]{subsection.3.1.1}{Likelihood}{section.3.1}% 15
-\BOOKMARK [2][-]{subsection.3.1.2}{Maximum Liklihood Estimators}{section.3.1}% 16
+\BOOKMARK [2][-]{subsection.3.1.2}{Maximum Likelihood Estimators}{section.3.1}% 16
 \BOOKMARK [1][-]{section.3.2}{Approximate Bayesian Computation}{chapter.3}% 17
 \BOOKMARK [1][-]{section.3.3}{Kolmogorov-Smirnov Test}{chapter.3}% 18
 \BOOKMARK [0][-]{chapter.4}{Replicating Existing Rainfall Models}{}% 19
@@ -24,7 +24,7 @@
 \BOOKMARK [1][-]{section.4.3}{Replicating Grando}{chapter.4}% 24
 \BOOKMARK [2][-]{subsection.4.3.1}{Code}{section.4.3}% 25
 \BOOKMARK [2][-]{subsection.4.3.2}{Results}{section.4.3}% 26
-\BOOKMARK [0][-]{chapter.5}{Extending HMM based Rainfall Models}{}% 27
+\BOOKMARK [0][-]{chapter.5}{Extending HMM-based Rainfall Models}{}% 27
 \BOOKMARK [1][-]{section.5.1}{Disc Structure}{chapter.5}% 28
 \BOOKMARK [1][-]{section.5.2}{Seasonal Effects}{chapter.5}% 29
 \BOOKMARK [1][-]{section.5.3}{High Dimensionality}{chapter.5}% 30

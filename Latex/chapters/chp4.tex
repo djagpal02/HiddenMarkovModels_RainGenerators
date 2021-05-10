@@ -28,7 +28,7 @@ Grando extended on Cwppertwait's ideas in \cite{Grando2019}. She completely remo
 
     \subsection{Model}
     \label{Replicating_Existing_Rainfall_Model:Grando:Model}
-    This subsection presents Grando's Rainfall Model in a summariesed way.
+    This subsection presents Grando's Rainfall Model in a summarised way.
 
     Grando defines her discrete time intensity process as follows:
     For $n \geq 1$ and $x \in A$, where $A \subset \mathbb{R}^2$
@@ -79,7 +79,7 @@ All programs have been run on the personal desktop (AMD Ryzen™ 9 3900X with 12
 
     \subsection{Code}
     \label{Replicating_Existing_Rainfall_Model:Replicating_Grando:Code}
-    We present a brief summary of the coding process in this subsectino.
+    We present a brief summary of the coding process in this subsection.
 
     To ensure the validity of the results, we wanted to run multiple tests. Grando's code was written in R and required multiple hours to produce a result. To improve on this, we have rewritten the program in C++ and used Python on Jupyter Notebooks for analysis.
 
@@ -185,7 +185,7 @@ All programs have been run on the personal desktop (AMD Ryzen™ 9 3900X with 12
 
         For each test we require three simulations. When computing for $\lambda_3$ we change its value from 30 to $\lambda_3 \sim \text{Unif(26,35)}$. Similarly, when computing for $\xi_3$, we change its value to $\xi_3 \sim \text{Unif(0.001,0.007)}$ and when computing for $\tau_3$ we change its value to $\tau_3 \sim \text{Unif(0.07,0.2)}$. At any given time there is one random variable between our nine that we are testing. For efficiency we process this over multiple threads. We completed 100 iterations and ran 5 attempts on the personal desktop. Attempt time ranged between 152.725 in to 199.386 seconds.
 
-        The graphs found in Figures \ref{singlelam}, \ref{singlexi} and \ref{singletau} correspond to the ones found in Grando’s *** REF** paper pages 78-80. We have come across unexpected results. Although the graphs show a similar pattern, there is an inconsistency in values. 
+        The graphs found in Figures \ref{singlelam}, \ref{singlexi} and \ref{singletau} correspond to the ones found in \cite{Grando2019}[78-80]. We have come across unexpected results. Although the graphs show a similar pattern, there is an inconsistency in values. 
 
 
         \begin{figure}

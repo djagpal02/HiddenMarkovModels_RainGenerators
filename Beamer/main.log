@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.25)  23 APR 2021 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.25)  27 APR 2021 22:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -908,32 +908,32 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ] [3
 
 ]
-<./images/./SingleParam/tau_3_1.png, id=127, 394.47375pt x 262.9825pt>
+<./images/./SingleParam/tau_3_1.png, id=133, 394.47375pt x 262.9825pt>
 File: ./images/./SingleParam/tau_3_1.png Graphic file (type png)
 <use ./images/./SingleParam/tau_3_1.png>
 Package pdftex.def Info: ./images/./SingleParam/tau_3_1.png  used on input line 88.
 (pdftex.def)             Requested size: 77.01721pt x 51.34357pt.
-<./images/./SingleParam/tau_3_2.png, id=129, 394.47375pt x 262.9825pt>
+<./images/./SingleParam/tau_3_2.png, id=135, 394.47375pt x 262.9825pt>
 File: ./images/./SingleParam/tau_3_2.png Graphic file (type png)
 <use ./images/./SingleParam/tau_3_2.png>
 Package pdftex.def Info: ./images/./SingleParam/tau_3_2.png  used on input line 88.
 (pdftex.def)             Requested size: 77.01721pt x 51.34357pt.
-<./images/./SingleParam/tau_3_3.png, id=130, 394.47375pt x 262.9825pt>
+<./images/./SingleParam/tau_3_3.png, id=136, 394.47375pt x 262.9825pt>
 File: ./images/./SingleParam/tau_3_3.png Graphic file (type png)
 <use ./images/./SingleParam/tau_3_3.png>
 Package pdftex.def Info: ./images/./SingleParam/tau_3_3.png  used on input line 88.
 (pdftex.def)             Requested size: 77.01721pt x 51.34357pt.
-<./images/./SingleParam/tau_3_4.png, id=131, 394.47375pt x 262.9825pt>
+<./images/./SingleParam/tau_3_4.png, id=137, 394.47375pt x 262.9825pt>
 File: ./images/./SingleParam/tau_3_4.png Graphic file (type png)
 <use ./images/./SingleParam/tau_3_4.png>
 Package pdftex.def Info: ./images/./SingleParam/tau_3_4.png  used on input line 88.
 (pdftex.def)             Requested size: 77.01721pt x 51.34357pt.
-<./images/./SingleParam/tau_3_5.png, id=132, 396.48125pt x 262.9825pt>
+<./images/./SingleParam/tau_3_5.png, id=138, 396.48125pt x 262.9825pt>
 File: ./images/./SingleParam/tau_3_5.png Graphic file (type png)
 <use ./images/./SingleParam/tau_3_5.png>
 Package pdftex.def Info: ./images/./SingleParam/tau_3_5.png  used on input line 88.
 (pdftex.def)             Requested size: 77.01721pt x 51.08273pt.
-<./images/./Adj_ABC/tau_3.png, id=133, 394.47375pt x 262.9825pt>
+<./images/./Adj_ABC/tau_3.png, id=139, 394.47375pt x 262.9825pt>
 File: ./images/./Adj_ABC/tau_3.png Graphic file (type png)
 <use ./images/./Adj_ABC/tau_3.png>
 Package pdftex.def Info: ./images/./Adj_ABC/tau_3.png  used on input line 88.
@@ -941,77 +941,79 @@ Package pdftex.def Info: ./images/./Adj_ABC/tau_3.png  used on input line 88.
  [4
 
  <./images/./SingleParam/tau_3_1.png> <./images/./SingleParam/tau_3_2.png> <./images/./SingleParam/tau_3_3.png> <./images/./SingleParam/tau_3_4.png> <./images/./SingleParam/tau_3_5.png> <./images/./Adj_ABC/tau_3.png>]
-<./images/HMM_Only/0_freq_data.png, id=167, 390.45876pt x 262.9825pt>
+<./images/HMM_Only/0_freq_data.png, id=173, 390.45876pt x 262.9825pt>
 File: ./images/HMM_Only/0_freq_data.png Graphic file (type png)
 <use ./images/HMM_Only/0_freq_data.png>
-Package pdftex.def Info: ./images/HMM_Only/0_freq_data.png  used on input line 103.
+Package pdftex.def Info: ./images/HMM_Only/0_freq_data.png  used on input line 104.
 (pdftex.def)             Requested size: 136.91862pt x 92.21779pt.
-<./images/HMM_Only/0_freq_sim.png, id=168, 390.45876pt x 263.98625pt>
+<./images/HMM_Only/0_freq_sim.png, id=174, 390.45876pt x 263.98625pt>
 File: ./images/HMM_Only/0_freq_sim.png Graphic file (type png)
 <use ./images/HMM_Only/0_freq_sim.png>
-Package pdftex.def Info: ./images/HMM_Only/0_freq_sim.png  used on input line 103.
+Package pdftex.def Info: ./images/HMM_Only/0_freq_sim.png  used on input line 104.
 (pdftex.def)             Requested size: 136.91862pt x 92.56976pt.
-<./images/HMM_Only/_freq_data.png, id=169, 383.4325pt x 262.9825pt>
+<./images/HMM_Only/_freq_data.png, id=175, 383.4325pt x 262.9825pt>
 File: ./images/HMM_Only/_freq_data.png Graphic file (type png)
 <use ./images/HMM_Only/_freq_data.png>
-Package pdftex.def Info: ./images/HMM_Only/_freq_data.png  used on input line 103.
+Package pdftex.def Info: ./images/HMM_Only/_freq_data.png  used on input line 104.
 (pdftex.def)             Requested size: 136.91862pt x 93.90718pt.
-<./images/HMM_Only/_freq_sim.png, id=170, 383.4325pt x 262.9825pt>
+<./images/HMM_Only/_freq_sim.png, id=176, 383.4325pt x 262.9825pt>
 File: ./images/HMM_Only/_freq_sim.png Graphic file (type png)
 <use ./images/HMM_Only/_freq_sim.png>
-Package pdftex.def Info: ./images/HMM_Only/_freq_sim.png  used on input line 103.
+Package pdftex.def Info: ./images/HMM_Only/_freq_sim.png  used on input line 104.
 (pdftex.def)             Requested size: 136.91862pt x 93.90718pt.
  [5
 
  <./images/HMM_Only/0_freq_data.png> <./images/HMM_Only/0_freq_sim.png> <./images/HMM_Only/_freq_data.png> <./images/HMM_Only/_freq_sim.png>]
-<./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png, id=200, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png, id=206, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png>
-Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png  used on input line 130.
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png  used on input line 131.
 (pdftex.def)             Requested size: 82.15201pt x 41.83833pt.
-<./images/Parameter Estimation on Attempt _1/param_1/lam_1.png, id=201, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/lam_1.png, id=207, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png>
-Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png  used on input line 130.
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png  used on input line 131.
 (pdftex.def)             Requested size: 82.15201pt x 41.83833pt.
-<./images/Parameter Estimation on Attempt _1/param_1/tau_1.png, id=202, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/tau_1.png, id=208, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png>
-Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png  used on input line 130.
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png  used on input line 131.
 (pdftex.def)             Requested size: 82.15201pt x 41.83833pt.
-<./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png, id=203, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png, id=209, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png>
-Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png  used on input line 130.
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png  used on input line 131.
 (pdftex.def)             Requested size: 82.15201pt x 41.83833pt.
-<./images/Parameter Estimation on Attempt _1/param_1/lam_2.png, id=204, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/lam_2.png, id=210, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png>
-Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png  used on input line 130.
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png  used on input line 131.
 (pdftex.def)             Requested size: 82.15201pt x 41.83833pt.
-<./images/Parameter Estimation on Attempt _1/param_1/tau_2.png, id=205, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/tau_2.png, id=211, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png>
-Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png  used on input line 130.
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png  used on input line 131.
 (pdftex.def)             Requested size: 82.15201pt x 41.83833pt.
-<./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png, id=206, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png, id=212, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png>
-Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png  used on input line 130.
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png  used on input line 131.
 (pdftex.def)             Requested size: 82.15201pt x 41.83833pt.
-<./images/Parameter Estimation on Attempt _1/param_1/lam_3.png, id=207, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/lam_3.png, id=213, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png>
-Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png  used on input line 130.
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png  used on input line 131.
 (pdftex.def)             Requested size: 82.15201pt x 41.83833pt.
-<./images/Parameter Estimation on Attempt _1/param_1/tau_3.png, id=208, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/tau_3.png, id=214, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png>
-Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png  used on input line 130.
+Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png  used on input line 131.
 (pdftex.def)             Requested size: 82.15201pt x 41.83833pt.
  [6
 
  <./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png (PNG copy)> <./images/Parameter Estimation on Attempt _1/param_1/lam_1.png> <./images/Parameter Estimation on Attempt _1/param_1/tau_1.png> <./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png (PNG copy)> <./images/Parameter Estimation on Attempt _1/param_1/lam_2.png> <./images/Parameter Estimation on Attempt _1/param_1/tau_2.png> <./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png (PNG copy)> <./images/Parameter Estimation on Attempt _1/param_1/lam_3.png> <./images/Parameter Estimation on Attempt _1/param_1/tau_3.png>] [7
+
+] [8
 
 ]
 \tf@nav=\write6
@@ -1023,27 +1025,27 @@ Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
  (/home/dil/Desktop/MMathProject/Beamer/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7DBF51A55BD3C441B2E4AB0BC248E6C4;273.
+(rerunfilecheck)             Checksum: E6EE298790B3CCC9BC21B65A47615C87;303.
  ) 
 Here is how much of TeX's memory you used:
- 25922 strings out of 481239
- 545909 string characters out of 5920377
+ 25931 strings out of 481239
+ 545988 string characters out of 5920377
  780110 words of memory out of 5000000
- 40581 multiletter control sequences out of 15000+600000
+ 40587 multiletter control sequences out of 15000+600000
  544526 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,15n,70p,828b,908s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on /home/dil/Desktop/MMathProject/Beamer/main.pdf (7 pages, 465065 bytes).
+Output written on /home/dil/Desktop/MMathProject/Beamer/main.pdf (8 pages, 467672 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 20 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 334 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 

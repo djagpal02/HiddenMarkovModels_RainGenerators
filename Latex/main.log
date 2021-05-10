@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.25)  23 APR 2021 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.25)  10 MAY 2021 10:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -923,7 +923,17 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 Non-PDF special ignored!
 <special> papersize=597.50787pt,845.04684pt
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/dil/Desktop/MMathProject/Latex/chapters/Abstract.tex) [1
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/dil/Desktop/MMathProject/Latex/chapters/Abstract.tex)
+Overfull \hbox (37.6101pt too wide) in paragraph at lines 9--61
+[]\OT1/cmr/m/n/12 All files are avail-able at []https://github.com/djagpal02/HiddenMarkovModels[]RainGenerators[].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--61
+
+ []
+
+[1
 
 ] (/home/dil/Desktop/MMathProject/Latex/main.toc [2
 
@@ -1021,94 +1031,94 @@ File: ./images/./AllParam/tau_3.png Graphic file (type png)
 Package pdftex.def Info: ./images/./AllParam/tau_3.png  used on input line 162.
 (pdftex.def)             Requested size: 140.84256pt x 93.89514pt.
  [25] [26 <./images/./AllParam/lambda_1.png> <./images/./AllParam/lambda_2.png> <./images/./AllParam/lambda_3.png> <./images/./AllParam/xi_1.png> <./images/./AllParam/xi_2.png> <./images/./AllParam/xi_3.png> <./images/./AllParam/tau_1.png> <./images/./AllParam/tau_2.png> <./images/./AllParam/tau_3.png>]
-<./images/./SingleParam/lambda_3_1.png, id=638, 383.4325pt x 262.9825pt>
+<./images/./SingleParam/lambda_3_1.png, id=639, 383.4325pt x 262.9825pt>
 File: ./images/./SingleParam/lambda_3_1.png Graphic file (type png)
 <use ./images/./SingleParam/lambda_3_1.png>
 Package pdftex.def Info: ./images/./SingleParam/lambda_3_1.png  used on input line 194.
 (pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
-<./images/./SingleParam/lambda_3_2.png, id=639, 383.4325pt x 262.9825pt>
+<./images/./SingleParam/lambda_3_2.png, id=640, 383.4325pt x 262.9825pt>
 File: ./images/./SingleParam/lambda_3_2.png Graphic file (type png)
 <use ./images/./SingleParam/lambda_3_2.png>
 Package pdftex.def Info: ./images/./SingleParam/lambda_3_2.png  used on input line 200.
 (pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
-<./images/./SingleParam/lambda_3_3.png, id=640, 383.4325pt x 262.9825pt>
+<./images/./SingleParam/lambda_3_3.png, id=641, 383.4325pt x 262.9825pt>
 File: ./images/./SingleParam/lambda_3_3.png Graphic file (type png)
 <use ./images/./SingleParam/lambda_3_3.png>
 Package pdftex.def Info: ./images/./SingleParam/lambda_3_3.png  used on input line 206.
 (pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
-<./images/./SingleParam/lambda_3_4.png, id=641, 383.4325pt x 262.9825pt>
+<./images/./SingleParam/lambda_3_4.png, id=642, 383.4325pt x 262.9825pt>
 File: ./images/./SingleParam/lambda_3_4.png Graphic file (type png)
 <use ./images/./SingleParam/lambda_3_4.png>
 Package pdftex.def Info: ./images/./SingleParam/lambda_3_4.png  used on input line 214.
 (pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
-<./images/./SingleParam/lambda_3_5.png, id=642, 383.4325pt x 262.9825pt>
+<./images/./SingleParam/lambda_3_5.png, id=643, 383.4325pt x 262.9825pt>
 File: ./images/./SingleParam/lambda_3_5.png Graphic file (type png)
 <use ./images/./SingleParam/lambda_3_5.png>
 Package pdftex.def Info: ./images/./SingleParam/lambda_3_5.png  used on input line 220.
 (pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
-<./images/./SingleParam/xi_3_1.png, id=648, 400.49625pt x 262.9825pt>
+<./images/./SingleParam/xi_3_1.png, id=649, 400.49625pt x 262.9825pt>
 File: ./images/./SingleParam/xi_3_1.png Graphic file (type png)
 <use ./images/./SingleParam/xi_3_1.png>
 Package pdftex.def Info: ./images/./SingleParam/xi_3_1.png  used on input line 243.
 (pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
-<./images/./SingleParam/xi_3_2.png, id=649, 400.49625pt x 262.9825pt>
+<./images/./SingleParam/xi_3_2.png, id=650, 400.49625pt x 262.9825pt>
 File: ./images/./SingleParam/xi_3_2.png Graphic file (type png)
 <use ./images/./SingleParam/xi_3_2.png>
 Package pdftex.def Info: ./images/./SingleParam/xi_3_2.png  used on input line 249.
 (pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
-<./images/./SingleParam/xi_3_3.png, id=650, 400.49625pt x 262.9825pt>
+<./images/./SingleParam/xi_3_3.png, id=651, 400.49625pt x 262.9825pt>
 File: ./images/./SingleParam/xi_3_3.png Graphic file (type png)
 <use ./images/./SingleParam/xi_3_3.png>
 Package pdftex.def Info: ./images/./SingleParam/xi_3_3.png  used on input line 255.
 (pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
-<./images/./SingleParam/xi_3_4.png, id=651, 400.49625pt x 262.9825pt>
+<./images/./SingleParam/xi_3_4.png, id=652, 400.49625pt x 262.9825pt>
 File: ./images/./SingleParam/xi_3_4.png Graphic file (type png)
 <use ./images/./SingleParam/xi_3_4.png>
 Package pdftex.def Info: ./images/./SingleParam/xi_3_4.png  used on input line 263.
 (pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
-<./images/./SingleParam/xi_3_5.png, id=652, 400.49625pt x 262.9825pt>
+<./images/./SingleParam/xi_3_5.png, id=653, 400.49625pt x 262.9825pt>
 File: ./images/./SingleParam/xi_3_5.png Graphic file (type png)
 <use ./images/./SingleParam/xi_3_5.png>
 Package pdftex.def Info: ./images/./SingleParam/xi_3_5.png  used on input line 269.
 (pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
  [27 <./images/./SingleParam/lambda_3_1.png> <./images/./SingleParam/lambda_3_2.png> <./images/./SingleParam/lambda_3_3.png> <./images/./SingleParam/lambda_3_4.png> <./images/./SingleParam/lambda_3_5.png>]
-<./images/./SingleParam/tau_3_1.png, id=671, 394.47375pt x 262.9825pt>
+<./images/./SingleParam/tau_3_1.png, id=672, 394.47375pt x 262.9825pt>
 File: ./images/./SingleParam/tau_3_1.png Graphic file (type png)
 <use ./images/./SingleParam/tau_3_1.png>
 Package pdftex.def Info: ./images/./SingleParam/tau_3_1.png  used on input line 296.
 (pdftex.def)             Requested size: 140.84256pt x 93.89514pt.
-<./images/./SingleParam/tau_3_2.png, id=672, 394.47375pt x 262.9825pt>
+<./images/./SingleParam/tau_3_2.png, id=673, 394.47375pt x 262.9825pt>
 File: ./images/./SingleParam/tau_3_2.png Graphic file (type png)
 <use ./images/./SingleParam/tau_3_2.png>
 Package pdftex.def Info: ./images/./SingleParam/tau_3_2.png  used on input line 302.
 (pdftex.def)             Requested size: 140.84256pt x 93.89514pt.
-<./images/./SingleParam/tau_3_3.png, id=673, 394.47375pt x 262.9825pt>
+<./images/./SingleParam/tau_3_3.png, id=674, 394.47375pt x 262.9825pt>
 File: ./images/./SingleParam/tau_3_3.png Graphic file (type png)
 <use ./images/./SingleParam/tau_3_3.png>
 Package pdftex.def Info: ./images/./SingleParam/tau_3_3.png  used on input line 308.
 (pdftex.def)             Requested size: 140.84256pt x 93.89514pt.
-<./images/./SingleParam/tau_3_4.png, id=674, 394.47375pt x 262.9825pt>
+<./images/./SingleParam/tau_3_4.png, id=675, 394.47375pt x 262.9825pt>
 File: ./images/./SingleParam/tau_3_4.png Graphic file (type png)
 <use ./images/./SingleParam/tau_3_4.png>
 Package pdftex.def Info: ./images/./SingleParam/tau_3_4.png  used on input line 316.
 (pdftex.def)             Requested size: 140.84256pt x 93.89514pt.
-<./images/./SingleParam/tau_3_5.png, id=675, 396.48125pt x 262.9825pt>
+<./images/./SingleParam/tau_3_5.png, id=676, 396.48125pt x 262.9825pt>
 File: ./images/./SingleParam/tau_3_5.png Graphic file (type png)
 <use ./images/./SingleParam/tau_3_5.png>
 Package pdftex.def Info: ./images/./SingleParam/tau_3_5.png  used on input line 322.
 (pdftex.def)             Requested size: 140.84256pt x 93.42163pt.
  [28 <./images/./SingleParam/xi_3_1.png> <./images/./SingleParam/xi_3_2.png> <./images/./SingleParam/xi_3_3.png> <./images/./SingleParam/xi_3_4.png> <./images/./SingleParam/xi_3_5.png>]
-<./images/./Adj_ABC/lam_3.png, id=695, 383.4325pt x 262.9825pt>
+<./images/./Adj_ABC/lam_3.png, id=696, 383.4325pt x 262.9825pt>
 File: ./images/./Adj_ABC/lam_3.png Graphic file (type png)
 <use ./images/./Adj_ABC/lam_3.png>
 Package pdftex.def Info: ./images/./Adj_ABC/lam_3.png  used on input line 354.
 (pdftex.def)             Requested size: 140.84256pt x 96.59975pt.
-<./images/./Adj_ABC/xi_3.png, id=696, 400.49625pt x 262.9825pt>
+<./images/./Adj_ABC/xi_3.png, id=697, 400.49625pt x 262.9825pt>
 File: ./images/./Adj_ABC/xi_3.png Graphic file (type png)
 <use ./images/./Adj_ABC/xi_3.png>
 Package pdftex.def Info: ./images/./Adj_ABC/xi_3.png  used on input line 360.
 (pdftex.def)             Requested size: 140.84256pt x 92.48264pt.
-<./images/./Adj_ABC/tau_3.png, id=697, 394.47375pt x 262.9825pt>
+<./images/./Adj_ABC/tau_3.png, id=698, 394.47375pt x 262.9825pt>
 File: ./images/./Adj_ABC/tau_3.png Graphic file (type png)
 <use ./images/./Adj_ABC/tau_3.png>
 Package pdftex.def Info: ./images/./Adj_ABC/tau_3.png  used on input line 366.
@@ -1122,33 +1132,33 @@ Chapter 6.
 (/home/dil/Desktop/MMathProject/Latex/chapters/chp6.tex [33
 
 ]
-<./images/HMM_Only/function.png, id=736, 947.54pt x 925.4575pt>
+<./images/HMM_Only/function.png, id=737, 947.54pt x 925.4575pt>
 File: ./images/HMM_Only/function.png Graphic file (type png)
 <use ./images/HMM_Only/function.png>
 Package pdftex.def Info: ./images/HMM_Only/function.png  used on input line 45.
 (pdftex.def)             Requested size: 211.26027pt x 206.32669pt.
-<./images/HMM_Only/convLog.png, id=737, 381.425pt x 262.9825pt>
+<./images/HMM_Only/convLog.png, id=738, 381.425pt x 262.9825pt>
 File: ./images/HMM_Only/convLog.png Graphic file (type png)
 <use ./images/HMM_Only/convLog.png>
 Package pdftex.def Info: ./images/HMM_Only/convLog.png  used on input line 51.
 (pdftex.def)             Requested size: 211.26027pt x 145.65604pt.
  [34]
-<./images/HMM_Only/0_freq_data.png, id=745, 390.45876pt x 262.9825pt>
+<./images/HMM_Only/0_freq_data.png, id=746, 390.45876pt x 262.9825pt>
 File: ./images/HMM_Only/0_freq_data.png Graphic file (type png)
 <use ./images/HMM_Only/0_freq_data.png>
 Package pdftex.def Info: ./images/HMM_Only/0_freq_data.png  used on input line 98.
 (pdftex.def)             Requested size: 211.26027pt x 142.28932pt.
-<./images/HMM_Only/0_freq_sim.png, id=746, 390.45876pt x 263.98625pt>
+<./images/HMM_Only/0_freq_sim.png, id=747, 390.45876pt x 263.98625pt>
 File: ./images/HMM_Only/0_freq_sim.png Graphic file (type png)
 <use ./images/HMM_Only/0_freq_sim.png>
 Package pdftex.def Info: ./images/HMM_Only/0_freq_sim.png  used on input line 104.
 (pdftex.def)             Requested size: 211.26027pt x 142.83241pt.
-<./images/HMM_Only/_freq_data.png, id=747, 383.4325pt x 262.9825pt>
+<./images/HMM_Only/_freq_data.png, id=748, 383.4325pt x 262.9825pt>
 File: ./images/HMM_Only/_freq_data.png Graphic file (type png)
 <use ./images/HMM_Only/_freq_data.png>
 Package pdftex.def Info: ./images/HMM_Only/_freq_data.png  used on input line 111.
 (pdftex.def)             Requested size: 211.26027pt x 144.89763pt.
-<./images/HMM_Only/_freq_sim.png, id=748, 383.4325pt x 262.9825pt>
+<./images/HMM_Only/_freq_sim.png, id=749, 383.4325pt x 262.9825pt>
 File: ./images/HMM_Only/_freq_sim.png Graphic file (type png)
 <use ./images/HMM_Only/_freq_sim.png>
 Package pdftex.def Info: ./images/HMM_Only/_freq_sim.png  used on input line 117.
@@ -1158,47 +1168,47 @@ Chapter 7.
 (/home/dil/Desktop/MMathProject/Latex/chapters/chp7.tex [37
 
 ]
-<./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png, id=773, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png, id=774, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png>
 Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png  used on input line 61.
 (pdftex.def)             Requested size: 375.57779pt x 191.283pt.
-<./images/Parameter Estimation on Attempt _1/param_1/lam_1.png, id=774, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/lam_1.png, id=775, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png>
 Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam_1.png  used on input line 68.
 (pdftex.def)             Requested size: 211.26027pt x 107.5931pt.
-<./images/Parameter Estimation on Attempt _1/param_1/tau_1.png, id=775, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/tau_1.png, id=776, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png>
 Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau_1.png  used on input line 74.
 (pdftex.def)             Requested size: 211.26027pt x 107.5931pt.
-<./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png, id=776, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png, id=777, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png>
 Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png  used on input line 85.
 (pdftex.def)             Requested size: 375.57779pt x 191.283pt.
-<./images/Parameter Estimation on Attempt _1/param_1/lam_2.png, id=777, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/lam_2.png, id=778, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png>
 Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam_2.png  used on input line 92.
 (pdftex.def)             Requested size: 211.26027pt x 107.5931pt.
-<./images/Parameter Estimation on Attempt _1/param_1/tau_2.png, id=778, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/tau_2.png, id=779, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png>
 Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau_2.png  used on input line 98.
 (pdftex.def)             Requested size: 211.26027pt x 107.5931pt.
-<./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png, id=779, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png, id=780, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png>
 Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png  used on input line 109.
 (pdftex.def)             Requested size: 375.57779pt x 191.283pt.
-<./images/Parameter Estimation on Attempt _1/param_1/lam_3.png, id=780, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/lam_3.png, id=781, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png>
 Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/lam_3.png  used on input line 116.
 (pdftex.def)             Requested size: 211.26027pt x 107.5931pt.
-<./images/Parameter Estimation on Attempt _1/param_1/tau_3.png, id=781, 567.62062pt x 289.08pt>
+<./images/Parameter Estimation on Attempt _1/param_1/tau_3.png, id=782, 567.62062pt x 289.08pt>
 File: ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png Graphic file (type png)
 <use ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png>
 Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau_3.png  used on input line 122.
@@ -1206,17 +1216,17 @@ Package pdftex.def Info: ./images/Parameter Estimation on Attempt _1/param_1/tau
  [38] [39 <./images/Parameter Estimation on Attempt _1/param_1/lam0-10tau0-10.png (PNG copy)> <./images/Parameter Estimation on Attempt _1/param_1/lam_1.png> <./images/Parameter Estimation on Attempt _1/param_1/tau_1.png>] [40 <./images/Parameter Estimation on Attempt _1/param_1/lam0-2tau0-0_5.png (PNG copy)> <./images/Parameter Estimation on Attempt _1/param_1/lam_2.png> <./images/Parameter Estimation on Attempt _1/param_1/tau_2.png>] [41 <./images/Parameter Estimation on Attempt _1/param_1/lam0_5-0_75tau0-0_1.png (PNG copy)> <./images/Parameter Estimation on Attempt _1/param_1/lam_3.png> <./images/Parameter Estimation on Attempt _1/param_1/tau_3.png>]) [42]
 Chapter 8.
 (/home/dil/Desktop/MMathProject/Latex/chapters/chp8.tex
-<./images/CDF/recorded.png, id=824, 371.13657pt x 289.08pt>
+<./images/CDF/recorded.png, id=825, 371.13657pt x 289.08pt>
 File: ./images/CDF/recorded.png Graphic file (type png)
 <use ./images/CDF/recorded.png>
 Package pdftex.def Info: ./images/CDF/recorded.png  used on input line 28.
 (pdftex.def)             Requested size: 140.84256pt x 109.70596pt.
-<./images/CDF/HMM.png, id=825, 371.13657pt x 289.08pt>
+<./images/CDF/HMM.png, id=826, 371.13657pt x 289.08pt>
 File: ./images/CDF/HMM.png Graphic file (type png)
 <use ./images/CDF/HMM.png>
 Package pdftex.def Info: ./images/CDF/HMM.png  used on input line 34.
 (pdftex.def)             Requested size: 140.84256pt x 109.70596pt.
-<./images/CDF/model.png, id=826, 371.13657pt x 289.08pt>
+<./images/CDF/model.png, id=827, 371.13657pt x 289.08pt>
 File: ./images/CDF/model.png Graphic file (type png)
 <use ./images/CDF/model.png>
 Package pdftex.def Info: ./images/CDF/model.png  used on input line 40.
@@ -1236,25 +1246,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 94B5A074234DB2EE185B4AA226A82AEC;3214.
+(rerunfilecheck)             Checksum: 4FC607112C45013CCA29C3C39B886389;3215.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 30069 strings out of 481239
- 606535 string characters out of 5920377
- 1215960 words of memory out of 5000000
- 44502 multiletter control sequences out of 15000+600000
+ 30071 strings out of 481239
+ 606564 string characters out of 5920377
+ 1216010 words of memory out of 5000000
+ 44504 multiletter control sequences out of 15000+600000
  548284 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,11n,70p,1048b,1675s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on /home/dil/Desktop/MMathProject/Latex/main.pdf (52 pages, 999626 bytes).
+Output written on /home/dil/Desktop/MMathProject/Latex/main.pdf (52 pages, 999670 bytes).
 PDF statistics:
- 1000 PDF objects out of 1000 (max. 8388607)
- 827 compressed objects within 9 object streams
+ 1001 PDF objects out of 1200 (max. 8388607)
+ 828 compressed objects within 9 object streams
  269 named destinations out of 1000 (max. 500000)
  653 words of extra memory for PDF output out of 10000 (max. 10000000)
 

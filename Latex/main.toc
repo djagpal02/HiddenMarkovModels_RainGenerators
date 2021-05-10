@@ -14,7 +14,7 @@
 \contentsline {chapter}{\numberline {3}Model Selection}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Maximum Likelihood Estimators}{17}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Likelihood}{17}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Maximum Liklihood Estimators}{17}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}Maximum Likelihood Estimators}{17}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Approximate Bayesian Computation}{19}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Kolmogorov-Smirnov Test}{20}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Replicating Existing Rainfall Models}{22}{chapter.4}%
@@ -28,7 +28,7 @@
 \contentsline {subsubsection}{Nine Parameter Estimation}{25}{section*.10}%
 \contentsline {subsubsection}{Three Parameter Estimation}{25}{section*.12}%
 \contentsline {subsubsection}{Adjusted Algorithm}{28}{section*.16}%
-\contentsline {chapter}{\numberline {5}Extending HMM based Rainfall Models}{31}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Extending HMM-based Rainfall Models}{31}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Disc Structure}{31}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Seasonal Effects}{32}{section.5.2}%
 \contentsline {section}{\numberline {5.3}High Dimensionality}{32}{section.5.3}%

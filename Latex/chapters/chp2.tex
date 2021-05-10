@@ -78,7 +78,7 @@ As with all models, we can use HMM to simulate processes. In this section, we wi
      \begin{example}
         \label{Hidden_Markov:Using_HMM:Simulation:Example}
         Suppose Alice is hidden away from the world and has no access to information regarding the weather. She meets Bob every day and knows how weather affects his mood.
-        For simplicity, assume Bob only has two moods, happy and sad.   Given matrix A, B and vector $\pi$ can she predict his mood for   three consecutive days?
+        For simplicity, assume Bob only has two moods, happy and sad.   Given matrix A, B and vector $\pi$ can she predict his mood for three consecutive days?
         \begin{figure}
             \centering
             \begin{tikzpicture}
@@ -266,7 +266,7 @@ We have a problem as even with a small model; we require a considerable number o
         \label{Hidden_Markov:Evaluation:Forward_Backward_Algorithm:Alpha}
         \alpha_t(i) = \prob (O_1,O_2,O_3,...,O_t,q_t=S_i | \lambda)
     \end{equation}
-    $\alpha$ is an extremly powerful tool in reducing the number of calculations. As given by \ref{Hidden_Markov:Evaluation:Forward_Backward_Algorithm:Alpha}, it providse the probability that at time $t$ we have seen a sequence of observations and are currently at state $q_t=S_i$. This is not quite $\prob (O | \lambda)$ but it represents a part of it. Instead of the probability of the whole sequence, it breaks it into a chunk of size $t$, commits to end at a particular state and then calculates the same proabbility for this.
+    $\alpha$ is an extremely powerful tool in reducing the number of calculations. As given by \ref{Hidden_Markov:Evaluation:Forward_Backward_Algorithm:Alpha}, it provides the probability that at time $t$ we have seen a sequence of observations and are currently at state $q_t=S_i$. This is not quite $\prob (O | \lambda)$ but it represents a part of it. Instead of the probability of the whole sequence, it breaks it into a chunk of size $t$, commits to ending at a particular state and then calculates the same probability for this.
 
     We can combine \ref{Hidden_Markov:Evaluation:Forward_Backward_Algorithm:Alpha} with induction to produce an iterative process that can solve our problem.
 
@@ -400,7 +400,7 @@ We have a problem as even with a small model; we require a considerable number o
     \end{example}
 
 
-    For question 1 this is sufficient. However, we will later require the $\beta$, backward component and as such we will describe it now. Logically it is the same principle as the forward component except this time instead of moving forward step by step we are moving backwards.
+    For question 1 this is sufficient. However, we will later require the $\beta$, backward component and as such we will describe it now. Logically it is the same principle as the forward component except for this time instead of moving forward step by step we are moving backwards.
     \begin{equation}
         \label{Hidden_Markov:Evaluation:Forward_Backward_Algorithm:Beta}
         \beta_t(i) = \prob (O_{t+1},O_{t+2},,...,O_T | q_t=S_i, \lambda)
@@ -409,7 +409,7 @@ We have a problem as even with a small model; we require a considerable number o
 
     \begin{enumerate}
         \item Base case \\
-        For each state we must assume that it is the final state in order to iterate from it. This gives us:
+        For each state, we must assume that it is the final state in order to iterate from it. This gives us:
         \begin{eqnarray}
             \beta_T(i) = 1, & i \in [1,N]
         \end{eqnarray}
@@ -451,7 +451,7 @@ We have a problem as even with a small model; we require a considerable number o
 
     This section will address the decoding problem \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:Second}. We will use the two helper functions developed in \ref{Hidden_Markov:Evaluation} together with the Viterbi Algorithm to do so. We will use ideas presented in \cite{Rabiner1986} and \cite{Forney1973}.
 
-    The problem searches for the sequence of states that best explains the sequence of observations. However, the definition of 'best' is quite vague and open to interpretations. An obvious appraoch would be to look for each time $t$, find the most likely state, given all observations and the model. Lets define this probaility as $\gamma$.
+    The problem searches for the sequence of states that best explains the sequence of observations. However, the definition of 'best' is quite vague and open to interpretations. An obvious approach would be to look for each time $t$, find the most likely state, given all observations and the model. Let's define this probability as $\gamma$.
     \begin{equation}
         \label{Hidden_Markov:Decoding:gamma}
         \gamma_t(i) = \prob (q_t = S_i | O, \lambda)
@@ -566,7 +566,7 @@ We have a problem as even with a small model; we require a considerable number o
 
     \begin{enumerate}
         \item Base case \\
-        For each state we must calculate $\pi_i b_i(O_1)$ to determine which intial state is most likely. We also must set $\psi_1(i)$ = 0 as there have not been any states until now. 
+        For each state, we must calculate $\pi_i b_i(O_1)$ to determine which initial state is most likely. We also must set $\psi_1(i)$ = 0 as there have not been any states until now. 
         \begin{eqnarray}
             \delta_1(i) & = & \pi_i b_i(O_1) \\
             \psi_1(i)   & = & 0
@@ -647,7 +647,7 @@ The learning problem \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:Third} 
 
     In this subsection, we will demonstrate the Baum-Welch Algorithm. Explanations have been inspired by \cite{Baum}.
 
-    For the Baum-Welch algorithm we will need all three parameters intrudced earlier; $\alpha$ \ref{Hidden_Markov:Evaluation:Forward_Backward_Algorithm:Alpha}, $\beta$ \ref{Hidden_Markov:Evaluation:Forward_Backward_Algorithm:Beta} and $\gamma$ \ref{Hidden_Markov:Decoding:gamma}. We will also need a new parameter $\xi_t(i,j)$. This will capture the probability of being in some state $S_i$ at time $t$ and then $S_j$ at time $t+1$ given the observations and the model. 
+    For the Baum-Welch algorithm we will need all three parameters introduced earlier; $\alpha$ \ref{Hidden_Markov:Evaluation:Forward_Backward_Algorithm:Alpha}, $\beta$ \ref{Hidden_Markov:Evaluation:Forward_Backward_Algorithm:Beta} and $\gamma$ \ref{Hidden_Markov:Decoding:gamma}. We will also need a new parameter $\xi_t(i,j)$. This will capture the probability of being in some state $S_i$ at time $t$ and then $S_j$ at time $t+1$ given the observations and the model. 
     \begin{equation}
         \xi_t(i,j) = \prob (q_t = S_i, q_{t+1} = S_j | O, \lambda)
     \end{equation} 
@@ -692,7 +692,7 @@ The learning problem \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:Third} 
 
         \item $\bar{a_{ij}}$
         
-        Here we can use the expected number of transitions from state $i$ to $j$ divided by expected number of transitions from $i$ in total. This will provide the appropriate transition probability. 
+        Here we can use the expected number of transitions from state $i$ to $j$ divided by the expected number of transitions from $i$ in total. This will provide the appropriate transition probability. 
         \begin{equation}
             \bar{a_{ij}} = \dfrac{\sum_{t=1}^{T-1} \xi_t(i,j)}{\sum_{t=1}^{T-1} \gamma_t(i)}
         \end{equation}
@@ -774,12 +774,12 @@ The learning problem \ref{Hidden_Markov:Using_HMM:Key_Problems:Questions:Third} 
 
         Using these along with \ref{Hidden_Markov:Learning:Baum_Welch:Reestimation} will allow us to re-estimate our A, B and $\pi$ parameters.
 
-        $\pi$ is the first column of the $\gamma$ matrix. Thus our new inital distribution is 
+        $\pi$ is the first column of the $\gamma$ matrix. Thus our new initial distribution is 
         \begin{equation}
             \bar{\pi} = \{0.522979, 0.303949,   0.173072\}
         \end{equation}
         
-        The number of transtions from state $i$ to $j$ can be taken as the sum of a particular position over all $\eta$ matrices. These can be divded by the sum of the corresponding $\gamma$ row, disregarding the last timestep.
+        The number of transitions from state $i$ to $j$ can be taken as the sum of a particular position overall $\eta$ matrices. These can be divided by the sum of the corresponding $\gamma$ row, disregarding the last timestep.
         \begin{equation}
             \bar{a_{ij}} = \begin{bmatrix}
                 0.307672  & 0.425369  & 0.266959 \\
